@@ -7,30 +7,24 @@ import 'element-ui/lib/theme-default/index.css'
 import VueRouter from 'vue-router'
 import store from './vuex/store'
 import Vuex from 'vuex'
-
 import routes from './routes'
 import Mock from './mock'
 Mock.bootstrap();
 import 'font-awesome/css/font-awesome.min.css'
 import  VueResource  from  'vue-resource';
+import func from './components/func/func'//引用
+Vue.use(func);//将全局函数当做插件来进行注册
 Vue.use(VueResource);
 Vue.use(ElementUI);
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
-const router = new VueRouter({
-  routes
-})
-
+const router = new VueRouter({routes})
 router.beforeEach((to, from, next) => {
-
   if (to.path == '/login') sessionStorage.removeItem('user');
   let user = JSON.parse(sessionStorage.getItem('user'));
   (!user && to.path != '/login')? next({ path: '/login' }):next()
-
 })
-
-
 
 new Vue({
   router,
