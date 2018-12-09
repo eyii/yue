@@ -1,5 +1,4 @@
 <template>
-
     <el-dialog title="编辑" :visible.sync="value" width="30%" :before-close="show">
         <span>这是一段信息</span>
         <span slot="footer" class="dialog-footer">
