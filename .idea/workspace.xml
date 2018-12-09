@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fec5976-81bf-4072-a0cd-541d72e6620a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/vue/src/components/global/vuez.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/nav1/Commission.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/common/js/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/common/js/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/edialog/add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/edialog/add.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/edialog/batchDel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/edialog/batchDel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/Table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/Table.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/vuex/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/vuex/getters.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/vuex/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/vuex/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/vuex/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/vuex/store.js" afterDir="false" />
-    </list>
+    <list default="true" id="8fec5976-81bf-4072-a0cd-541d72e6620a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +26,7 @@
         <counts>
           <entry key="conf" value="4" />
           <entry key="html" value="1" />
-          <entry key="js" value="69" />
+          <entry key="js" value="70" />
           <entry key="json" value="3" />
           <entry key="vue" value="73" />
         </counts>
@@ -51,7 +35,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="69" />
+          <entry key="JavaScript" value="70" />
           <entry key="SmartyConfig" value="4" />
           <entry key="Vue.js" value="73" />
         </counts>
@@ -76,35 +60,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Table.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="435">
               <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="37" />
               <folding>
                 <element signature="e#263#317#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-              <folding>
-                <element signature="n#style#0;n#el-table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -121,7 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filters</find>
       <find>sels</find>
       <find>vue</find>
       <find>秦娜</find>
@@ -150,6 +112,7 @@
       <find>editShowDialog</find>
       <find>boolea</find>
       <find>showDialogEdit</find>
+      <find>showDialogE</find>
       <find>showDialog</find>
     </findStrings>
     <replaceStrings>
@@ -370,32 +333,6 @@
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
-            <path>
-              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="nav1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -433,7 +370,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544262690463" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544266792494" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -476,12 +413,12 @@
       <updated>1544187587045</updated>
       <workItem from="1544187588613" duration="13901000" />
       <workItem from="1544247258470" duration="14557000" />
-      <workItem from="1544263061099" duration="1422000" />
+      <workItem from="1544263061099" duration="2206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29880000" />
+    <option name="totallyTimeSpent" value="30664000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -494,7 +431,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25778133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -512,7 +448,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.66560256" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.33439744" side_tool="true" weight="0.32952693" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49880287" visible="true" weight="0.109298535" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49880287" visible="true" weight="0.62805873" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -653,9 +589,6 @@
         <state relative-caret-position="-360" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/global/vuez.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Form.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270" />
@@ -713,22 +646,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Table.vue">
+    <entry file="file://$PROJECT_DIR$/vue/src/components/global/vuez.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="-315">
           <folding>
-            <element signature="e#263#317#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#el-table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#el-col#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#el-col#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-input#0;n#el-col#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#el-col#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#el-col#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#el-col#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-date-picker#0;n#el-col#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-date-picker#0;n#el-col#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -737,6 +666,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#el-table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Table.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <element signature="e#263#317#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
