@@ -12,8 +12,8 @@ import Mock from './mock'
 Mock.bootstrap();
 import 'font-awesome/css/font-awesome.min.css'
 import  VueResource  from  'vue-resource';
-import func from './components/func/func'//引用
-Vue.use(func);//将全局函数当做插件来进行注册
+import func from './components/func/func'
+Vue.use(func);
 Vue.use(VueResource);
 Vue.use(ElementUI);
 Vue.use(VueRouter);

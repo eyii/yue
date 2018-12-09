@@ -20,30 +20,24 @@
     export default {
         name: "elist",
         props: {
-            showDialog:{
+            value:{
                 type:Boolean,
                 default:false
             }
 
         },
-
         data() {
             return {
                 filters: { name: ''},
                 total: 0,
                 page: 1,
                 users:[],
-                sels: [],//列表选中列
-                showDialog:this.showDialog,//编辑界面是否显示
+                sels: [],
                 editLoading: false,
                 editForm: { id: 0, name: '', sex: -1, age: 0, birth: '', addr: ''},
-                addFormVisible: false,                                                      //新增界面是否显示
                 addLoading: false,
-                addForm: {name: '', sex: -1, age: 0, birth: '', addr: ''}                   //新page增界面数据
-
             }
         },
-
 
         methods: {
             getUsers() {
@@ -51,18 +45,15 @@
                 getUserListPage(para).then((res) => {
                     this.total = res.data.total;
                     this.commit('setUsers',res.data.users);
-
                 });
             },
             handleEdit: function (index, row) {
-                this.showDialog = true;
+                this.$emit('input', true);
+
                 this.editForm = Object.assign({}, row);
             },
 
 
-        },
-        watch:{
-            showDialog(val){ this.$emit('update:showDialog', val); },
         },
 
         mounted() {

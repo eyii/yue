@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fec5976-81bf-4072-a0cd-541d72e6620a" name="Default Changelist" comment="" />
+    <list default="true" id="8fec5976-81bf-4072-a0cd-541d72e6620a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vue/src/components/common/props/mprops.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/components/common/props/sx.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/Table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/Table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/nav3/Page6.vue" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,48 +36,56 @@
         <counts>
           <entry key="conf" value="4" />
           <entry key="html" value="1" />
-          <entry key="js" value="70" />
-          <entry key="json" value="3" />
-          <entry key="vue" value="73" />
+          <entry key="js" value="77" />
+          <entry key="json" value="4" />
+          <entry key="log" value="1" />
+          <entry key="vue" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="3" />
-          <entry key="JavaScript" value="70" />
+          <entry key="JSON" value="4" />
+          <entry key="JavaScript" value="77" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="SmartyConfig" value="4" />
-          <entry key="Vue.js" value="73" />
+          <entry key="Vue.js" value="94" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="36" />
           <entry key="html" value="6" />
-          <entry key="js" value="208" />
-          <entry key="vue" value="594" />
+          <entry key="js" value="215" />
+          <entry key="vue" value="1060" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="6" />
-          <entry key="JavaScript" value="208" />
+          <entry key="JavaScript" value="215" />
           <entry key="SmartyConfig" value="36" />
-          <entry key="Vue.js" value="594" />
+          <entry key="Vue.js" value="1060" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Table.vue">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/add.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="37" />
-              <folding>
-                <element signature="e#263#317#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="74" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="80" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -84,13 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sels</find>
-      <find>vue</find>
-      <find>秦娜</find>
-      <find>total</find>
-      <find>formatSex</find>
-      <find>getUsers</find>
-      <find>addLoading</find>
       <find>editSubmit</find>
       <find>显示新增界面</find>
       <find>users</find>
@@ -106,14 +117,21 @@
       <find>edit_success</find>
       <find>handleAdd</find>
       <find>handleDel</find>
-      <find>addFormVisible</find>
       <find>editFormVisible</find>
       <find>type</find>
       <find>editShowDialog</find>
       <find>boolea</find>
       <find>showDialogEdit</find>
       <find>showDialogE</find>
+      <find>beforEc</find>
+      <find>sels</find>
+      <find>addForm</find>
+      <find>addFormVisible</find>
+      <find>value1</find>
+      <find>visible</find>
+      <find>value</find>
       <find>showDialog</find>
+      <find>Page6</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -154,18 +172,21 @@
         <option value="$PROJECT_DIR$/vue/build/dev-server.js" />
         <option value="$PROJECT_DIR$/vue/src/vuex/getters.js" />
         <option value="$PROJECT_DIR$/vue/src/components/func.js" />
-        <option value="$PROJECT_DIR$/vue/src/main.js" />
         <option value="$PROJECT_DIR$/vue/src/components/func/func.js" />
         <option value="$PROJECT_DIR$/vue/src/vuex/mutations.js" />
         <option value="$PROJECT_DIR$/vue/src/components/eleme/edialog/batchDel.vue" />
-        <option value="$PROJECT_DIR$/vue/src/routes.js" />
         <option value="$PROJECT_DIR$/vue/src/components/eleme/edialog/add.vue" />
         <option value="$PROJECT_DIR$/vue/src/vuex/store.js" />
         <option value="$PROJECT_DIR$/vue/src/views/nav1/Commission.vue" />
         <option value="$PROJECT_DIR$/vue/src/common/vue/vuez.js" />
         <option value="&lt;42956422-192a-4048-91c4-a11eeb6fcaae&gt;/vhost/www.yibetwenjian.com.conf" />
+        <option value="$PROJECT_DIR$/vue/src/components/common/props/mprops.vue" />
+        <option value="$PROJECT_DIR$/vue/src/components/common/props/sx.vue" />
         <option value="$PROJECT_DIR$/vue/src/views/nav1/Table.vue" />
         <option value="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" />
+        <option value="$PROJECT_DIR$/vue/src/views/nav3/Page6.vue" />
+        <option value="$PROJECT_DIR$/vue/src/main.js" />
+        <option value="$PROJECT_DIR$/vue/src/routes.js" />
         <option value="$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue" />
       </list>
     </option>
@@ -183,7 +204,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NamedScopeManager">
-    <scope name="ivews" pattern="file[yii_vue_admin]:vue/src/views//*" />
+    <scope name="ivews" pattern="file[yii_vue_admin]:vue/src/views//*||file[yii_vue_admin]:vue/src/components//*" />
+    <scope name="worker" pattern="file:vue/src/components/common/props/sx.vue||file:vue/src/views/nav1/Table.vue" />
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/vue/node_modules" />
@@ -251,12 +273,73 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
+        <subPane subId="Scope 'worker'; set:file:vue/src/components/common/props/sx.vue||file:vue/src/views/nav1/Table.vue; class com.intellij.psi.search.scope.packageSet.NamedScope">
+          <expand>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="nav1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <subPane subId="Scope 'ivews'; set:file[yii_vue_admin]:vue-admin/src/views//*; class com.intellij.psi.search.scope.packageSet.NamedScope">
           <expand>
             <path>
@@ -327,33 +410,179 @@
           </expand>
           <select />
         </subPane>
+        <subPane subId="Scope 'Changed Files'; set:Changed Files; ALL; class com.intellij.packageDependencies.ChangeListScope">
+          <expand>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="table" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'ivews'; set:file[yii_vue_admin]:vue/src/views//*||file[yii_vue_admin]:vue/src/components//*; class com.intellij.psi.search.scope.packageSet.NamedScope">
+          <expand>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="table" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="vue" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="common" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="table" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -370,8 +599,8 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544266792494" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544334839738" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-touzi" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -413,12 +642,12 @@
       <updated>1544187587045</updated>
       <workItem from="1544187588613" duration="13901000" />
       <workItem from="1544247258470" duration="14557000" />
-      <workItem from="1544263061099" duration="2206000" />
+      <workItem from="1544263061099" duration="15037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30664000" />
+    <option name="totallyTimeSpent" value="43495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,6 +660,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25778133" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -448,7 +678,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.66560256" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.33439744" side_tool="true" weight="0.32952693" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49880287" visible="true" weight="0.62805873" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49880287" visible="true" weight="0.32952693" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -466,6 +696,11 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../vue-touzi/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -486,19 +721,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/views/common/eleme/table/list.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/views/common/eleme/edialog/batchDel.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/api/api.js" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/views/common/eleme/edialog/add.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/views/common/eleme/toolbar/etoolbar.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/views/common/eleme/table/elist.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/views/common/common/mslot.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/components/eleme/edialog/add.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/components/eleme/edialog/edit.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/components/eleme/edialog/batchDel.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/components/common/slot/mslot.vue" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/common/vue/vue-resource.min.js" />
-    <entry file="file://$PROJECT_DIR$/vue-admin/src/views/Login.vue" />
     <entry file="file://$PROJECT_DIR$/vue-admin/src/common/vue/post.js" />
     <entry file="file://$PROJECT_DIR$/vue-admin/src/common/vue/base.js" />
     <entry file="file://$PROJECT_DIR$/vue-admin/src/common/js/util.js" />
@@ -589,42 +811,6 @@
         <state relative-caret-position="-360" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Form.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/add.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/func/func.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/vuex/store.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -636,13 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="362" column="55" selection-start-line="362" selection-start-column="51" selection-end-line="362" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Commission.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -662,30 +841,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue">
+    <entry file="file://$PROJECT_DIR$/vue/node_modules/vue/src/core/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/common/vue/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1888">
+          <caret column="1531" lean-forward="true" selection-start-column="1531" selection-end-column="1531" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/node_modules/vue/src/core/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/npm-debug.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" column="25" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/common/props/mprops.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/common/props/sx.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        <state relative-caret-position="150">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#el-table#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Form.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="91" lean-forward="true" selection-start-line="1" selection-start-column="91" selection-end-line="1" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#el-form#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Table.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="32" column="37" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="37" />
+        <state relative-caret-position="75">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
-            <element signature="e#263#317#0" expanded="true" />
+            <element signature="e#194#248#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/Main.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/Login.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/Home.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/404.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/nav3/Page6.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/nav2/Page4.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/func/func.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#220#254#0" expanded="true" />
+            <element signature="e#386#432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Commission.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/add.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="74" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/edit.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
         </state>
       </provider>
     </entry>
@@ -705,7 +1006,7 @@
       </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
-          <last-edited>ivews</last-edited>
+          <last-edited>worker</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -715,6 +1016,7 @@
           </splitter-proportions>
           <order>
             <scope name="ivews" />
+            <scope name="worker" />
           </order>
         </settings>
       </state>
