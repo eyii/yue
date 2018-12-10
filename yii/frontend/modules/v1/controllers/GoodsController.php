@@ -1,7 +1,9 @@
 <?php
 namespace frontend\modules\v1\controllers;
 
-use yii\rest\ActiveController;
+
+
+use common\controllers\ActiveController;
 
 class GoodsController extends ActiveController
 {
