@@ -1,0 +1,34 @@
+version: '3.3'
+services:
+  php5.6:
+    build:
+      ./php5.6
+    container_name: php5.6
+    privileged: true
+    image: dockerla03/apache:php5.6
+    ports:
+      - 56:80
+  php7.0:
+    build:
+      ./php7.0
+    container_name: php7.0
+    privileged: true
+    image: dockerla03/apache:php7.0
+    ports:
+      - 70:80
+  php7.1:
+     build:
+       ./php7.1
+     container_name: php7.1
+     privileged: true
+     image: dockerla03/apache:php7.1
+     ports:
+       - 71:80
+  php7.2:
+     build:
+       ./php7.2
+     container_name: php7.2
+     privileged: true
+     image: dockerla03/apache:php7.2
+     ports:
+       - 72:80

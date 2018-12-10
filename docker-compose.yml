@@ -1,0 +1,48 @@
+version: '3.3'
+services:
+  db:
+    build:
+      ./docker/apache/db
+    container_name: db
+    hostname: db
+    image: dockerla02/jiechi:db
+    volumes:
+        - ./docker/apache/db/mysql:/var/lib/mysql
+        - ./docker/apache/db/conf.d:/etc/mysql/conf.d
+        - ./docker/apache/db/mysql.conf.d:/etc/mysql/mysql.conf.d
+    ports:
+      - 3306:3306
+    networks:
+      - backend
+    restart : always
+  redis:
+    container_name: redis
+    hostname: redis
+    image: redis:latest
+    restart : always
+    networks:
+      - backend
+    ports:
+    - 6379:6379
+  apache:
+    container_name: apache
+    hostname: apache
+    build:
+      ./docker/apache/apache
+    image:  dockerla02/jiechi:apache
+    volumes:
+      - ./web:/var/www/html
+      - ./docker/apache/apache/tools/cron.d/crontab:/etc/crontab
+    ports:
+      - 80:80
+    depends_on:
+      - db
+    links:
+      - db
+      - redis
+    restart : always
+    networks:
+      - backend
+networks:
+  backend:
+    driver: bridge

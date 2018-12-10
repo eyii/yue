@@ -3,7 +3,7 @@ exports.install = function (Vue, options) {
 
         this.$store.commit(name,data);
     };
-    Vue.prototype.text2 = function (){//全局函数2
-        alert('执行成功2');
+    Vue.prototype.getters = function (key){
+     return  this.$store.getters[key];
     };
 };

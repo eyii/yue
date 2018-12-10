@@ -1,0 +1,1 @@
+docker run -d --privileged -p 80:80 --name php dockerliweipei/xdebug:php7.2

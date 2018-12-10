@@ -10,7 +10,7 @@
                 <span slot="op" >
                           <el-button size="mini" @click="edit(scope.$index, scope.row,1,0)" v-if="scope.row.state==1"  type="success">确认打款</el-button>
                           <el-button size="mini" @click="dialogVisible=true;chexiaoForm.id=scope.row.id; " v-if="scope.row.state==1" type="danger">撤销提现</el-button>
-                    </span>
+                </span>
             </ecol>
 
         </el-table-column>

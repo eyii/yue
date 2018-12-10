@@ -1,0 +1,38 @@
+version: '3.3'
+services:
+  db:
+    build:
+      ./docker/apache/db
+    container_name: db
+    hostname: db
+    image: dockerla02/jiechi:db
+    volumes:
+        - ./docker/apache/db/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: test
+      LANG: C.UTF-8
+    ports:
+      - 3306:3306
+    networks:
+      - backend
+    restart : always
+  apache:
+    container_name: apache
+    hostname: apache
+    build:
+      ./docker/apache/apache
+    image:  dockerla02/jiechi:apache
+    volumes:
+      - ./web:/var/www/html
+    ports:
+      - 80:80
+    depends_on:
+      - db
+    links:
+      - db
+    networks:
+      - backend
+networks:
+  backend:
+    driver: bridge

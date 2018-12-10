@@ -1,0 +1,20 @@
+docker run -d --privileged -p 80:80 --name php dockerliweipei/xdebug:php7.0
+
+
+
+
+ENV PHP_INI_DIR=/usr/local/etc/php
+#tools
+RUN  mkdir -p /root/tools
+WORKDIR /root/tools
+RUN ln -s /etc/apache2/sites-enabled vhost
+RUN ln -s /etc/apache2/apache2.conf  apache2.conf
+RUN ln -s /var/www/html/ web
+
+
+#composer
+WORKDIR /var/www/html
+RUN php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');"
+RUN php composer-setup.php
+RUN php -r "unlink('composer-setup.php');"
+RUN mv composer.phar /usr/local/bin/composer

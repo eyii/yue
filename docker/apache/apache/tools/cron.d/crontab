@@ -1,0 +1,8 @@
+# /etc/crontab: system-wide crontab
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+# m h dom mon dow user	command
+*/3 *  *  *    *  root  php /var/www/html/cli.php /Task/index
+*/3 *  *  *    *  root  php /var/www/html/cli.php /Email/index
+#
+#*/1 *  *  *    *  root  echo 'hello world'>>/root/cron.log

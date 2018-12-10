@@ -1,52 +1,53 @@
 <template>
-  <div>
-      <el-table :data="$store.getters.getUsers" highlight-current-row @selection-change="sels=$event.target.value" style="width: 100%;">
-          <el-table-column type="selection" width="55"></el-table-column>
-          <el-table-column type="index" width="60"></el-table-column>
-          <el-table-column label="操作" width="150">
-              <template slot-scope="scope">
-                  <el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-                  <el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>
-              </template>
-          </el-table-column>
-      </el-table>
+    <div>
+        <el-table :data="$store.getters.getUsers" highlight-current-row @selection-change="sels=$event.target.value" >
+            <el-table-column v-for="(item,key) in options" :key="key" :label="item.text" :prop="item.value"  v-if="item.show"  :width="item.width" >
+                <ecol slot-scope="scope" :keyname="item.value" :row="scope.row" :item="item">
+                    <span slot="common">{{scope.row[item.value]}}</span>
+                 <!--  <span slot="state">  {{ ['完成','申请','已取消','已支付','已失败','已删除'][scope.row.state] }}</span>-->
+             <!--     <span slot="actionTime">{{moment.unix(scope.row.actionTime).format("YYYY-MM-DD HH:mm:ss")  }}</span>-->
+                    <span slot="op" >
+                         <el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
+                        <el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>
+                     </span>
+                </ecol>
+            </el-table-column>
+        </el-table>
 
-  </div>
+    </div>
 </template>
 
 <script>
 
-    import { getUserListPage, removeUser } from '../../../api/api';
+    import { getUserListPage, removeUser } from '@/api/api';
+    import ecol from '@/components/eleme/table/ecol'
     export default {
         name: "elist",
-        props: {
-            value:{
-                type:Boolean,
-                default:false
-            }
+        components: {ecol},
 
+        props: {
+            value:{ type:Boolean, default:false},
         },
         data() {
             return {
-                filters: { name: ''},
-                total: 0,
                 page: 1,
                 users:[],
                 sels: [],
                 editLoading: false,
                 editForm: { id: 0, name: '', sex: -1, age: 0, birth: '', addr: ''},
                 addLoading: false,
+                options: [
+                    {value: 'id',               text: 'id',           disabled:true,   show:true, width:120,copy:false},
+                    {value: 'name',             text: '用户名',       disabled:true,    show:true, width:120,copy:false},
+                    {value: 'address',            text: '地址',         disabled:true,  show:true, width:300,copy:false} ,
+                    {value: 'op',               text: '操作',         disabled:true,    show:true, width:300,copy:false} ,
+                    {value: 'actionTime',       text: '申请时间',      disabled:true,   show:true,  width:120,copy:false} ,
+                ],
             }
         },
 
         methods: {
-            getUsers() {
-                let para = {page: this.page, name: this.filters.name};
-                getUserListPage(para).then((res) => {
-                    this.total = res.data.total;
-                    this.commit('setUsers',res.data.users);
-                });
-            },
+
             handleEdit: function (index, row) {
                 this.$emit('input', true);
 
@@ -56,9 +57,7 @@
 
         },
 
-        mounted() {
-           this.getUsers();
-        }
+
     }
 </script>
 

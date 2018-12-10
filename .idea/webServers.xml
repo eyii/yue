@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e595e855-c88d-431a-9d18-e29c032ba74c" name="dan_33.146_bak" url="BcMZPIgofJZZVEEp mysql:8ELT1EhTnwbqK6o5">
+        <fileTransfer host="45.38.33.146" port="22" rootFolder="/web/www/otxt/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="8a8b6ba9-4768-422a-8d94-9e43e77769de" name="dan_33.146_conf" url="BcMZPIgofJZZVEEp mysql:8ELT1EhTnwbqK6o5">
+        <fileTransfer host="45.38.33.146" port="22" rootFolder="/usr/local/nginx/conf" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="2df29ce7-40bb-435d-b8ee-dd91161217d6" name="dan_33.146_php" url="BcMZPIgofJZZVEEp mysql:8ELT1EhTnwbqK6o5">
+        <fileTransfer host="45.38.33.146" port="22" rootFolder="/usr/local/php/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

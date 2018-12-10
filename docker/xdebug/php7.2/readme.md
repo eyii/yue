@@ -1,0 +1,1 @@
+docker run -d --privileged -p 80:80 --name php dockerla03/xdebug:apache7.2
