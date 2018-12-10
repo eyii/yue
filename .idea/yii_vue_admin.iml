@@ -3,6 +3,11 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/yii/.vagrant" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/backend" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/console" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/environments" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/frontend/controllers" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/behat/gherkin" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/inputmask" />
