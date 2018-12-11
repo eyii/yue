@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="php@b261fe84-8651-4f6c-81d2-f6589503af9a">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$/yii/frontend/web" remote-root="/app/frontend/web" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>

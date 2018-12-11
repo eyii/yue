@@ -7,6 +7,7 @@ Vue.use(Vuex);
 
 // 应用初始状态
 const state = {
+    count:1,
     filters: { name: ''},
     total: 0,
     users:[],

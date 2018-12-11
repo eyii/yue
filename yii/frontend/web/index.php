@@ -15,4 +15,5 @@ $config = yii\helpers\ArrayHelper::merge(
     require __DIR__ . '/../config/main-local.php'
 );
 
+$config['defaultRoute']='/v1/goods';
 (new yii\web\Application($config))->run();

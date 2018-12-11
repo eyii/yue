@@ -2236,17 +2236,14 @@ class BaseHtml
     public static function getInputName($model, $attribute)
     {
         $formName = $model->formName();
-        if (!preg_match(static::$attributeRegex, $attribute, $matches)) {
-            throw new InvalidArgumentException('Attribute name must contain word characters only.');
-        }
+        if (!preg_match(static::$attributeRegex, $attribute, $matches)) throw new InvalidArgumentException('Attribute name must contain word characters only.');
+
         $prefix = $matches[1];
         $attribute = $matches[2];
         $suffix = $matches[3];
-        if ($formName === '' && $prefix === '') {
-            return $attribute . $suffix;
-        } elseif ($formName !== '') {
-            return $formName . $prefix . "[$attribute]" . $suffix;
-        }
+        if ($formName === '' && $prefix === '') return $attribute . $suffix;
+         elseif ($formName !== '') return $formName . $prefix . "[$attribute]" . $suffix;
+
 
         throw new InvalidArgumentException(get_class($model) . '::formName() cannot be empty for tabular inputs.');
     }

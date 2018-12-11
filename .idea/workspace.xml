@@ -2,17 +2,611 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fec5976-81bf-4072-a0cd-541d72e6620a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/yii/common/controllers/ActiveController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/frontend/controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/frontend/web/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/components/eleme/upload/excel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/nav1/excel.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii/common/models/UploadForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UploadController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii/vagrant/php/20-xdebug.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii/vagrant/php/php-fpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yii/vagrant/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca92fe29-3837-4fc5-9efd-4fb123338ab5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ca92fe29-3837-4fc5-9efd-4fb123338ab5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/yii_vue_admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yii_vue_admin.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/toolbar/etoolbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/toolbar/etoolbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/Table.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/Table.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/otable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/otable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/nav2/Page5.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/vuex/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/vuex/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/hostmanager/id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/machines/yii/virtualbox/action_provision" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/machines/yii/virtualbox/action_set_name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/machines/yii/virtualbox/creator_uid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/machines/yii/virtualbox/id" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/machines/yii/virtualbox/index_uuid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/machines/yii/virtualbox/private_key" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/machines/yii/virtualbox/synced_folders" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/.vagrant/machines/yii/virtualbox/vagrant_cwd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/Vagrantfile" beforeDir="false" afterPath="$PROJECT_DIR$/yii/Vagrantfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yii/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/yii/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yii/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yii/frontend/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/config/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/modules/v1/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/modules/v1/Module.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/GoodsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/GoodsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/frontend/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/web/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/init" beforeDir="false" afterPath="$PROJECT_DIR$/yii/init" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vagrant/config/vagrant-local.example.yml" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vagrant/config/vagrant-local.example.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vagrant/provision/always-as-root.sh" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vagrant/provision/always-as-root.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vagrant/provision/once-as-root.sh" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vagrant/provision/once-as-root.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vagrant_2.0.3_x86_64.deb" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vagrant/vagrant_2.0.3_x86_64.deb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/bin/yii" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/bin/yii" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Autoloader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/APC.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/CacheBase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/DiscISAM.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/ICache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/Igbinary.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/Memcache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/Memory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/MemoryGZip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/MemorySerialized.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/PHPTemp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/SQLite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/SQLite3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorage/Wincache.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CachedObjectStorageFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CalcEngine/CyclicReferenceStack.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/CalcEngine/Logger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/DateTime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Engineering.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/ExceptionHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Financial.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/FormulaParser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/FormulaToken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Function.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Logical.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/LookupRef.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/MathTrig.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Statistical.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/TextData.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/Token/Stack.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Calculation/functionlist.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell/AdvancedValueBinder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell/DataType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell/DataValidation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell/DefaultValueBinder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell/Hyperlink.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Cell/IValueBinder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/DataSeries.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/DataSeriesValues.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/Layout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/Legend.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/PlotArea.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/Renderer/PHP Charting Libraries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/Renderer/jpgraph.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Chart/Title.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/DocumentProperties.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/DocumentSecurity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/HashTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/IComparable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/NamedRange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Abstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/CSV.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/DefaultReadFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel2003XML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel2007.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel2007/Chart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel2007/Theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel5/Escher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel5/MD5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Excel5/RC4.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/Gnumeric.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/HTML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/IReadFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/IReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/OOCalc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Reader/SYLK.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/ReferenceHelper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/RichText.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/RichText/ITextElement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/RichText/Run.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/RichText/TextElement.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Settings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/CodePage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Date.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Drawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Escher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Escher/DgContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Escher/DgContainer/SpgrContainer/SpContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Escher/DggContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Escher/DggContainer/BstoreContainer/BSE/Blip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Excel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/File.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/Font.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/CHANGELOG.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/CholeskyDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/EigenvalueDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/LUDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/Matrix.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/QRDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/SingularValueDecomposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/utils/Error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/JAMA/utils/Maths.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/OLE.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/OLE/ChainedBlockStream.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/OLE/PPS.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/OLE/PPS/File.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/OLE/PPS/Root.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/OLERead.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/PCLZip/gnu-lgpl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/PCLZip/pclzip.lib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/PCLZip/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/PasswordHasher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/String.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/TimeZone.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/XMLWriter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/ZipArchive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/ZipStreamWrapper.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/trend/bestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/trend/exponentialBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/trend/linearBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/trend/logarithmicBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/trend/polynomialBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/trend/powerBestFitClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Shared/trend/trendClass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Alignment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Border.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Borders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Color.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Conditional.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Fill.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Font.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/NumberFormat.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Protection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Style/Supervisor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/AutoFilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/AutoFilter/Column.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/AutoFilter/Column/Rule.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/BaseDrawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/CellIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/ColumnDimension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/Drawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/Drawing/Shadow.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/HeaderFooter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/HeaderFooterDrawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/MemoryDrawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/PageMargins.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/PageSetup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/Protection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/Row.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/RowDimension.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/RowIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Worksheet/SheetView.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/WorksheetIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Abstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/CSV.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/Chart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/Comments.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/ContentTypes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/DocProps.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/Drawing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/Rels.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/RelsRibbon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/RelsVBA.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/StringTable.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/Style.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/Theme.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/Workbook.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/Worksheet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel2007/WriterPart.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel5/BIFFwriter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel5/Escher.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel5/Font.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel5/Parser.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel5/Workbook.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel5/Worksheet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Excel5/Xf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/Exception.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/HTML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/IWriter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/PDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/PDF/Core.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/PDF/DomPDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/PDF/mPDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/Writer/PDF/tcPDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/bg/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/cs/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/cs/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/da/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/da/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/de/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/de/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/en/uk/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/es/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/es/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/fi/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/fi/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/fr/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/fr/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/hu/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/hu/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/it/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/it/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/nl/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/nl/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/no/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/no/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/pl/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/pl/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/pt/br/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/pt/br/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/pt/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/pt/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/ru/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/ru/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/sv/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/sv/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/tr/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Classes/PHPExcel/locale/tr/functions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/01pharSimple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/01simple-download-pdf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/01simple-download-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/01simple-download-xlsx.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/01simple.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/01simplePCLZip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/02types-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/02types.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/03formulas.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/04printing.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/05featuredemo.inc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/05featuredemo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/06largescale-with-cellcaching-sqlite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/06largescale-with-cellcaching-sqlite3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/06largescale-with-cellcaching.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/06largescale-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/06largescale.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/07reader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/07readerPCLZip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/08conditionalformatting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/08conditionalformatting2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/09pagebreaks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/10autofilter-selection-1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/10autofilter-selection-2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/10autofilter-selection-display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/10autofilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/11documentsecurity-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/11documentsecurity.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/12cellProtection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/13calculation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/14excel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/15datavalidation-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/15datavalidation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/16csv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/17html.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/18extendedcalculation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/19namedrange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/20readexcel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/21pdf.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/22heavilyformatted.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/23sharedstyles.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/24readfilter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/25inmemoryimage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/26utf8.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/27imagesexcel5.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/28iterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/29advancedvaluebinder.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/30template.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/31docproperties_write-xls.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/31docproperties_write.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/32chartreadwrite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-area.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-bar-stacked.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-bar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-column-2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-column.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-composite.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-line.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-multiple-charts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-pie.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-radar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-scatter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/33chartcreate-stock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/34chartupdate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/35chartrender.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/36chartreadwriteHTML.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/36chartreadwritePDF.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/37page_layout_view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/38cloneWorksheet.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/40duplicateStyle.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/Excel2003XMLReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/Excel2003XMLTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/GnumericReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/GnumericTest.gnumeric" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/OOCalcReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/OOCalcReaderPCLZip.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/OOCalcTest.ods" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/Quadratic.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/Quadratic2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/SylkReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/SylkTest.slk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/XMLReader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/XMLTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/images/officelogo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/images/paid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/images/phpexcel_logo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/images/termsconditions.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/Examples/runall.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/install.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/AutoloaderTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Calculation/DateTimeTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Calculation/EngineeringTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Calculation/FinancialTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Calculation/FunctionsTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Calculation/LogicalTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Calculation/LookupRefTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Calculation/MathTrigTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Calculation/TextDataTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/CalculationTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Cell/AdvancedValueBinderTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Cell/DataTypeTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Cell/HyperlinkTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/CellTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Chart/DataSeriesValuesTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Chart/LayoutTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Chart/LegendTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/ReferenceHelperTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Shared/CodePageTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Shared/DateTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Shared/FileTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Shared/FontTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Shared/PasswordHasherTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Shared/StringTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Shared/TimeZoneTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Style/ColorTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Style/NumberFormatTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Worksheet/AutoFilter/Column/RuleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Worksheet/AutoFilter/ColumnTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Worksheet/AutoFilterTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/Classes/PHPExcel/Worksheet/CellCollectionTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/custom/Complex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/custom/complexAssert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/phpunit-cc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/DATE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/DATEDIF.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/DATEVALUE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/DAY.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/DAYS360.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/EDATE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/EOMONTH.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/HOUR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/MINUTE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/MONTH.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/NETWORKDAYS.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/SECOND.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/TIME.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/TIMEVALUE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/WEEKDAY.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/WEEKNUM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/WORKDAY.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/YEAR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/DateTime/YEARFRAC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/BESSELI.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/BESSELJ.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/BESSELK.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/BESSELY.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/BIN2DEC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/BIN2HEX.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/BIN2OCT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/COMPLEX.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/CONVERTUOM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/DEC2BIN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/DEC2HEX.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/DEC2OCT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/DELTA.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/ERF.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/ERFC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/GESTEP.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/HEX2BIN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/HEX2DEC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/HEX2OCT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMABS.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMAGINARY.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMARGUMENT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMCONJUGATE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMCOS.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMDIV.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMEXP.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMLN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMLOG10.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMLOG2.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMPOWER.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMPRODUCT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMREAL.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMSIN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMSQRT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMSUB.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/IMSUM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/OCT2BIN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/OCT2DEC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Engineering/OCT2HEX.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/ACCRINT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/ACCRINTM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/AMORDEGRC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/AMORLINC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/COUPDAYBS.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/COUPDAYS.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/COUPDAYSNC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/COUPNCD.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/COUPNUM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/COUPPCD.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/CUMIPMT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/CUMPRINC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/DB.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/DDB.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/DISC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/DOLLARDE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/DOLLARFR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/EFFECT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/FV.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/FVSCHEDULE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/INTRATE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/IPMT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/IRR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/ISPMT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/MIRR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/NOMINAL.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/NPER.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/NPV.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/PRICE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/RATE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Financial/XIRR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/ERROR_TYPE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_BLANK.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_ERR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_ERROR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_EVEN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_LOGICAL.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_NA.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_NONTEXT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_NUMBER.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_ODD.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/IS_TEXT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/N.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Functions/TYPE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Logical/AND.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Logical/IF.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Logical/IFERROR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Logical/NOT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/Logical/OR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/LookupRef/HLOOKUP.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/LookupRef/VLOOKUP.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/ATAN2.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/CEILING.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/COMBIN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/EVEN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/FACT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/FACTDOUBLE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/FLOOR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/GCD.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/INT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/LCM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/LOG.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/MDETERM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/MINVERSE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/MMULT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/MOD.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/MROUND.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/MULTINOMIAL.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/ODD.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/POWER.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/PRODUCT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/QUOTIENT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/ROMAN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/ROUNDDOWN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/ROUNDUP.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/SERIESSUM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/SIGN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/SQRTPI.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/SUMSQ.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/MathTrig/TRUNC.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/CHAR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/CLEAN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/CODE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/CONCATENATE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/DOLLAR.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/FIND.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/FIXED.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/LEFT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/LEN.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/LOWER.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/MID.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/PROPER.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/REPLACE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/RIGHT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/SEARCH.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/SUBSTITUTE.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/T.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/TEXT.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/TRIM.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Calculation/TextData/UPPER.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CalculationBinaryComparisonOperation.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellAbsoluteCoordinate.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellAbsoluteReference.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellBuildRange.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellCoordinates.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellExtractAllCellReferencesInRange.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellGetRangeBoundaries.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellRangeBoundaries.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellRangeDimension.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/CellSplitRange.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/ColumnIndex.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/ColumnString.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/CentimeterSizeToPixels.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/CodePage.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/DateTimeExcelToPHP1900.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/DateTimeExcelToPHP1900Timezone.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/DateTimeExcelToPHP1904.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/DateTimeFormatCodes.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/DateTimeFormattedPHPToExcel1900.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/DateTimePHPToExcel1900.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/DateTimePHPToExcel1904.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/FontSizeToPixels.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/InchSizeToPixels.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Shared/PasswordHashes.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Style/ColorChangeBrightness.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Style/ColorGetBlue.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Style/ColorGetGreen.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Style/ColorGetRed.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/rawTestData/Style/NumberFormat.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel/unitTests/testDataFileIterator.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/BaseYii.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/BaseYii.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/db/ActiveRecord.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/db/ActiveRecord.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/helpers/BaseHtml.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/helpers/BaseHtml.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/IndexAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/IndexAction.php" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,147 +638,8 @@
         <item name="yii2advanced@192.168.83.137" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="yii2advanced@192.168.83.137" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="yii2advanced: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="yii2advanced@192.168.83.137" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="yii2advanced: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="user: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1716513941">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="Dockerfile" value="1" />
-          <entry key="Vagrantfile" value="13" />
-          <entry key="action_set_name" value="1" />
-          <entry key="bat" value="3" />
-          <entry key="conf" value="30" />
-          <entry key="creator_uid" value="1" />
-          <entry key="data" value="2" />
-          <entry key="gitignore" value="8" />
-          <entry key="gitkeep" value="1" />
-          <entry key="goods" value="3" />
-          <entry key="htaccess" value="1" />
-          <entry key="html" value="2" />
-          <entry key="id" value="1" />
-          <entry key="ini" value="5" />
-          <entry key="init" value="2" />
-          <entry key="js" value="86" />
-          <entry key="json" value="16" />
-          <entry key="lock" value="1" />
-          <entry key="log" value="5" />
-          <entry key="md" value="5" />
-          <entry key="php" value="127" />
-          <entry key="sh" value="39" />
-          <entry key="sql" value="3" />
-          <entry key="ts" value="1" />
-          <entry key="user" value="2" />
-          <entry key="vagrant_cwd" value="2" />
-          <entry key="vue" value="119" />
-          <entry key="yii" value="1" />
-          <entry key="yml" value="23" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Bash" value="39" />
-          <entry key="Bat" value="3" />
-          <entry key="Database Element" value="5" />
-          <entry key="Dockerfile" value="1" />
-          <entry key="HTML" value="2" />
-          <entry key="Ini" value="5" />
-          <entry key="JSON" value="17" />
-          <entry key="JavaScript" value="86" />
-          <entry key="Markdown" value="5" />
-          <entry key="PHP" value="130" />
-          <entry key="PLAIN_TEXT" value="34" />
-          <entry key="SQL" value="1" />
-          <entry key="Scratch" value="2" />
-          <entry key="SmartyConfig" value="30" />
-          <entry key="TypeScript" value="1" />
-          <entry key="Vue.js" value="119" />
-          <entry key="YAML" value="23" />
-          <entry key="htaccess" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="Dockerfile" value="16" />
-          <entry key="Vagrantfile" value="29" />
-          <entry key="cell" value="5" />
-          <entry key="conf" value="73" />
-          <entry key="gitignore" value="3" />
-          <entry key="htaccess" value="4" />
-          <entry key="html" value="6" />
-          <entry key="ini" value="1" />
-          <entry key="js" value="262" />
-          <entry key="json" value="23" />
-          <entry key="log" value="1" />
-          <entry key="md" value="166" />
-          <entry key="php" value="269" />
-          <entry key="sh" value="14" />
-          <entry key="txt" value="5" />
-          <entry key="vue" value="1763" />
-          <entry key="yml" value="35" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Bash" value="14" />
-          <entry key="Dockerfile" value="16" />
-          <entry key="HTML" value="6" />
-          <entry key="Ini" value="1" />
-          <entry key="JSON" value="23" />
-          <entry key="JavaScript" value="262" />
-          <entry key="Markdown" value="166" />
-          <entry key="PHP" value="269" />
-          <entry key="PLAIN_TEXT" value="38" />
-          <entry key="Scratch" value="5" />
-          <entry key="SmartyConfig" value="73" />
-          <entry key="Vue.js" value="1763" />
-          <entry key="YAML" value="35" />
-          <entry key="htaccess" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.js.language.service.starts">
-        <counts>
-          <entry key="TypeScriptServerServiceImpl" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.actions">
-        <counts>
-          <entry key="updateAll_from_ComposerEditorNotificationPanel" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.new.class">
-        <counts>
-          <entry key="PHP Class.type" value="7" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="yii_vue_admin" />
@@ -192,19 +647,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yii/frontend/web/index.php">
+        <entry file="file://$PROJECT_DIR$/yii/vagrant/config/vagrant-local.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="203">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/Vagrantfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="610">
+              <caret line="53" column="42" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yii/vagrant/provision/once-as-root.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="27" column="82" lean-forward="true" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/yii/frontend/config/main.php">
+        <entry file="file://$PROJECT_DIR$/yii/vagrant/php/20-xdebug.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+            <state relative-caret-position="120">
+              <caret line="8" column="59" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -215,23 +688,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="Vue Single File Component" />
         <option value="HTML File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>type</find>
-      <find>editShowDialog</find>
-      <find>boolea</find>
-      <find>showDialogEdit</find>
-      <find>showDialogE</find>
-      <find>beforEc</find>
-      <find>sels</find>
-      <find>addForm</find>
-      <find>addFormVisible</find>
-      <find>value1</find>
       <find>visible</find>
       <find>value</find>
       <find>showDialog</find>
@@ -246,12 +709,22 @@
       <find>yii2-app-advanced/</find>
       <find>domains</find>
       <find>y2aa</find>
-      <find>app.conf</find>
       <find>Install composer</find>
       <find>YII_ENV_DEV</find>
       <find>VUEADMIN</find>
       <find>'bootstrap' =&gt; [</find>
       <find>modules</find>
+      <find>php7.0-dev</find>
+      <find>collapsed</find>
+      <find>handleclose</find>
+      <find>active</find>
+      <find>menuCollapsed</find>
+      <find>submenu-hook</find>
+      <find>scope</find>
+      <find>app.c</find>
+      <find>80</find>
+      <find>app.conf</find>
+      <find>ip</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -273,34 +746,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vue/src/views/nav1/Commission.vue" />
-        <option value="$PROJECT_DIR$/vue/src/views/nav1/otable.vue" />
-        <option value="$PROJECT_DIR$/vue/src/routes.js" />
-        <option value="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" />
-        <option value="$PROJECT_DIR$/yii/requirements.php" />
-        <option value="$PROJECT_DIR$/yii/frontend/models/SignupForm.php" />
-        <option value="$PROJECT_DIR$/yii/frontend/models/ResetPasswordForm.php" />
-        <option value="$PROJECT_DIR$/yii/vagrant/readme.md" />
-        <option value="$PROJECT_DIR$/yii/vagrant/provision/always-as-root.sh" />
-        <option value="$PROJECT_DIR$/yii/vagrant/provision/common.sh" />
-        <option value="$PROJECT_DIR$/yii/vagrant/provision/once-as-root.sh" />
-        <option value="$PROJECT_DIR$/yii/vagrant/provision/once-as-vagrant.sh" />
-        <option value="$PROJECT_DIR$/docker/nginx/Dockerfile" />
-        <option value="$PROJECT_DIR$/yii/vagrant/config/vagrant-local.yml" />
-        <option value="$PROJECT_DIR$/nginx.conf" />
-        <option value="$PROJECT_DIR$/yii/yii2-app-advanced/vagrant/config/vagrant-local.yml" />
-        <option value="$PROJECT_DIR$/yii/yii2-app-advanced/Vagrantfile" />
-        <option value="$PROJECT_DIR$/yii/yii2-app-advanced/vagrant/nginx/app.conf" />
-        <option value="$PROJECT_DIR$/yii/yii2-app-advanced/vagrant/provision/once-as-root.sh" />
-        <option value="$PROJECT_DIR$/yii/Vagrantfile" />
-        <option value="$PROJECT_DIR$/yii/vagrant/config/vagrant-local.example.yml" />
-        <option value="$PROJECT_DIR$/yii/vagrant/nginx/app.conf" />
-        <option value="$PROJECT_DIR$/yii/backend/views/site/index.php" />
-        <option value="$PROJECT_DIR$/yii/backend/web/index.php" />
-        <option value="$PROJECT_DIR$/vue/src/views/Home.vue" />
-        <option value="$PROJECT_DIR$/vue/package.json" />
-        <option value="$PROJECT_DIR$/yii/backend/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/yii/backend/config/main-local.php" />
         <option value="$PROJECT_DIR$/yii/.gitignore" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ca92fe29-3837-4fc5-9efd-4fb123338ab5/console.sql" />
         <option value="$PROJECT_DIR$/yii/frontend/config/main-local.php" />
@@ -315,29 +760,51 @@
         <option value="$PROJECT_DIR$/yii/frontend/runtime/logs/app.log" />
         <option value="$PROJECT_DIR$/yii/frontend/modules/v1/Module.php" />
         <option value="$PROJECT_DIR$/1.html" />
-        <option value="$PROJECT_DIR$/yii/composer.json" />
         <option value="$PROJECT_DIR$/yii/frontend/models/User.php" />
         <option value="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/yii/frontend/web/index.php" />
         <option value="$PROJECT_DIR$/yii/frontend/controllers/UserController.php" />
         <option value="$PROJECT_DIR$/yii/common/controllers/ActiveController.php" />
-        <option value="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/GoodsController.php" />
         <option value="$PROJECT_DIR$/yii/frontend/web/.htaccess" />
+        <option value="$PROJECT_DIR$/vue/package.json" />
+        <option value="$PROJECT_DIR$/yii/composer.json" />
+        <option value="$PROJECT_DIR$/yii/vagrant/provision/common.sh" />
+        <option value="$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue" />
+        <option value="$PROJECT_DIR$/vue/src/vuex/store.js" />
+        <option value="$PROJECT_DIR$/vue/src/routes.js" />
+        <option value="$PROJECT_DIR$/vue/src/views/Home.vue" />
+        <option value="$PROJECT_DIR$/vue/src/components/eleme/toolbar/etoolbar.vue" />
+        <option value="$PROJECT_DIR$/vue/src/views/nav1/otable.vue" />
+        <option value="$PROJECT_DIR$/yii/yii" />
+        <option value="$PROJECT_DIR$/vue/src/views/nav1/excel.vue" />
+        <option value="$PROJECT_DIR$/vue/src/views/nav1/Table.vue" />
+        <option value="$PROJECT_DIR$/yii/common/models/UploadForm.php" />
         <option value="$PROJECT_DIR$/yii/frontend/config/main.php" />
+        <option value="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/helpers/BaseHtml.php" />
+        <option value="$PROJECT_DIR$/Vagrantfile" />
+        <option value="$PROJECT_DIR$/yii/init" />
+        <option value="$PROJECT_DIR$/yii/vagrant/php/php-fpm" />
+        <option value="$PROJECT_DIR$/yii/vagrant/nginx/log/frontend-error.log" />
+        <option value="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UploadController.php" />
+        <option value="$PROJECT_DIR$/vue/config/index.js" />
+        <option value="$PROJECT_DIR$/yii/vagrant/provision/always-as-root.sh" />
+        <option value="$PROJECT_DIR$/yii/vagrant/readme.md" />
+        <option value="$PROJECT_DIR$/vue/src/components/eleme/upload/excel.vue" />
+        <option value="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/GoodsController.php" />
+        <option value="$PROJECT_DIR$/yii/vagrant/nginx/app.conf" />
+        <option value="$PROJECT_DIR$/yii/vagrant/provision/once-as-root.sh" />
+        <option value="$PROJECT_DIR$/yii/vagrant/config/vagrant-local.example.yml" />
+        <option value="$PROJECT_DIR$/yii/frontend/web/index.php" />
+        <option value="$PROJECT_DIR$/yii/Vagrantfile" />
+        <option value="$PROJECT_DIR$/yii/vagrant/config/vagrant-local.yml" />
+        <option value="$PROJECT_DIR$/yii/vagrant/php/20-xdebug.ini" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -348,16 +815,21 @@
   <component name="NamedScopeManager">
     <scope name="ivews" pattern="file[yii_vue_admin]:vue/src/views//*||file[yii_vue_admin]:vue/src/components//*" />
     <scope name="worker" pattern="file:vue/src/components/common/props/sx.vue||file:vue/src/views/nav1/Table.vue" />
+    <scope name="v1" pattern="file[yii_vue_admin]:yii/frontend/modules/v1/controllers//*||file:yii/frontend/modules/v1/Module.php" />
+    <scope name="vue" pattern="file[yii_vue_admin]:vue/src//*" />
+    <scope name="yii" pattern="file[yii_vue_admin]:yii/frontend//*" />
   </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/vue/node_modules" />
+  <component name="PhpDebugGeneral" xdebug_debug_port="9001" break_at_first_line="true" ignore_connections_through_unregistered_servers="true" listening_started="true" zd_debug_auto_detect_ide_hosts="false" zd_debug_configured_ide_host="10.10.20.165,127.0.0.1" />
+  <component name="PhpServers">
+    <servers>
+      <server host="f.cn" id="fa3acc8d-950c-4bc1-8e87-1c797af83dfb" name="f.cn" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/yii" remote-root="/app" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/vue/package.json" />
-    </packageJsonPaths>
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="vg PHP 7.0">
     <include_path>
       <path value="$PROJECT_DIR$/yii/vendor/yiisoft/yii2-swiftmailer" />
       <path value="$PROJECT_DIR$/yii/vendor/yiisoft/yii2-gii" />
@@ -427,13 +899,16 @@
       <path value="$PROJECT_DIR$/yii/vendor/sebastian/object-enumerator" />
       <path value="$PROJECT_DIR$/yii/vendor/theseer/tokenizer" />
       <path value="$PROJECT_DIR$/yii/vendor/cebe/markdown" />
-      <path value="$PROJECT_DIR$/yii/vendor/phpoffice/phpexcel" />
+      <path value="$PROJECT_DIR$/yii/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/yii/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/yii/vendor/psr/simple-cache" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="width" value="1919" />
-    <option name="height" value="1036" />
+    <option name="x" value="77" />
+    <option name="y" value="47" />
+    <option name="width" value="1279" />
+    <option name="height" value="701" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -488,47 +963,10 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <showModules Scope="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="yii" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="yii" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="yii" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
-              <item name="yii" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-excluded-files" value="false" />
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'worker'; set:file:vue/src/components/common/props/sx.vue||file:vue/src/views/nav1/Table.vue; class com.intellij.psi.search.scope.packageSet.NamedScope">
           <expand>
@@ -608,6 +1046,72 @@
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
               <item name="vue-admin1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="nav1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'vue'; set:file[yii_vue_admin]:vue/src//*; class com.intellij.psi.search.scope.packageSet.NamedScope">
+          <expand>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="upload" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="nav1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
@@ -748,7 +1252,16 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="table" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="toolbar" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="upload" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -768,7 +1281,7 @@
           </expand>
           <select />
         </subPane>
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+        <subPane subId="Scope 'v1'; set:file[yii_vue_admin]:yii/frontend/modules/v1/controllers//*||file:yii/frontend/modules/v1/Module.php; class com.intellij.psi.search.scope.packageSet.NamedScope">
           <expand>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -777,64 +1290,122 @@
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yii" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yii" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yii" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yii" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="v1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="eleme" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="table" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="yii" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="frontend" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="modules" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="v1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="controllers" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'yii'; set:file[yii_vue_admin]:yii/frontend//*; class com.intellij.psi.search.scope.packageSet.NamedScope">
+          <expand>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="nav1" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="yii_vue_admin" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="yii_vue_admin" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="vue" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="vuex" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="yii" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name=".vagrant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="vagrant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="vagrant" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="vagrant" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="vagrant" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="yii" type="462c0819:PsiDirectoryNode" />
+              <item name="vagrant" type="462c0819:PsiDirectoryNode" />
+              <item name="provision" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -848,24 +1419,18 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544442304773" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544520451753" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vue-touzi" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/yii/frontend/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/yii/frontend/web" />
-      <recent name="$PROJECT_DIR$/yii/common/models" />
-      <recent name="$PROJECT_DIR$/vue-admin/src/components/common/slot" />
-      <recent name="$PROJECT_DIR$/vue-admin/src/views/common/eleme/edialog" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/yii/frontend/models" />
       <recent name="$PROJECT_DIR$/yii" />
@@ -873,6 +1438,41 @@
       <recent name="$PROJECT_DIR$/vue/src/components/global" />
       <recent name="$PROJECT_DIR$/vue-admin/src/components" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/yii/vagrant/php" />
+      <recent name="$PROJECT_DIR$/yii/vagrant" />
+      <recent name="$PROJECT_DIR$/yii/frontend/web" />
+      <recent name="$PROJECT_DIR$/yii/common/models" />
+      <recent name="$PROJECT_DIR$/vue-admin/src/components/common/slot" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://f.cn" />
+          <option name="urlPath" value="/v1/upload/upload" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveFileToSend" value="true" />
+          <option name="isFileUpload" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="$USER_HOME$/Desktop/Win10极简蓝.ssf" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -885,6 +1485,11 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="f.cn" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="f.cn">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -902,12 +1507,15 @@
       <workItem from="1544343494908" duration="10058000" />
       <workItem from="1544410712209" duration="11198000" />
       <workItem from="1544424068842" duration="13727000" />
-      <workItem from="1544438682648" duration="3014000" />
+      <workItem from="1544438682648" duration="35109000" />
+      <workItem from="1544520684553" duration="68000" />
+      <workItem from="1544520868342" duration="8000" />
+      <workItem from="1544521027681" duration="341000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88450000" />
+    <option name="totallyTimeSpent" value="125230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -920,9 +1528,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.29209897" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.29848364" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -932,29 +1539,65 @@
       <window_info id="Structure" order="7" sideWeight="0.5008157" side_tool="true" weight="0.14445332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960095" weight="0.32952693" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49880287" weight="0.32899022" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.69912213" weight="0.44788274" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.66560256" weight="0.32952693" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50039905" side_tool="true" weight="0.32952693" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.5818037" visible="true" weight="0.109298535" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.66480446" weight="0.32952693" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.22745411" side_tool="true" visible="true" weight="0.32736155" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.7725459" visible="true" weight="0.32736155" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32952693" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.0065252855" />
+      <window_info anchor="bottom" id="REST Client" order="14" weight="0.50734097" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.32960895" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Ant Build" order="5" show_stripe_button="false" weight="0.24980047" />
-      <window_info anchor="right" id="Maven Projects" order="6" show_stripe_button="false" weight="0.32960895" />
-      <window_info anchor="right" id="Database" order="7" weight="0.32960895" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Ant Build" order="4" show_stripe_button="false" weight="0.24980047" />
+      <window_info anchor="right" id="Maven Projects" order="5" show_stripe_button="false" weight="0.32960895" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32960895" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Remote Host" order="9" weight="0.32960895" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918434" visible="true" weight="0.29369512" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" show_stripe_button="false" sideWeight="0.50185186" side_tool="true" weight="0.14445332" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Learn" order="6" show_stripe_button="false" weight="0.32960895" />
+      <window_info id="Structure" order="7" sideWeight="0.5008157" side_tool="true" weight="0.14445332" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.50734097" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49960095" weight="0.32952693" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.6884176" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.66560256" weight="0.32952693" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50039905" side_tool="true" weight="0.32952693" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.5818037" visible="true" weight="0.31647635" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" weight="0.32952693" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="13" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.0065252855" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Ant Build" order="4" show_stripe_button="false" weight="0.24980047" />
+      <window_info anchor="right" id="Maven Projects" order="5" show_stripe_button="false" weight="0.32960895" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32960895" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Remote Host" order="9" visible="true" weight="0.32960895" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -963,9 +1606,6 @@
         <option value="$PROJECT_DIR$/../vue-touzi/node_modules/karma/config.tpl.js" />
       </list>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -977,7 +1617,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/vue/src/views/nav1/Table.vue</url>
-          <line>45</line>
+          <line>48</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -987,8 +1627,58 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/yii/frontend/modules/v1/controllers/GoodsController.php</url>
-          <line>12</line>
+          <line>22</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/modules/v1/controllers/GoodsController.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/yii</url>
+          <line>6</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UploadController.php</url>
+          <line>23</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/web/index.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/web/index.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/web/index.php</url>
+          <line>11</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/web/index.php</url>
+          <line>9</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/web/index.php</url>
+          <line>8</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/web/index.php</url>
+          <line>18</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/yii/frontend/web/index.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -998,302 +1688,311 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yii/backend/config/test-local.php">
+    <entry file="file://$PROJECT_DIR$/vue/src/views/404.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/.vagrant/hostmanager/id">
+    <entry file="file://$PROJECT_DIR$/vue/src/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="61" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1234">
+          <caret line="114" column="77" selection-start-line="114" selection-start-column="65" selection-end-line="114" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/otable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/toolbar/etoolbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="95" selection-start-line="6" selection-start-column="88" selection-end-line="6" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/table/elist.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/console/config/main-local.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/backend/config/params-local.php">
+    <entry file="file://$PROJECT_DIR$/yii/console/config/params.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/backend/modules/admin/controllers/DefaultController.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ca92fe29-3837-4fc5-9efd-4fb123338ab5/console.sql">
+    <entry file="file://$PROJECT_DIR$/yii/console/config/params-local.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/console/config/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/console/config/main.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/environments/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/yii">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/BaseYii.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Application.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="385" selection-start-line="385" selection-end-line="385" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/ErrorHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/common/models/UploadForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/backend/modules/v1/views/default/index.php" />
-    <entry file="file://$PROJECT_DIR$/yii/backend/modules/v1/controllers/DefaultController.php" />
-    <entry file="file://$PROJECT_DIR$/yii/backend/models/Goods.php">
+    <entry file="file://$PROJECT_DIR$/yii/frontend/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180" />
+        <state relative-caret-position="322">
+          <caret line="47" column="6" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/models/PasswordResetRequestForm.php">
+    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/helpers/BaseHtml.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="2238" column="72" selection-start-line="2238" selection-start-column="72" selection-end-line="2238" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="75">
+            <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/UploadedFile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="105" column="60" lean-forward="true" selection-start-line="105" selection-start-column="60" selection-end-line="105" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/init">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/backend/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/config/main-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/config/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/controllers/GoodsController.php" />
-    <entry file="file://$PROJECT_DIR$/yii/common/models/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/common/models/GoodsQuery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/modules/v1/controllers/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/IndexAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="977">
-          <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+          <caret line="169" column="51" selection-start-line="169" selection-start-column="51" selection-end-line="169" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/common/config/main-local.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding>
-            <element signature="e#53#270#1#PHP" />
-            <element signature="e#292#622#1#PHP" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/backend/controllers/SiteController.php">
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/php/php-fpm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/backend/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/backend/config/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/backend/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/common/fixtures/UserFixture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/test/ActiveFixture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1100">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/runtime/gii-2.0.15.1/yii-gii-generators-module-Generator.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/runtime/logs/app.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/runtime/debug/5c0e302003213.data">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/runtime/debug/index.data">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/web/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3524" selection-start-column="3524" selection-end-column="3524" />
-          <folding>
-            <element signature="e#2162#2169#0" expanded="true" />
-            <element signature="e#2650#2657#0" expanded="true" />
-            <element signature="e#3148#3155#0" expanded="true" />
-            <element signature="e#3275#3281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/models/SignupForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/filters/ContentNegotiator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="85" column="6" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/common/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="140">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/common/config/main.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/modules/v1/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/modules/v1/views/default/index.php">
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/nginx/log/frontend-error.log" />
+    <entry file="file://$PROJECT_DIR$/yii/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://ca92fe29-3837-4fc5-9efd-4fb123338ab5/schema/yii2advanced/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="75">
+            <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="das://ca92fe29-3837-4fc5-9efd-4fb123338ab5/schema/yii2advanced/table/goods">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/extensions/ResBeforeSendBehavior.php">
+    <entry file="file://$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UploadController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="352">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
           <folding>
-            <element signature="e#38#46#0#PHP" expanded="true" />
+            <element signature="e#138#178#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/common/models/Goods.php">
+    <entry file="file://$PROJECT_DIR$/vue/src/api/api.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/api/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/common/vue/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="262">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/ActiveController.php">
+    <entry file="file://$PROJECT_DIR$/../../server/php/70/etc/php.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/excel.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="195">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/common/controllers/ActiveController.php">
+    <entry file="file://$PROJECT_DIR$/vue/src/views/nav1/Table.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#37#73#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UserController.php">
+    <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/upload/excel.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
+    <entry file="das://ca92fe29-3837-4fc5-9efd-4fb123338ab5/schema/yii2advanced/table/goods" />
     <entry file="file://$PROJECT_DIR$/yii/frontend/modules/v1/controllers/GoodsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="255">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#52#92#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/web/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/web/.htaccess">
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/nginx/app.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/config/vagrant-local.example.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/provision/always-as-root.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/provision/common.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yii/frontend/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="163">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yii/frontend/config/main.php">
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/config/vagrant-local.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        <state relative-caret-position="203">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/Vagrantfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/provision/once-as-root.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="27" column="82" lean-forward="true" selection-start-line="27" selection-start-column="79" selection-end-line="27" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yii/vagrant/php/20-xdebug.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -1313,7 +2012,7 @@
       </state>
       <state key="ScopeChooserConfigurable.UI">
         <settings>
-          <last-edited>worker</last-edited>
+          <last-edited>yii</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1324,6 +2023,9 @@
           <order>
             <scope name="ivews" />
             <scope name="worker" />
+            <scope name="v1" />
+            <scope name="vue" />
+            <scope name="yii" />
           </order>
         </settings>
       </state>

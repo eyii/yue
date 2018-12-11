@@ -8,9 +8,8 @@
  * init --env=Development --overwrite=n
  */
 
-if (!extension_loaded('openssl')) {
-    die('The OpenSSL PHP extension is required by Yii2.');
-}
+if (!extension_loaded('openssl')) die('The OpenSSL PHP extension is required by Yii2.');
+
 
 $params = getParams();
 $root = str_replace('\\', '/', __DIR__);
@@ -22,9 +21,8 @@ echo "Yii Application Initialization Tool v1.0\n\n";
 $envName = null;
 if (empty($params['env']) || $params['env'] === '1') {
     echo "Which environment do you want the application to be initialized in?\n\n";
-    foreach ($envNames as $i => $name) {
-        echo "  [$i] $name\n";
-    }
+    foreach ($envNames as $i => $name) echo "  [$i] $name\n";
+
     echo "\n  Your choice [0-" . (count($envs) - 1) . ', or "q" to quit] ';
     $answer = trim(fgets(STDIN));
 
@@ -33,12 +31,10 @@ if (empty($params['env']) || $params['env'] === '1') {
         exit(0);
     }
 
-    if (isset($envNames[$answer])) {
-        $envName = $envNames[$answer];
-    }
-} else {
-    $envName = $params['env'];
-}
+    if (isset($envNames[$answer])) $envName = $envNames[$answer];
+
+} else $envName = $params['env'];
+
 
 if (!in_array($envName, $envNames)) {
     $envsList = implode(', ', $envNames);
@@ -65,18 +61,14 @@ if (isset($env['skipFiles'])) {
     $files = array_diff($files, array_intersect_key($env['skipFiles'], array_filter($skipFiles, 'file_exists')));
 }
 $all = false;
-foreach ($files as $file) {
-    if (!copyFile($root, "environments/{$env['path']}/$file", $file, $all, $params)) {
-        break;
-    }
-}
+foreach ($files as $file) if (!copyFile($root, "environments/{$env['path']}/$file", $file, $all, $params)) break;
+
+
 
 $callbacks = ['setCookieValidationKey', 'setWritable', 'setExecutable', 'createSymlink'];
-foreach ($callbacks as $callback) {
-    if (!empty($env[$callback])) {
-        $callback($root, $env[$callback]);
-    }
-}
+foreach ($callbacks as $callback) if (!empty($env[$callback])) $callback($root, $env[$callback]);
+
+
 
 echo "\n  ... initialization completed.\n\n";
 
@@ -85,16 +77,13 @@ function getFileList($root, $basePath = '')
     $files = [];
     $handle = opendir($root);
     while (($path = readdir($handle)) !== false) {
-        if ($path === '.git' || $path === '.svn' || $path === '.' || $path === '..') {
-            continue;
-        }
+        if ($path === '.git' || $path === '.svn' || $path === '.' || $path === '..') continue;
+
         $fullPath = "$root/$path";
         $relativePath = $basePath === '' ? $path : "$basePath/$path";
-        if (is_dir($fullPath)) {
-            $files = array_merge($files, getFileList($fullPath, $relativePath));
-        } else {
-            $files[] = $relativePath;
-        }
+        if (is_dir($fullPath)) $files = array_merge($files, getFileList($fullPath, $relativePath));
+        else $files[] = $relativePath;
+
     }
     closedir($handle);
     return $files;
@@ -111,9 +100,8 @@ function copyFile($root, $source, $target, &$all, $params)
             echo "  unchanged $target\n";
             return true;
         }
-        if ($all) {
-            echo "  overwrite $target\n";
-        } else {
+        if ($all) echo "  overwrite $target\n";
+        else {
             echo "      exist $target\n";
             echo "            ...overwrite? [Yes|No|All|Quit] ";
 
@@ -122,9 +110,8 @@ function copyFile($root, $source, $target, &$all, $params)
             if (!strncasecmp($answer, 'q', 1)) {
                 return false;
             } else {
-                if (!strncasecmp($answer, 'y', 1)) {
-                    echo "  overwrite $target\n";
-                } else {
+                if (!strncasecmp($answer, 'y', 1)) echo "  overwrite $target\n";
+                 else {
                     if (!strncasecmp($answer, 'a', 1)) {
                         echo "  overwrite $target\n";
                         $all = true;
@@ -157,9 +144,8 @@ function getParams()
         if (preg_match('/^--(\w+)(=(.*))?$/', $param, $matches)) {
             $name = $matches[1];
             $params[$name] = isset($matches[3]) ? $matches[3] : true;
-        } else {
-            $params[] = $param;
-        }
+        } else $params[] = $param;
+
     }
     return $params;
 }
@@ -170,12 +156,10 @@ function setWritable($root, $paths)
         if (is_dir("$root/$writable")) {
             if (@chmod("$root/$writable", 0777)) {
                 echo "      chmod 0777 $writable\n";
-            } else {
-                printError("Operation chmod not permitted for directory $writable.");
-            }
-        } else {
-            printError("Directory $writable does not exist.");
-        }
+            } else printError("Operation chmod not permitted for directory $writable.");
+
+        } else printError("Directory $writable does not exist.");
+
     }
 }
 
@@ -183,14 +167,11 @@ function setExecutable($root, $paths)
 {
     foreach ($paths as $executable) {
         if (file_exists("$root/$executable")) {
-            if (@chmod("$root/$executable", 0755)) {
-                echo "      chmod 0755 $executable\n";
-            } else {
-                printError("Operation chmod not permitted for $executable.");
-            }
-        } else {
-            printError("$executable does not exist.");
-        }
+            if (@chmod("$root/$executable", 0755)) echo "      chmod 0755 $executable\n";
+             else printError("Operation chmod not permitted for $executable.");
+
+        } else printError("$executable does not exist.");
+
     }
 }
 

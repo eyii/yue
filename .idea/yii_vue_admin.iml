@@ -7,6 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/yii/backend" />
       <excludeFolder url="file://$MODULE_DIR$/yii/console" />
       <excludeFolder url="file://$MODULE_DIR$/yii/environments" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/frontend/controllers" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/behat/gherkin" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/bower-asset/inputmask" />
@@ -26,13 +27,14 @@
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/ezyang/htmlpurifier" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/markbaker/complex" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phar-io/version" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpdocumentor/type-resolver" />
-      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpoffice/phpexcel" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpoffice/phpspreadsheet" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpspec/php-diff" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpspec/prophecy" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpunit/php-code-coverage" />
@@ -44,6 +46,7 @@
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/phpunit/phpunit-mock-objects" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/psr/http-message" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/yii/vendor/psr/simple-cache" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/ralouphie/getallheaders" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/sebastian/code-unit-reverse-lookup" />
       <excludeFolder url="file://$MODULE_DIR$/yii/vendor/sebastian/comparator" />

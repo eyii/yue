@@ -41,6 +41,10 @@ $config['components']['urlManager']=[
           'controller'    => ['v1/goods'], 'pluralize'     => false, //false, user 也可访问 true  users 才可访问
 
         ],
+     ['class' => 'yii\rest\UrlRule', 'controller' => 'v1/upload',
+         'extraPatterns' => ['OPTIONS,POST    upload' => 'upload',]
+     ],
+
     ],
 ];
 $config['components']['response']=[

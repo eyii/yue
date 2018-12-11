@@ -2,6 +2,7 @@
 	<section>
 		<!--工具条-->
 		<etoolbar v-model="filters"/>
+		<excel/>
 		<elist v-model="isShow"/>
 		<edialog v-model="isShow"/>
 		<!--工具条-->
@@ -18,8 +19,9 @@
 	import edialog from '@/components/eleme/edialog/edialog'
     import etoolbar from '@/components/eleme/toolbar/etoolbar'
     import Etoolbar from "../../components/eleme/toolbar/etoolbar";
+    import excel  from '@/components/eleme/upload/excel';
 	export default {
-        components: {Etoolbar, edialog, elist},
+        components: {etoolbar, edialog, elist,excel},
 		data(){
             return {
                 isShow:false,
@@ -27,6 +29,7 @@
                     name: '',
                     fcheck:this.fcheck,
                     fadd:this.fadd,
+                    fexport:this.fexport,
 					page:0
                 },
             }
@@ -43,10 +46,15 @@
             fadd(){
                 debugger;
 
-                let users=this.$store.getters.getUsers();
+            //    let users=this.$store.getters.getUsers();
                 return 1;
             },
+            fexport(){
+                debugger;
 
+               // let users=this.$store.getters.getUsers();
+                return 1;
+            },
         }
 
 	}

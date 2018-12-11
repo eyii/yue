@@ -1,1 +1,0 @@
-{"virtualbox":{"/app":{"owner":"vagrant","group":"vagrant","guestpath":"/app","hostpath":"/www/wwwroot/yii_vue_admin/yii","disabled":false,"__vagrantfile":true}}}

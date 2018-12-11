@@ -38,7 +38,7 @@
                 addLoading: false,
                 options: [
                     {value: 'id',               text: 'id',           disabled:true,   show:true, width:120,copy:false},
-                    {value: 'name',             text: '用户名',       disabled:true,    show:true, width:120,copy:false},
+                    {value: 'name',             text: '会员账号',       disabled:true,    show:true, width:120,copy:false},
                     {value: 'address',            text: '地址',         disabled:true,  show:true, width:300,copy:false} ,
                     {value: 'op',               text: '操作',         disabled:true,    show:true, width:300,copy:false} ,
                     {value: 'actionTime',       text: '申请时间',      disabled:true,   show:true,  width:120,copy:false} ,
