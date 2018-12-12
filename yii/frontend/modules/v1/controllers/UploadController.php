@@ -50,15 +50,20 @@ class UploadController extends ActiveController
     }
 
      function actionUpload(){
-    /*    $model = new UploadForm();
+      $model = new UploadForm();
      //   if (!Yii::$app->request->isPost)   return ['code'    => 20, 'msg'=> '非法访问',];
-        $model->file = UploadedFile::getInstanceByName('file');
-         $fileName = $model->upload() ;
+         $model->file = UploadedFile::getInstance($model, 'file');
+         if ($model->file && $model->validate())
+         {
+             $model->file->saveAs('uploads/' . $model->file->baseName . '.' . $model->file->extension);
+         }
 
-        return $fileName ?  ['code'    => 20, 'msg'=> '保存成功',]:['code'    => 20, 'msg'=> '文件无法保存',];
-*/
 
-         return ['code'    => 20, 'msg'=> '保存成功',];
+        // return $this->render('upload', ['model' => $model]);
+
+   /* xdebug_break();
+        $request= Yii::$app->request;
+         return ['code'    => 20, 'msg'=> '保存成功',];*/
     }
 
 

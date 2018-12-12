@@ -343,29 +343,23 @@ class Model extends Component implements StaticInstanceInterface, IteratorAggreg
      */
     public function validate($attributeNames = null, $clearErrors = true)
     {
-        if ($clearErrors) {
-            $this->clearErrors();
-        }
+        if ($clearErrors) $this->clearErrors();
 
-        if (!$this->beforeValidate()) {
-            return false;
-        }
+
+        if (!$this->beforeValidate()) return false;
+
 
         $scenarios = $this->scenarios();
         $scenario = $this->getScenario();
-        if (!isset($scenarios[$scenario])) {
-            throw new InvalidArgumentException("Unknown scenario: $scenario");
-        }
+        if (!isset($scenarios[$scenario])) throw new InvalidArgumentException("Unknown scenario: $scenario");
+        
 
-        if ($attributeNames === null) {
-            $attributeNames = $this->activeAttributes();
-        }
+        if ($attributeNames === null) $attributeNames = $this->activeAttributes();
 
         $attributeNames = (array)$attributeNames;
 
-        foreach ($this->getActiveValidators() as $validator) {
-            $validator->validateAttributes($this, $attributeNames);
-        }
+        foreach ($this->getActiveValidators() as $validator) $validator->validateAttributes($this, $attributeNames);
+
         $this->afterValidate();
 
         return !$this->hasErrors();

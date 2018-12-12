@@ -56,8 +56,8 @@ info "Enabling site configuration"
 ln -s /app/vagrant/nginx/app.conf /etc/nginx/sites-enabled/app.conf
 echo "Done!"
 info "xdebug"
-rm -f /etc/php/7.0/cli/conf.d/20-xdebug.ini
-ln -s /app/vagrant/php/20-xdebug.ini /etc/php/7.0/cli/conf.d/20-xdebug.ini
+rm -f  /etc/php/7.0/fpm/conf.d/20-xdebug.ini
+ln -s /app/vagrant/php/20-xdebug.ini /etc/php/7.0/fpm/conf.d/20-xdebug.ini
 echo "xdebug!"
 info "Initailize databases for MySQL"
 mysql -uroot <<< "CREATE DATABASE yii2advanced"

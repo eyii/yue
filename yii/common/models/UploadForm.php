@@ -14,23 +14,23 @@ use yii\web\UploadedFile;
 
 class UploadForm extends Model{
 
-    public $single;
 
 
-    public $multiple;
+    public $file;
 
 
-     function rules(){
+
+    public function rules()
+    {
         return [
-            [['single'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg'],
-            [['multiple'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg','maxFiles' => 4],
+            [['file'], 'file'],
         ];
     }
 
      function upload(){
         if (!$this->validate())return false;
-        $newName = 'uploads/' . $this->single->baseName . '.' . $this->single->extension;
-        $this->single->saveAs($newName);
+        $newName = 'uploads/' . $this->file->baseName . '.' . $this->file->extension;
+        $this->file->saveAs($newName);
         return true;
 
 

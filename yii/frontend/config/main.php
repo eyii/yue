@@ -20,7 +20,10 @@ $config= [
 ];
 
 
-//$config['components']['errorHandler']= ['errorAction' => 'site/error',];
+/*$config['components']['errorHandler']= [
+
+    'errorAction' => '/v1/error/error',
+    ];*/
 $config['components']['user']= [
     'identityClass'     => 'frontend\models\User',
     'enableAutoLogin'   => false,
@@ -47,6 +50,7 @@ $config['components']['urlManager']=[
 
     ],
 ];
+
 $config['components']['response']=[
     'class'     => 'yii\web\Response',
     'format'=> yii\web\Response::FORMAT_JSON,
@@ -62,13 +66,14 @@ $config['components']['response']=[
     ],
     //参考 http://www.yiiframework.com/doc-2.0/guide-concept-configurations.html#configuration-format
 ];
-$config['components']['request']= ['parsers' => ['application/json' => 'yii\web\JsonParser',]];
+/*$config['components']['request']= ['parsers' => ['application/json' => 'yii\web\JsonParser',]];*/
 $config['modules']= ['v1' => ['class' => 'frontend\modules\v1\Module',],];
 $config['bootstrap']=  [
     'log',
     [
         'class'     => 'yii\filters\ContentNegotiator',
-        'formats' => ['application/json' => yii\web\Response::FORMAT_JSON, 'application/xml' => yii\web\Response::FORMAT_XML,],
+        'formats' => ['application/json' => yii\web\Response::FORMAT_JSON,
+            'application/xml' => yii\web\Response::FORMAT_XML,],
     ]
 ];
 

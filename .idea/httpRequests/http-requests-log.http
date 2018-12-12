@@ -1,3 +1,53 @@
+POST http://f.cn/v1/upload/upload?file=
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /root/Desktop/Win10极简蓝.ssf
+--null--
+
+###
+
+POST http://f.cn/v1/upload/upload
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /root/Desktop/Win10极简蓝.ssf
+--null--
+
+###
+
+POST http://f.cn/v1/upload/upload
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /root/Desktop/Win10极简蓝.ssf
+--null--
+
+<> 2018-12-11T070824.500.json
+
+###
+
+POST http://f.cn/v1/upload/upload
+Accept: */*
+Cache-Control: no-cache
+
+--null
+
+
+< /root/Desktop/Win10极简蓝.ssf
+--null--
+
+###
+
 POST http://f.cn/v1/upload/upload
 Accept: */*
 Cache-Control: no-cache
