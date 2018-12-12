@@ -3,18 +3,16 @@ namespace common\controllers;
 
 use yii\base\InvalidConfigException;
 use yii\base\Model;
+use yii\filters\AccessControl;
+use yii\filters\Cors;
+use yii\helpers\ArrayHelper;
 use yii\web\ForbiddenHttpException;
 
 class ActiveController extends \yii\rest\ActiveController
 {
-    /**
-     * @var string the model class name. This property must be set.
-     */
+
     public $modelClass;
-    /**
-     * @var string the scenario used for updating a model.
-     * @see \yii\base\Model::scenarios()
-     */
+
     public $updateScenario = Model::SCENARIO_DEFAULT;
     /**
      * @var string the scenario used for creating a model.
@@ -23,9 +21,7 @@ class ActiveController extends \yii\rest\ActiveController
     public $createScenario = Model::SCENARIO_DEFAULT;
 
 
-    /**
-     * {@inheritdoc}
-     */
+
     public function init()
     {
         parent::init();
@@ -34,9 +30,7 @@ class ActiveController extends \yii\rest\ActiveController
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
+
     public function actions()
     {
         return [
@@ -73,9 +67,6 @@ class ActiveController extends \yii\rest\ActiveController
         ];
     }
 
-    /**
-     * {@inheritdoc}
-     */
     protected function verbs()
     {
         return [
@@ -87,19 +78,29 @@ class ActiveController extends \yii\rest\ActiveController
         ];
     }
 
-    /**
-     * Checks the privilege of the current user.
-     *
-     * This method should be overridden to check whether the current user has the privilege
-     * to run the specified action against the specified data model.
-     * If the user does not have access, a [[ForbiddenHttpException]] should be thrown.
-     *
-     * @param string $action the ID of the action to be executed
-     * @param object $model the model to be accessed. If null, it means no specific model is being accessed.
-     * @param array $params additional parameters
-     * @throws ForbiddenHttpException if the user does not have access
-     */
-    public function checkAccess($action, $model = null, $params = [])
-    {
+
+     function checkAccess($action, $model = null, $params = []){
     }
+
+    public function behaviors()
+    {
+      $behaviors=  parent::behaviors();
+       $ip= ['access' => ['class' => AccessControl::className(),
+                       'only' => ['login', 'logout', 'signup'],
+                       'rules' => [['ips' => [ '127.0.0.1'], 'allow' => false,],],
+              ]];
+     $cors=[['class' => Cors::className(),
+                    'cors' => [
+                        'Origin' => ['*'],
+                        'Access-Control-Request-Method' => [], //POST
+                        'Access-Control-Request-Headers'=>['*'] //content-type
+                    ],
+
+            ],
+        ];
+       $behaviors=  ArrayHelper::merge($cors, $behaviors);
+        $behaviors=  ArrayHelper::merge($ip, $behaviors);
+        return $behaviors;
+    }
+
 }

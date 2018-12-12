@@ -73,13 +73,13 @@
       <path value="$PROJECT_DIR$/yii/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/yii/vendor/markbaker/complex" />
       <path value="$PROJECT_DIR$/yii/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/yii/vendor/yiisoft/yii2-queue" />
+      <path value="$PROJECT_DIR$/yii/vendor/symfony/process" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
     <interpreters>
-      <interpreter home="vagrant:///www/wwwroot/yii_vue_admin/yii/usr/bin/php" id="b261fe84-8651-4f6c-81d2-f6589503af9a" name="vg PHP 7.0" debugger_id="php.debugger.XDebug">
-        <remote_data VAGRANT_FOLDER="$PROJECT_DIR$/yii" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/vagrant/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
-      </interpreter>
+      <interpreter home="vagrant:///www/wwwroot/yii_vue_admin/yii/usr/bin/php" id="b261fe84-8651-4f6c-81d2-f6589503af9a" name="vg PHP 7.0" debugger_id="php.debugger.XDebug" />
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">

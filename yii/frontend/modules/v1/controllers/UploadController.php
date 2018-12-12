@@ -1,70 +1,89 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: root
- * Date: 18-12-11
- * Time: 上午11:55
- */
+
 
 namespace frontend\modules\v1\controllers;
 
 
 use common\controllers\ActiveController;
+use common\lib\result\MsgAbort;
+use common\lib\result\MsgOk;
 use common\models\UploadForm;
-use SebastianBergmann\CodeCoverage\Util;
+
+use PhpOffice\PhpSpreadsheet\IOFactory;
+
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use Yii;
-use yii\web\UploadedFile;
+
 
 class UploadController extends ActiveController
 {
     public $modelClass = 'common\models\Goods';
 
-    function actionSearch(){
 
-        $model = new UploadForm();
-
-        if (Yii::$app->request->isPost) return false;
-
-            $model->single = UploadedFile::getInstance($model, 'single');
-            $model->upload();
-
-
-            $model->multiple = UploadedFile::getInstances($model, 'multiple');
-            $model->uploadMultiple();
-
-            unset($model->single,$model->multiple);
-
-
-            $model->single = UploadedFile::getInstanceByName('single-file');
-            $model->upload();
-
-            //获取多个文件用 getInstancesByName
-            $model->multiple = UploadedFile::getInstancesByName('multi-file');
-            $model->uploadMultiple();
-
-            unset($model->single,$model->multiple);
-
-        return $this->render('upload', ['model' => $model]);
-
-
-    }
 
      function actionUpload(){
       $model = new UploadForm();
-     //   if (!Yii::$app->request->isPost)   return ['code'    => 20, 'msg'=> '非法访问',];
-         $model->file = UploadedFile::getInstance($model, 'file');
-         if ($model->file && $model->validate())
-         {
-             $model->file->saveAs('uploads/' . $model->file->baseName . '.' . $model->file->extension);
-         }
+      if (!Yii::$app->request->isPost)          return  new MsgAbort('非法访问',-20);
 
+         if ($model->getFIle()||!$model->validate())            return new MsgAbort('非法文件',-20);
+         $model->getFilePath($fileName);
+         $model->file->saveAs($fileName);
+         $result=  $this->actionRead($fileName);
+       //
+         return !empty($result)?  new MsgOk("上传成功",200,$result):new MsgAbort('保存文件失败');
 
-        // return $this->render('upload', ['model' => $model]);
-
-   /* xdebug_break();
-        $request= Yii::$app->request;
-         return ['code'    => 20, 'msg'=> '保存成功',];*/
     }
 
+    function actionExcel(){
+        $spreadsheet = new Spreadsheet();
 
+        // Set document properties
+        $spreadsheet->getProperties()->setCreator('Yue')
+            ->setLastModifiedBy('Yue')
+            ->setTitle('Office 2007 XLSX Test Document')
+            ->setSubject('Office 2007 XLSX Test Document')
+            ->setKeywords('office 2007 openxml php')
+            ->setCategory('Test result file');
+
+        // Add some data
+        $spreadsheet->setActiveSheetIndex(0)
+            ->setCellValue('A1', 'Hello')
+            ->setCellValue('B2', 'world!')
+            ->setCellValue('C1', 'Hello')
+            ->setCellValue('D2', 'world!');
+
+        // Miscellaneous glyphs, UTF-8
+        $spreadsheet->setActiveSheetIndex(0)->setCellValue('A4', 'Miscellaneous glyphs')->setCellValue('A5', 'éàèùâêîôûëïüÿäöüç');
+
+        // Rename worksheet
+        $spreadsheet->getActiveSheet()->setTitle('Simple');
+
+        // Set active sheet index to the first sheet, so Excel opens this as the first sheet
+        $spreadsheet->setActiveSheetIndex(0);
+
+        // Redirect output to a client’s web browser (Xlsx)
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment;filename="01simple.xlsx"');
+        header('Cache-Control: max-age=0');
+
+        header('Cache-Control: max-age=1');
+
+        header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
+        header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
+        header('Cache-Control: cache, must-revalidate');
+        header('Pragma: public');
+
+        $writer = IOFactory::createWriter($spreadsheet, 'Xlsx');
+        $writer->save('php://output');
+    }
+
+    function actionRead($fileName =  'uploads/data.xls',$type= 'Xls'){
+
+        $reader = IOFactory::createReader($type);
+        $reader->setReadDataOnly(true);
+        $spreadsheet = $reader->load($fileName);
+        $data = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
+
+        return empty($data)?false:$data;
+    }
 }

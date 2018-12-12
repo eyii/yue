@@ -8,6 +8,7 @@
 
 namespace common\models;
 
+use Yii;
 use yii\base\Model;
 use yii\web\UploadedFile;
 
@@ -15,7 +16,9 @@ use yii\web\UploadedFile;
 class UploadForm extends Model{
 
 
-
+    /**
+     * @var UploadedFile
+     */
     public $file;
 
 
@@ -23,11 +26,12 @@ class UploadForm extends Model{
     public function rules()
     {
         return [
-            [['file'], 'file'],
+            [['file'], 'file','extensions' => 'xls,xlsx','checkExtensionByMimeType' => false],
         ];
     }
 
      function upload(){
+       $this->file = UploadedFile::getInstance($this, 'file');
         if (!$this->validate())return false;
         $newName = 'uploads/' . $this->file->baseName . '.' . $this->file->extension;
         $this->file->saveAs($newName);
@@ -50,4 +54,17 @@ class UploadForm extends Model{
 
     }
 
+    function getFilePath(&$fileName){
+
+        $baseName =$this->file->baseName;// Yii::$app->getSecurity()->encryptByPassword($this->file->baseName, '123');
+      //  $baseName= str_ireplace(array('/','$','.'),'',$baseName,$count);
+        $fileName='uploads/' . $baseName . '.' . $this->file->extension;
+        return $fileName;
+    }
+
+
+    function  getFIle(){
+        $this->file = UploadedFile::getInstance($this, 'file');
+        return empty($this->file);
+    }
 }

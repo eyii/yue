@@ -526,9 +526,8 @@ class Module extends ServiceLocator
             $oldController = Yii::$app->controller;
             Yii::$app->controller = $controller;
             $result = $controller->runAction($actionID, $params);
-            if ($oldController !== null) {
-                Yii::$app->controller = $oldController;
-            }
+            if ($oldController !== null) Yii::$app->controller = $oldController;
+
 
             return $result;
         }

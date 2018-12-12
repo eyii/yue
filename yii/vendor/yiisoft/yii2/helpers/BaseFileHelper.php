@@ -146,9 +146,8 @@ class BaseFileHelper
             $magicFile = Yii::getAlias($magicFile);
         }
         if (!extension_loaded('fileinfo')) {
-            if ($checkExtension) {
-                return static::getMimeTypeByExtension($file, $magicFile);
-            }
+            if ($checkExtension) return static::getMimeTypeByExtension($file, $magicFile);
+
 
             throw new InvalidConfigException('The fileinfo PHP extension is not installed.');
         }

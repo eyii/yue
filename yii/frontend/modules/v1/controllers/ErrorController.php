@@ -22,14 +22,14 @@ class ErrorController extends ActiveController
     public function actionError(){
             xdebug_break();
         $error = Yii::$app->errorHandler->exception;
-        if($error){
+        if($error) {
 
             $file = $error->getFile();
             $line = $error->getLine();
             $message = $error->getMessage();
             $code = $error->getCode();
 
-
+        }
 
 
 

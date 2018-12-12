@@ -15,3 +15,5 @@ export const batchRemoveUser = params => { return axios.get(`${base}/user/batchr
 export const editUser = params => { return axios.get(`${base}/user/edit`, { params: params }); };
 
 export const addUser = params => { return axios.get(`${base}/user/add`, { params: params }); };
+export const upload = params => { return axios.get(`${base}/user/add`, { params: params }); };
+//     let config = {headers: {'Content-Type': 'multipart/form-data'}};

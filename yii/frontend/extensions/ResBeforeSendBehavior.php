@@ -10,7 +10,7 @@ class ResBeforeSendBehavior extends Behavior{
     public $defaultCode = 500;
 
     public $defaultMsg = 'error';
-
+    public $response;
     public function events() {
         return [Response::EVENT_BEFORE_SEND => 'beforeSend',];
     }
@@ -18,24 +18,34 @@ class ResBeforeSendBehavior extends Behavior{
     public function beforeSend($event)
     {
         try {
-            $response = $event->sender;
+            $this->response= $response = & $event->sender;
             if($response->data === null)$response->data = ['code'  => $this->defaultCode, 'msg'   => $this->defaultMsg,];
-             elseif(!$response->isSuccessful) {
-                $exception = Yii::$app->getErrorHandler()->exception;
-                if(is_object($exception) && !$exception instanceof yii\web\HttpException) throw $exception;
-                 else {
-                    $rData = $response->data;
-                    $response->data = ['code'  => empty($rData['status']) ? $this->defaultCode : $rData['status'], 'msg'   => empty($rData['message']) ? $this->defaultMsg : $rData['message'],];
-                }
-            } else {
-                $rData = $response->data;
-                $response->data = ['code' => isset($rData['error_code']) ? $rData['error_code'] : 0, 'msg' => isset($rData['res_msg']) ? $rData['res_msg'] : $rData,];
-                $response->statusCode = 200;
-            }
+             elseif(!$response->isSuccessful) $this->responseAbort();
+
+
         } catch (\Exception $e) {
             $response->data = ['code'  => $this->defaultCode, 'msg'   => $this->defaultMsg,];
         }
         return true;
+    }
+    function responseOk(){
+        $response=&$this->response;
+        $data = $response->data;
+    //    $response->data = ['code' => isset($data->code) ?$data->code: 0, 'msg' => isset($data->msg) ?$data->msg : $data];
+      //  $response->statusCode = 200;
+    }
+    function responseAbort(){
+        $response=&$this->response;
+        $exception = Yii::$app->getErrorHandler()->exception;
+        if(is_object($exception) && !$exception instanceof yii\web\HttpException) throw $exception;
+        $data = $response->data;
+        $response->data = ['code'  => empty($data['status']) ? $this->defaultCode : $data['status'], 'msg'   => empty($data['message']) ? $this->defaultMsg : $data['message'],];
+
+    }
+    function dataNull(){
+        $response=&$this->response;
+        if($response->data === null)$response->data = ['code'  => $this->defaultCode, 'msg'   => $this->defaultMsg,];
+
     }
 }
 

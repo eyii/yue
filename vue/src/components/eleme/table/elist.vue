@@ -4,8 +4,9 @@
             <el-table-column v-for="(item,key) in options" :key="key" :label="item.text" :prop="item.value"  v-if="item.show"  :width="item.width" >
                 <ecol slot-scope="scope" :keyname="item.value" :row="scope.row" :item="item">
                     <span slot="common">{{scope.row[item.value]}}</span>
-                 <!--  <span slot="state">  {{ ['完成','申请','已取消','已支付','已失败','已删除'][scope.row.state] }}</span>-->
-             <!--     <span slot="actionTime">{{moment.unix(scope.row.actionTime).format("YYYY-MM-DD HH:mm:ss")  }}</span>-->
+                    <!--<span slot="state">  {{ ['完成','申请','已取消','已支付','已失败','已删除'][scope.row.state] }}</span>-->
+                    <!--<span slot="actionTime">{{moment.unix(scope.row.actionTime).format("YYYY-MM-DD HH:mm:ss")  }}</span>-->
+                    <span slot="result"><el-input v-model="scope.row[item.value]" placeholder="请输入内容"></el-input></span>-->
                     <span slot="op" >
                          <el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
                         <el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>
@@ -24,7 +25,6 @@
     export default {
         name: "elist",
         components: {ecol},
-
         props: {
             value:{ type:Boolean, default:false},
         },
@@ -37,11 +37,12 @@
                 editForm: { id: 0, name: '', sex: -1, age: 0, birth: '', addr: ''},
                 addLoading: false,
                 options: [
-                    {value: 'id',               text: 'id',           disabled:true,   show:true, width:120,copy:false},
-                    {value: 'name',             text: '会员账号',       disabled:true,    show:true, width:120,copy:false},
-                    {value: 'address',            text: '地址',         disabled:true,  show:true, width:300,copy:false} ,
-                    {value: 'op',               text: '操作',         disabled:true,    show:true, width:300,copy:false} ,
-                    {value: 'actionTime',       text: '申请时间',      disabled:true,   show:true,  width:120,copy:false} ,
+                    {value: 'id',              text: 'id',              disabled:true,     show:true,    width:150, copy:false},
+                    {value: 'name',            text: '会员账号',         disabled:true,     show:true,   width:150, copy:false},
+                    {value: 'bet',             text: '投注',             disabled:true,     show:true,   width:150,copy:false} ,
+                    {value: 'result',          text: '结果',             disabled:true,     show:true,   width:150,copy:false} ,
+                 //   {value: 'actionTime',    text: '申请时间',          disabled:true,     show:true,   width:150,copy:false} ,
+                    {value: 'op',               text: '操作',             disabled:true,    show:true,  width:150,copy:false} ,
                 ],
             }
         },

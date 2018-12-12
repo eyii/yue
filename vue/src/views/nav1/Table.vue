@@ -2,7 +2,7 @@
 	<section>
 		<!--工具条-->
 		<etoolbar v-model="filters"/>
-		<excel/>
+
 		<elist v-model="isShow"/>
 		<edialog v-model="isShow"/>
 		<!--工具条-->
@@ -18,10 +18,10 @@
     import elist from '@/components/eleme/table/elist'
 	import edialog from '@/components/eleme/edialog/edialog'
     import etoolbar from '@/components/eleme/toolbar/etoolbar'
-    import Etoolbar from "../../components/eleme/toolbar/etoolbar";
-    import excel  from '@/components/eleme/upload/excel';
+
+
 	export default {
-        components: {etoolbar, edialog, elist,excel},
+        components: {etoolbar, edialog, elist},
 		data(){
             return {
                 isShow:false,

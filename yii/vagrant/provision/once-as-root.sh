@@ -57,11 +57,11 @@ ln -s /app/vagrant/nginx/app.conf /etc/nginx/sites-enabled/app.conf
 echo "Done!"
 info "xdebug"
 rm -f  /etc/php/7.0/fpm/conf.d/20-xdebug.ini
-ln -s /app/vagrant/php/20-xdebug.ini /etc/php/7.0/fpm/conf.d/20-xdebug.ini
+ln -s /app/vagrant/php/xdebug.ini /etc/php/7.0/fpm/conf.d/xdebug.ini
 echo "xdebug!"
 info "Initailize databases for MySQL"
-mysql -uroot <<< "CREATE DATABASE yii2advanced"
-mysql -uroot <<< "CREATE DATABASE yii2advanced_test"
+mysql -uroot <<< "CREATE DATABASE yii"
+mysql -uroot <<< "CREATE DATABASE yii_test"
 echo "Done!"
 
 info "Install composer"

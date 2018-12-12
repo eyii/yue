@@ -124,15 +124,12 @@ class Controller extends Component implements ViewContextInterface
     public function runAction($id, $params = [])
     {
         $action = $this->createAction($id);
-        if ($action === null) {
-            throw new InvalidRouteException('Unable to resolve the request: ' . $this->getUniqueId() . '/' . $id);
-        }
+        if ($action === null) throw new InvalidRouteException('Unable to resolve the request: ' . $this->getUniqueId() . '/' . $id);
 
         Yii::debug('Route to run: ' . $action->getUniqueId(), __METHOD__);
 
-        if (Yii::$app->requestedAction === null) {
-            Yii::$app->requestedAction = $action;
-        }
+         (Yii::$app->requestedAction === null)&& Yii::$app->requestedAction = $action;
+
 
         $oldAction = $this->action;
         $this->action = $action;
@@ -142,9 +139,8 @@ class Controller extends Component implements ViewContextInterface
 
         // call beforeAction on modules
         foreach ($this->getModules() as $module) {
-            if ($module->beforeAction($action)) {
-                array_unshift($modules, $module);
-            } else {
+            if ($module->beforeAction($action)) array_unshift($modules, $module);
+            else {
                 $runAction = false;
                 break;
             }
@@ -158,16 +154,12 @@ class Controller extends Component implements ViewContextInterface
 
             $result = $this->afterAction($action, $result);
 
-            // call afterAction on modules
-            foreach ($modules as $module) {
-                /* @var $module Module */
-                $result = $module->afterAction($action, $result);
-            }
+            foreach ($modules as $module) $result = $module->afterAction($action, $result);
+
         }
 
-        if ($oldAction !== null) {
-            $this->action = $oldAction;
-        }
+        if ($oldAction !== null) $this->action = $oldAction;
+
 
         return $result;
     }

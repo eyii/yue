@@ -1,12 +1,12 @@
 <template>
 
-     <HotTable></HotTable>
+     <xls></xls>
 
 </template>
 
 <script>
 
-    import HotTable  from '@/components/eleme/upload/excel';
+    import xls  from '@/components/excel/xls';
     export default {
         name:'excel',
         data: function() {
@@ -24,12 +24,8 @@
             };
         },
         components: {
-            HotTable,
+            xls,
 
         }
     }
 </script>
-
-<style>
-    @import "../../../node_modules/handsontable/dist/handsontable.full.css";
-</style>

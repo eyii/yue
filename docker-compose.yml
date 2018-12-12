@@ -24,6 +24,17 @@ services:
       - backend
     ports:
     - 6379:6379
+  vue:
+    container_name: vue
+    hostname: vue
+    image: node:slim
+    restart: always
+    volumes:
+    - ./vue:/home/vue
+    networks:
+    - backend
+    ports:
+    - 80:80
   apache:
     container_name: apache
     hostname: apache
@@ -34,7 +45,7 @@ services:
       - ./web:/var/www/html
       - ./docker/apache/apache/tools/cron.d/crontab:/etc/crontab
     ports:
-      - 80:80
+      - 81:81
     depends_on:
       - db
     links:

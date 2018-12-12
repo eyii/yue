@@ -1,40 +1,43 @@
 <template>
     <el-upload action="" :on-change="handleChange" :httpRequest="uploadFile">
-        <i class="el-icon-upload"></i>
-        <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
-        <div class="el-upload__tip" slot="tip">只能上传jpg/png文件，且不超过500kb</div>
+     <el-button  type="primary">上传</el-button>
     </el-upload>
 
 
 </template>
 <script>
+   import VPost from '@/components/js/ajax/VPost'
+
     export default {
         data() {
             return {
                 file: {},
-                url:'http://f.cn/v1/upload/upload/?XDEBUG_SESSION_START=12983'
+
+                form:{
+                    url:'http://f.cn/v1/upload/upload?XDEBUG_SESSION_START=11886',
+                    param:{},
+                    success:this.success,
+                    catch:this.catch
+                }
             };
         },
         methods: {
+            success(msg,data){
+                alert(msg);
+            },
+            catch(msg,data){
+                alert(msg);
+
+            },
             handleChange(file) {
-                debugger;
+
                 this.file = file.raw
             },
 
             uploadFile() {
-                debugger;
-
-
-                event.preventDefault();
-                let form = new FormData();
-                form.append("UploadForm[file]",this.file);
-
-
-
-           //     let config = {headers: {'Content-Type': 'multipart/form-data'}};
-
-                this.$http.post(this.url, form);
-
+                this.form.param= new FormData();
+                this.form.param.append('UploadForm[file]',this.file);
+                new VPost(this.form,this,true);
 
             }
 
