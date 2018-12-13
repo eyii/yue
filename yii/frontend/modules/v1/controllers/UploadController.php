@@ -22,22 +22,18 @@ class UploadController extends ActiveController
 
 
      function actionUpload(){
-      $model = new UploadForm();
-      if (!Yii::$app->request->isPost)          return  new MsgAbort('非法访问',-20);
-
+         $model = new UploadForm();
+        if (!Yii::$app->request->isPost)                         return  new MsgAbort('非法访问',-20);
          if ($model->getFIle()||!$model->validate())            return new MsgAbort('非法文件',-20);
          $model->getFilePath($fileName);
          $model->file->saveAs($fileName);
          $result=  $this->actionRead($fileName);
-       //
          return !empty($result)?  new MsgOk("上传成功",200,$result):new MsgAbort('保存文件失败');
 
     }
 
-    function actionExcel(){
+    function actionWrite(){
         $spreadsheet = new Spreadsheet();
-
-        // Set document properties
         $spreadsheet->getProperties()->setCreator('Yue')
             ->setLastModifiedBy('Yue')
             ->setTitle('Office 2007 XLSX Test Document')
@@ -83,7 +79,8 @@ class UploadController extends ActiveController
         $reader->setReadDataOnly(true);
         $spreadsheet = $reader->load($fileName);
         $data = $spreadsheet->getActiveSheet()->toArray(null, true, true, true);
-
-        return empty($data)?false:$data;
+        if (!is_array($data))return false;
+       // array_pop($data);
+        return $data;
     }
 }

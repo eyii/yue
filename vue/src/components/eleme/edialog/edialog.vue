@@ -1,6 +1,6 @@
 <template>
-    <el-dialog title="编辑" :visible.sync="value" width="30%" :before-close="show">
-         <div> <span slot="content"> 这是一段信息</span></div>
+    <el-dialog :title="value.title" :visible.sync="value.isShow" width="30%" >
+         <div> <span slot="content"> {{value.editForm}}</span></div>
         <span slot="footer" class="dialog-footer">
             <el-button @click="show">取 消</el-button>
              <el-button type="primary" @click="show" >确 定</el-button>
@@ -12,11 +12,15 @@
     export default {
         name: "edialog",
         props: {
-            value:{type:Boolean, default:false}
+            value:{
+                isShow:false,
+                title:'编辑'
+            }
         },
         methods:{
             show(){
-               this.$emit('input',false);
+               this.value.isShow=false;
+               this.$emit('input',this.value);
             }
         }
 

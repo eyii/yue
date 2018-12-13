@@ -16,7 +16,7 @@
         </el-col>
 
         <!--列表-->
-        <el-table :data="users" highlight-current-row v-loading="listLoading" @selection-change="selsChange" style="width: 100%;">
+        <el-table :data="list" highlight-current-row v-loading="listLoading" @selection-change="selsChange" style="width: 100%;">
             <el-table-column type="selection" width="55">
             </el-table-column>
             <el-table-column type="index" width="60">
@@ -115,7 +115,7 @@
                 filters: {
                     name: ''
                 },
-                users: [],
+                list: [],
                 total: 0,
                 page: 1,
                 listLoading: false,
@@ -175,7 +175,7 @@
                 //NProgress.start();
                 getUserListPage(para).then((res) => {
                     this.total = res.data.total;
-                    this.users = res.data.users;
+                    this.list = res.data.list;
                     this.listLoading = false;
                     //NProgress.done();
                 });
@@ -202,7 +202,7 @@
                 });
             },
             //显示编辑界面
-            handleEdit: function (index, row) {
+            edit: function (index, row) {
                 this.editFormVisible = true;
                 this.editForm = Object.assign({}, row);
             },

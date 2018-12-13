@@ -46,7 +46,7 @@
                 this.listLoading = true;
                 getUserListPage(para).then((res) => {
                     this.total = res.data.total;
-                    this.commit('setUsers',res.data.users);
+                    this.commit('setUsers',res.data.list);
                     this.listLoading = false;
 
                 });
@@ -63,7 +63,7 @@
                 });
             },
             //显示编辑界面
-            handleEdit: function (index, row) {
+            edit: function (index, row) {
                 this.editFormVisible = true;
                 this.editForm = Object.assign({}, row);
             },

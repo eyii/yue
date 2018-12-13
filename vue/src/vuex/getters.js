@@ -4,5 +4,5 @@ export const getCount = state => {
 }
 
 export const getUsers = state => {
-    return state.users
+    return state.list
 }

@@ -12,32 +12,32 @@ export default class base {
     }
     ecall(result) {
         if (this.isDebugger) debugger;
-        this.result=result;
+        this.data=result;
        this.sinit();
     }
 
     scall(result){
 
-         this.result=result;
+         this.data=result;
          this.sinit()
     }
     sinit(){
 
-        var result=this.result;
-        this.body=result.body;
-        this.code=this.body.code;
-        this.msg=this.body.msg;
-        this.data=result.data;
-        this.result=this.data.result;
+        var result=this.data;
+        var body= this.body=result.body;
+        this.code=body.code;
+        this.msg=body.msg;
+        this.data=body.data;
+       // this.result=this.body.data;
     }
     getType(success){
         return false===success?false:typeof success;
     }
-    cmp(callback, msg,res){
+    cmp(callback, msg,data){
 
         var type=this.getType(callback);
         switch (type) {
-            case  "function":                                                                                       return callback(msg,res);
+            case  "function":                                                                                       return callback(msg,data);
             case  false:                                                                                             return '';
             case "string":                                                                                           alert(callback);break;
             case  'undefined':                                                                                             return alert(msg);
@@ -50,11 +50,11 @@ export default class base {
     success_error(){
 
         if (this.code==200) return;
-        this.cmp(this.catch,this.msg,this.result);
+        this.cmp(this.catch,this.msg,this.data);
     }
     handle_success() {
 
         if(this.code!=200) return;
-        this.cmp(this.success,this.msg,this.result);
+        this.cmp(this.success,this.msg,this.data);
     }
 }

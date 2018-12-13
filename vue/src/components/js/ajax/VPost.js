@@ -11,14 +11,14 @@ export default  class VPost extends base{
         super(data,Vue,isDebugger);
         this.post();
     }
-    ecall(res) {
+    ecall(response) {
         if (this.isDebugger) debugger;
-        super.ecall(res);
-        this.cmp(this.catch,'操作异常',res);
+        super.ecall(response);
+        this.cmp(this.catch,'操作异常',response);
     }
-    scall(res){
+    scall(response){
         if (this.isDebugger) debugger;
-        super.scall(res);
+        super.scall(response);
         this.getMsg();
         this.success_error();
         this.handle_success();

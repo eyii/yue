@@ -15,7 +15,7 @@ import  VueResource  from  'vue-resource';
 import func from '@/components/func/func'
 //js
 
-
+import '@/components/js/Array'
 Vue.use(func);
 Vue.use(VueResource);
 Vue.use(ElementUI);

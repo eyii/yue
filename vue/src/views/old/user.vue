@@ -42,7 +42,7 @@
 					name: ''
 				},
 				loading: false,
-				users: [
+				list: [
 				]
 			}
 		},
@@ -59,7 +59,7 @@
 				this.loading = true;
 				//NProgress.start();
 				getUserList(para).then((res) => {
-					this.users = res.data.users;
+					this.users = res.data.list;
 					this.loading = false;
 					//NProgress.done();
 				});
