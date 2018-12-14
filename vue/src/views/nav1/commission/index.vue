@@ -1,5 +1,6 @@
 <template>
 	<section>
+		<!--<div>{{form.list}}</div>-->
 		 <etoolbar v-model="form"/>
 		 <elist v-model="form"/>
 		 <edialog v-model="form"/>
@@ -23,13 +24,14 @@
                     name: '',
                     fcheck:this.fcheck,
                     fadd:this.fadd,
+
 					page:0,
 					list:[],
 					fields: {
 						'比例': 'A',
 						'关卡': 'B',
 						'会员': 'C',
-						'投注': 'D',
+						'金额': 'D',
 						'结果': 'E',
 					},
                 },
