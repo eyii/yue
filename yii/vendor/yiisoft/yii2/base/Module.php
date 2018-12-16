@@ -177,11 +177,9 @@ class Module extends ServiceLocator
      */
     public static function setInstance($instance)
     {
-        if ($instance === null) {
-            unset(Yii::$app->loadedModules[get_called_class()]);
-        } else {
-            Yii::$app->loadedModules[get_class($instance)] = $instance;
-        }
+        if ($instance === null) unset(Yii::$app->loadedModules[get_called_class()]);
+         else Yii::$app->loadedModules[get_class($instance)] = $instance;
+
     }
 
     /**
@@ -238,11 +236,9 @@ class Module extends ServiceLocator
     {
         $path = Yii::getAlias($path);
         $p = strncmp($path, 'phar://', 7) === 0 ? $path : realpath($path);
-        if ($p !== false && is_dir($p)) {
-            $this->_basePath = $p;
-        } else {
-            throw new InvalidArgumentException("The directory does not exist: $path");
-        }
+        if ($p !== false && is_dir($p)) $this->_basePath = $p;
+         else throw new InvalidArgumentException("The directory does not exist: $path");
+
     }
 
     /**

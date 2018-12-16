@@ -39,9 +39,8 @@ class CreateAction extends Action
      */
     public function run()
     {
-        if ($this->checkAccess) {
-            call_user_func($this->checkAccess, $this->id);
-        }
+        if ($this->checkAccess) call_user_func($this->checkAccess, $this->id);
+
 
         /* @var $model \yii\db\ActiveRecord */
         $model = new $this->modelClass([

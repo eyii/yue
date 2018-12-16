@@ -145,15 +145,13 @@ class UrlRule extends CompositeUrlRule
      */
     public function init()
     {
-        if (empty($this->controller)) {
-            throw new InvalidConfigException('"controller" must be set.');
-        }
+        if (empty($this->controller)) throw new InvalidConfigException('"controller" must be set.');
+
 
         $controllers = [];
         foreach ((array) $this->controller as $urlName => $controller) {
-            if (is_int($urlName)) {
-                $urlName = $this->pluralize ? Inflector::pluralize($controller) : $controller;
-            }
+            if (is_int($urlName)) $urlName = $this->pluralize ? Inflector::pluralize($controller) : $controller;
+
             $controllers[$urlName] = $controller;
         }
         $this->controller = $controllers;

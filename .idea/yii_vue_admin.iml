@@ -5,7 +5,6 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.vagrant" />
       <excludeFolder url="file://$MODULE_DIR$/yii/.vagrant" />
-      <excludeFolder url="file://$MODULE_DIR$/yii/backend" />
       <excludeFolder url="file://$MODULE_DIR$/yii/console" />
       <excludeFolder url="file://$MODULE_DIR$/yii/environments" />
       <excludeFolder url="file://$MODULE_DIR$/yii/frontend/controllers" />

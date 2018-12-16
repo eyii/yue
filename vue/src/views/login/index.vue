@@ -9,7 +9,7 @@
 </template>
 
 <script>
-  import { requestLogin } from '../api/api';
+  import { requestLogin } from '@/api/api';
   //import NProgress from 'nprogress'
   export default {
     data() {
@@ -33,7 +33,7 @@
       handleSubmit2(ev) {
         var _this = this;
         this.$refs.ruleForm2.validate((valid) => {
-          if (valid) {
+          if (!valid)  return false;
 
             this.logining = true;
 
@@ -47,7 +47,7 @@
                 this.$router.push({ path: '/' });
               }
             });
-          } else return false;
+
 
         });
       }

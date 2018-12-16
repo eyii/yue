@@ -159,15 +159,10 @@ class UploadedFile extends BaseObject
      */
     public function saveAs($file, $deleteTempFile = true)
     {
-        if ($this->error == UPLOAD_ERR_OK) {
-            if ($deleteTempFile) {
-                return move_uploaded_file($this->tempName, $file);
-            } elseif (is_uploaded_file($this->tempName)) {
-                return copy($this->tempName, $file);
-            }
-        }
+        if ($this->error != UPLOAD_ERR_OK) return false;
+        if ($deleteTempFile) return move_uploaded_file($this->tempName, $file);
+        elseif (is_uploaded_file($this->tempName)) return copy($this->tempName, $file);
 
-        return false;
     }
 
     /**

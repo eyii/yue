@@ -83,10 +83,8 @@ class Application extends \yii\base\Application
             } catch (UrlNormalizerRedirectException $e) {
                 $url = $e->url;
                 if (is_array($url)) {
-                    if (isset($url[0])) {
-                        // ensure the route is absolute
-                        $url[0] = '/' . ltrim($url[0], '/');
-                    }
+                    if (isset($url[0])) $url[0] = '/' . ltrim($url[0], '/');
+
                     $url += $request->getQueryParams();
                 }
 
@@ -101,9 +99,8 @@ class Application extends \yii\base\Application
             Yii::debug("Route requested: '$route'", __METHOD__);
             $this->requestedRoute = $route;
             $result = $this->runAction($route, $params);
-            if ($result instanceof Response) {
-                return $result;
-            }
+            if ($result instanceof Response) return $result;
+
 
             $response = $this->getResponse();
             if ($result !== null) {

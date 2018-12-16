@@ -1114,14 +1114,12 @@ abstract class BaseActiveRecord extends Model implements ActiveRecordInterface
     public function getPrimaryKey($asArray = false)
     {
         $keys = $this->primaryKey();
-        if (!$asArray && count($keys) === 1) {
-            return isset($this->_attributes[$keys[0]]) ? $this->_attributes[$keys[0]] : null;
-        }
+        if (!$asArray && count($keys) === 1) return isset($this->_attributes[$keys[0]]) ? $this->_attributes[$keys[0]] : null;
+
 
         $values = [];
-        foreach ($keys as $name) {
-            $values[$name] = isset($this->_attributes[$name]) ? $this->_attributes[$name] : null;
-        }
+        foreach ($keys as $name) $values[$name] = isset($this->_attributes[$name]) ? $this->_attributes[$name] : null;
+
 
         return $values;
     }

@@ -216,37 +216,30 @@ abstract class Application extends Module
      */
     public function preInit(&$config)
     {
-        if (!isset($config['id'])) {
-            throw new InvalidConfigException('The "id" configuration for the Application is required.');
-        }
-        if (isset($config['basePath'])) {
+        if (!isset($config['id'])) throw new InvalidConfigException('The "id" configuration for the Application is required.');
+
+        if (isset($config['basePath'])) {                                               //$this->_basePath
             $this->setBasePath($config['basePath']);
             unset($config['basePath']);
-        } else {
-            throw new InvalidConfigException('The "basePath" configuration for the Application is required.');
-        }
+        } else throw new InvalidConfigException('The "basePath" configuration for the Application is required.');
+
 
         if (isset($config['vendorPath'])) {
             $this->setVendorPath($config['vendorPath']);
             unset($config['vendorPath']);
-        } else {
-            // set "@vendor"
-            $this->getVendorPath();
-        }
+        } else $this->getVendorPath();
+
         if (isset($config['runtimePath'])) {
             $this->setRuntimePath($config['runtimePath']);
             unset($config['runtimePath']);
-        } else {
-            // set "@runtime"
-            $this->getRuntimePath();
-        }
+        } else     $this->getRuntimePath();
+
 
         if (isset($config['timeZone'])) {
             $this->setTimeZone($config['timeZone']);
             unset($config['timeZone']);
-        } elseif (!ini_get('date.timezone')) {
-            $this->setTimeZone('UTC');
-        }
+        } elseif (!ini_get('date.timezone')) $this->setTimeZone('UTC');
+
 
         if (isset($config['container'])) {
             $this->setContainer($config['container']);
@@ -256,11 +249,9 @@ abstract class Application extends Module
 
         // merge core components with custom components
         foreach ($this->coreComponents() as $id => $component) {
-            if (!isset($config['components'][$id])) {
-                $config['components'][$id] = $component;
-            } elseif (is_array($config['components'][$id]) && !isset($config['components'][$id]['class'])) {
-                $config['components'][$id]['class'] = $component['class'];
-            }
+            if (!isset($config['components'][$id])) $config['components'][$id] = $component;
+             elseif (is_array($config['components'][$id]) && !isset($config['components'][$id]['class'])) $config['components'][$id]['class'] = $component['class'];
+
         }
     }
 
@@ -295,9 +286,8 @@ abstract class Application extends Module
                 if ($component instanceof BootstrapInterface) {
                     Yii::debug('Bootstrap with ' . get_class($component) . '::bootstrap()', __METHOD__);
                     $component->bootstrap($this);
-                } else {
-                    Yii::debug('Bootstrap with ' . get_class($component), __METHOD__);
-                }
+                } else Yii::debug('Bootstrap with ' . get_class($component), __METHOD__);
+
             }
         }
 
@@ -309,18 +299,14 @@ abstract class Application extends Module
                     continue;
                 }
             } elseif (is_string($mixed)) {
-                if ($this->has($mixed)) {
-                    $component = $this->get($mixed);
-                } elseif ($this->hasModule($mixed)) {
-                    $component = $this->getModule($mixed);
-                } elseif (strpos($mixed, '\\') === false) {
-                    throw new InvalidConfigException("Unknown bootstrapping component ID: $mixed");
-                }
+                if ($this->has($mixed)) $component = $this->get($mixed);
+                elseif ($this->hasModule($mixed)) $component = $this->getModule($mixed);
+                 elseif (strpos($mixed, '\\') === false) throw new InvalidConfigException("Unknown bootstrapping component ID: $mixed");
+
             }
 
-            if (!isset($component)) {
-                $component = Yii::createObject($mixed);
-            }
+            if (!isset($component)) $component = Yii::createObject($mixed);
+
 
             if ($component instanceof BootstrapInterface) {
                 Yii::debug('Bootstrap with ' . get_class($component) . '::bootstrap()', __METHOD__);

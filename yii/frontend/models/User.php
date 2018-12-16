@@ -9,6 +9,8 @@
 namespace frontend\models;
 
 
+use yii\web\IdentityInterface;
+
 class User extends \common\models\User
 {
 

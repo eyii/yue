@@ -75,9 +75,8 @@ class IndexAction extends Action
      */
     public function run()
     {
-        if ($this->checkAccess) {
-            call_user_func($this->checkAccess, $this->id);
-        }
+        if ($this->checkAccess) call_user_func($this->checkAccess, $this->id);
+
 
         return $this->prepareDataProvider();
     }
@@ -119,12 +118,8 @@ class IndexAction extends Action
         return Yii::createObject([
             'class' => ActiveDataProvider::className(),
             'query' => $query,
-            'pagination' => [
-                'params' => $requestParams,
-            ],
-            'sort' => [
-                'params' => $requestParams,
-            ],
+            'pagination' => ['params' => $requestParams,],
+            'sort' => ['params' => $requestParams,],
         ]);
     }
 }

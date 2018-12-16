@@ -5,7 +5,7 @@ Array.prototype.test=function( fun ){
 
 
 Array.getByKey=  function (key,newKey=undefined) {
-    debugger;
+
     let arr=this;
     let newArr=[];
     arr.map((item) =>{
@@ -43,9 +43,8 @@ Array.prototype.map=function(   fun  ){
 //Array类的del函数：在ie中delete是保留字，所以用del做函数名
 Array.prototype.del=function(  a  ){
     var o=this.clone();
-    for( var i=o.length,n=0;i>n;i--){
-        if( o[i]==a ) o.splice(i,1 );
-    }
+    for( var i=o.length,n=0;i>n;i--)  if( o[i]==a ) o.splice(i,1 );
+
     return o;
 }
 

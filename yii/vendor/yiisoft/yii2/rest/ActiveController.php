@@ -131,7 +131,6 @@ class ActiveController extends Controller
      * @param array $params additional parameters
      * @throws ForbiddenHttpException if the user does not have access
      */
-    public function checkAccess($action, $model = null, $params = [])
-    {
+    function checkAccess($action, $model = null, $params = []){
     }
 }

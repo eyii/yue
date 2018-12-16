@@ -125,12 +125,10 @@ class Serializer extends Component
      */
     public function init()
     {
-        if ($this->request === null) {
-            $this->request = Yii::$app->getRequest();
-        }
-        if ($this->response === null) {
-            $this->response = Yii::$app->getResponse();
-        }
+        if ($this->request === null) $this->request = Yii::$app->getRequest();
+
+        if ($this->response === null) $this->response = Yii::$app->getResponse();
+
     }
 
     /**

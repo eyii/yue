@@ -24,7 +24,7 @@ exports.install = function (Vue, options) {
 
     Vue.prototype.addCol=  function (arr,cols) {
         if (!Array.isArray(cols)) return arr;
-        debugger
+
        let newArray= arr.map((item,i) =>{
             if (cols[i]==undefined)return item;
             let col=   cols[i];
@@ -32,7 +32,7 @@ exports.install = function (Vue, options) {
 
           return item;
         })
-        debugger
+
         return newArray;
     }
 
@@ -53,4 +53,19 @@ exports.install = function (Vue, options) {
 
         return newArr;
     }
+    Vue.prototype.getByKey=function (url,file,filename,newKey=undefined) {
+            let form={};
+            form.param= new FormData();
+            form.url=url;
+           if (file)form.param.append('UploadForm[file]',file);
+           form.param.append('filename',this.$route.path+'_'+filename);
+            new VPost(form,this);
+        return newArr;
+    }
+
 };
+
+
+function log(data) {
+console.log(data)
+}

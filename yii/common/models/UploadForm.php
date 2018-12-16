@@ -13,6 +13,7 @@ use yii\base\Model;
 use yii\web\UploadedFile;
 
 
+
 class UploadForm extends Model{
 
 
@@ -54,17 +55,16 @@ class UploadForm extends Model{
 
     }
 
-    function getFilePath(&$fileName){
-
-        $baseName =$this->file->baseName;// Yii::$app->getSecurity()->encryptByPassword($this->file->baseName, '123');
-      //  $baseName= str_ireplace(array('/','$','.'),'',$baseName,$count);
-        $fileName='uploads/' . $baseName . '.' . $this->file->extension;
+    function getFilePath(&$fileName,$ext='xls'){
+        $ext=   $this->fileIsNull()?$ext:$this->file->extension;
+        $baseName =Yii::$app->request->post('filename');
+        $fileName='uploads/' . $baseName . '.'. $ext;
         return $fileName;
     }
 
 
-    function  getFIle(){
+    function  fileIsNull(){
         $this->file = UploadedFile::getInstance($this, 'file');
-        return empty($this->file);
+        return $this->file==null;
     }
 }

@@ -39,14 +39,22 @@ $config['components']['urlManager']=[
     'enablePrettyUrl' => true,
     'showScriptName' => false,
  'rules' => [
-      'GET <module:\d+>/<controller:\w+>/search' => '<module>/<controller>/search',
-        ['class'         => 'yii\rest\UrlRule',
+     'GET <module:\w+>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/view',
+     'POST <module:\w+>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/create',
+     'DELETE <module:\w+>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/delete',
+     'PATCH <module:\w+>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/update',
+  //   'GET <module:\w+>/<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+ //    'GET <module:\w+>/<controller:\w+>/<action:\w+>' => '<controller>/<action>',
+     ['class' => 'yii\rest\UrlRule', 'controller' => '*', 'pluralize' => false],
+     /*   ['class'         => 'yii\rest\UrlRule',
           'controller'    => ['v1/goods'], 'pluralize'     => false, //false, user 也可访问 true  users 才可访问
 
         ],
-     ['class' => 'yii\rest\UrlRule', 'controller' => 'v1/upload',
-         'extraPatterns' => ['OPTIONS,POST    upload' => 'upload',]
-     ],
+     ['class' => 'yii\rest\UrlRule',
+         'controller' => 'v1/upload',
+         'extraPatterns' => ['OPTIONS,POST    upload' => 'upload',
+      ]
+     ],*/
 
     ],
 ];
@@ -72,8 +80,10 @@ $config['bootstrap']=  [
     'log',
     [
         'class'     => 'yii\filters\ContentNegotiator',
-        'formats' => ['application/json' => yii\web\Response::FORMAT_JSON,
-            'application/xml' => yii\web\Response::FORMAT_XML,],
+        'formats' => [
+            'application/json' => yii\web\Response::FORMAT_JSON,
+            'application/xml' => yii\web\Response::FORMAT_XML,
+            ],
     ]
 ];
 

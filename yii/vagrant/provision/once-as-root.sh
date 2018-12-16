@@ -56,6 +56,7 @@ info "Enabling site configuration"
 ln -s /app/vagrant/nginx/app.conf /etc/nginx/sites-enabled/app.conf
 echo "Done!"
 info "xdebug"
+ln -s /etc/init.d/php7.0-fpm /etc/init.d/fpm
 rm -f  /etc/php/7.0/fpm/conf.d/20-xdebug.ini
 ln -s /app/vagrant/php/xdebug.ini /etc/php/7.0/fpm/conf.d/xdebug.ini
 echo "xdebug!"

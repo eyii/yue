@@ -1,30 +1,27 @@
-import Login from './views/Login.vue'
+import Login from './views/login/index'
 import NotFound from './views/404.vue'
-import Home from './views/Home.vue'
+import Home from './views/home/index'
 import Main from './views/Main.vue'
 import Commission from './views/nav1/commission/index'
+import loss from './views/nav1/loss/index'
 import otable from './views/old/otable'
-import user from './views/old/user.vue'
-import Page4 from './views/nav2/Page4.vue'
-import echarts from './views/charts/echarts.vue'
+
+import menuManage from './views/system/menu/index.vue'
 import test from './views/old/test'
+
 let routes = [
     {path: '/login', component: Login, name: '', hidden: true},
 
-    {path: '/', component: Home, name: '财务', iconCls: 'el-icon-message', children: [
+    {path: '/', component: Home, name: '财务', icon: 'el-icon-message', children: [
             { path: '/main', component: Main, name: '主页', hidden: true },
-            { path: '/Commission', component: Commission, name: '返佣' },
-
+            { path: '/Commission', component: Commission, name: '增益' },
+            { path: '/loss', component: loss, name: '损益' },
         ]},
-    {path: '/', component: Home, name: '导航2', iconCls: 'fa fa-id-card-o', children: [
-            { path: '/user', component: user, name: '列表' },
+    {path: '/', component: Home, name: '系统', icon: 'fa fa-id-card-o', children: [
+            { path: '/menuManage', component: menuManage, name: '菜单管理' },
             { path: '/otable', component: otable, name: '列表2' },
             { path: '/test', component: test, name: 'test' },
         ]},
-    {path: '/', component: Home, name: '导航3', iconCls: 'fa fa-id-card-o', children: [
-            { path: '/page4', component: Page4, name: 'vuex' },
-            { path: '/echarts', component: echarts, name: 'echarts' }
-     ]},
     {path: '/404', component: NotFound, name: '', hidden: true},
     {path: '*', hidden: true, redirect: { path: '/404' }}
 ];

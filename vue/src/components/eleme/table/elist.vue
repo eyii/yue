@@ -35,8 +35,8 @@
                 options: [
                     {value: 'A',               text: '比例',               disabled:true,     show:true,    width:150, copy:false},
                     {value: 'B',               text: '关卡',         disabled:true,     show:true,   width:150, copy:false},
-                    {value: 'C',               text: '会员',             disabled:true,     show:true,   width:150,copy:false} ,
-                    {value: 'D',               text: '投注',              disabled:true,     show:true,   width:150,copy:false} ,
+                    {value: 'C',               text: '会员账号',             disabled:true,     show:true,   width:150,copy:false} ,
+                    {value: 'D',               text: '有效投注',              disabled:true,     show:true,   width:150,copy:false} ,
                     {value: 'E',               text: '结果',             disabled:true,    show:true,  width:150,copy:false} ,
                     {value: 'F',              text: '操作',             disabled:true,    show:true,  width:150,copy:false} ,
                 ],
