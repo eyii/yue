@@ -3,7 +3,7 @@
         <slot>
             <el-form label-position="left" :inline="true" class="demo-form-inline">
                 <el-form-item  v-for="(item,key) in items"    :label="item.text" :key="item.value">
-                    <el-input  v-model="value.row[item.value]" style="width: 8rem" />
+                    <el-input  v-model="value.params[item.value]" style="width: 8rem" />
                 </el-form-item>
             </el-form>
         </slot>
@@ -17,7 +17,7 @@
     export default {
         name: "addDialog",
         components:{edialog},
-        props:{value:{isShow:false, title:'', row:{}, fshow:''}},
+        props:{value:{isShow:false, title:'', params:{}, fshow:''}},
         data(){return {items:items}},
     }
 </script>

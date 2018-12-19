@@ -29,17 +29,21 @@
                        name: '', fcheck:this.fcheck, fadd:null, page:0, list:[], bl:[],
                        url:'http://f.cn/v1/menu',
                    },
-                   addform:{isShow:false, title:'111', row:[], fshow:this.addSumbit,success:this.aSuccess,catch:this.catch}
+                   addform:{isShow:false, title:'111', params:[], fshow:this.addSumbit,success:this.aSuccess,catch:this.catch}
 			   }
 
             }
 		},
         methods:{
             fcheck(){},
-			aSuccess(msg,data){},
-			catch(){},
+			aSuccess(msg,data){
+               alert('成功')
+			},
+			catch(msg,data){
+                alert('失败')
+			},
 			addSumbit(){
-                addMenu(this.form.addform.row,this);
+                addMenu(this.form.addform,this);
 
 			},
             add(){

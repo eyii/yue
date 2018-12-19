@@ -2,129 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fec5976-81bf-4072-a0cd-541d72e6620a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/idea-plugin.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/eleme/button/btnBlue.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/eleme/button/btnGreen.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/eleme/button/btnRed.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/eleme/edialog/base.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/zsgc/add/VPostE.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/zsgc/add/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/components/zsgc/add/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/nav1/commission/option.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/nav1/loss/option.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/system/menu/addDialog.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/system/menu/option.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/user/login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue/src/views/user/reg.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/common/lib/di/Container.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/common/lib/di/ErrorHandler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/common/lib/di/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/common/lib/rbac/HttpBearerAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/common/lib/rbac/QueryParamAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/common/lib/rest/Response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/common/lib/rest/UrlManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/common/lib/rest/httpStatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/frontend/libs/ResBeforeSendBehavior.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/frontend/models/LoginForm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/RbacController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/frontend/rbac/items.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/readme/flow.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/readme/get.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/readme/member.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yii/readme/trigger.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ca92fe29-3837-4fc5-9efd-4fb123338ab5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ca92fe29-3837-4fc5-9efd-4fb123338ab5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/yii_vue_admin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yii_vue_admin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vagrant/machines/yii/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/.vagrant/machines/yii/virtualbox/action_set_name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/upload/excel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/upload/excel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/func/func.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/func/func.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/js/ajax/VGet.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/js/ajax/VPost.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/js/ajax/base.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/js/ajax/watch.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/zsgc/CreateAction.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/components/zsgc/DelAction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/zsgc/delete/indexAction.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/Main.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/home/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/home/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/home/mcontent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/home/mcontent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/home/mmenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/home/mmenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/login/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/commission/downexcel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/commission/downexcel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/commission/elist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/commission/elist.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/commission/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/commission/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/commission/uploadexcel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/commission/uploadexcel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/loss/elist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/loss/elist.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/loss/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/loss/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/nav1/loss/uploadexcel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/nav1/loss/uploadexcel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/system/menu/elist.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/system/menu/elist.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/components/eleme/edialog/base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/components/eleme/edialog/base.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/system/menu/addDialog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/system/menu/addDialog.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/views/system/menu/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/system/menu/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/system/menu/uploadexcel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/system/menu/uploadexcel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/yii/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/backend/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/backend/controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/backend/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/backend/controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/controllers/ActiveController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/controllers/ActiveController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/ErrorHandler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/filters/Cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/filters/Cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/filters/VerbFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/filters/VerbFilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/filters/auth/HttpHeaderAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/filters/auth/HttpHeaderAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/rbac/PhpManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/rbac/PhpManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/rest/Action.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/rest/Action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/rest/ActiveController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/rest/ActiveController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/rest/DeleteAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/rest/DeleteAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/rest/IndexAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/rest/IndexAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/rest/OptionsAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/rest/OptionsAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/lib/rest/UpdateAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/lib/rest/UpdateAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/models/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/models/LoginForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/common/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/common/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/yii/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/config/main-local.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/config/main-local.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/config/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/config/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/config/params.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/config/params.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/config/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/config/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/extensions/ResBeforeSendBehavior.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/models/SignupForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/models/SignupForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/MenuController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UploadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UploadController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/modules/v1/controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/web/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/web/uploads/Commission_bl.xls" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/web/uploads/Commission_bl.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/frontend/web/uploads/Commission_hy.xls" beforeDir="false" afterPath="$PROJECT_DIR$/yii/frontend/web/uploads/Commission_hy.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2-debug/src/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2-debug/src/Module.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/BaseYii.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/BaseYii.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Action.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/ActionFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/ActionFilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/BaseObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/BaseObject.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Behavior.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Behavior.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Component.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Component.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/ErrorHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/ErrorHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/InlineAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/InlineAction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Module.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Response.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Security.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/base/Security.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/db/ActiveRecord.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/db/ActiveRecord.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/db/BaseActiveRecord.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/db/BaseActiveRecord.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/di/Container.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/di/Container.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/di/ServiceLocator.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/di/ServiceLocator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/filters/VerbFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/filters/VerbFilter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/Action.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/Action.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/ActiveController.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/ActiveController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/Serializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/rest/Serializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/Application.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/Application.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/UrlManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/UrlManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/yii/vendor/yiisoft/yii2/web/User.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -210,7 +90,7 @@
           <entry key="gitignore" value="1" />
           <entry key="html" value="3" />
           <entry key="ip" value="1" />
-          <entry key="js" value="222" />
+          <entry key="js" value="223" />
           <entry key="json" value="18" />
           <entry key="log" value="1" />
           <entry key="map" value="1" />
@@ -234,7 +114,7 @@
           <entry key="Dockerfile" value="1" />
           <entry key="HTML" value="3" />
           <entry key="JSON" value="19" />
-          <entry key="JavaScript" value="221" />
+          <entry key="JavaScript" value="222" />
           <entry key="Log" value="1" />
           <entry key="Markdown" value="34" />
           <entry key="PHP" value="802" />
@@ -252,7 +132,7 @@
         <counts>
           <entry key="PHP Console" value="119" />
           <entry key="cell" value="15" />
-          <entry key="js" value="1450" />
+          <entry key="js" value="1455" />
           <entry key="json" value="35" />
           <entry key="md" value="487" />
           <entry key="php" value="4267" />
@@ -260,20 +140,20 @@
           <entry key="sh" value="18" />
           <entry key="sql" value="128" />
           <entry key="txt" value="40" />
-          <entry key="vue" value="4906" />
+          <entry key="vue" value="5047" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="18" />
           <entry key="JSON" value="35" />
-          <entry key="JavaScript" value="1450" />
+          <entry key="JavaScript" value="1455" />
           <entry key="Markdown" value="487" />
           <entry key="PHP" value="4386" />
           <entry key="PLAIN_TEXT" value="41" />
           <entry key="SQL" value="115" />
           <entry key="Scratch" value="28" />
-          <entry key="Vue.js" value="4906" />
+          <entry key="Vue.js" value="5047" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.actions">
@@ -302,11 +182,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue/src/views/system/menu/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="388">
+              <caret line="50" column="28" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#el-col#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#396#423#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue/src/api/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="109" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
             </state>
           </provider>
         </entry>
@@ -314,8 +204,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/src/views/system/menu/addDialog.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+            <state relative-caret-position="176">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#slot#0;n#edialog#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="e#452#512#0" expanded="true" />
@@ -329,8 +219,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/base.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="53" />
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -376,8 +266,8 @@
       <find>components</find>
       <find>form</find>
       <find>model</find>
-      <find>row</find>
       <find>labelPosition</find>
+      <find>row</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -453,13 +343,13 @@
         <option value="$PROJECT_DIR$/vue/src/main.js" />
         <option value="$PROJECT_DIR$/vue/package.json" />
         <option value="$PROJECT_DIR$/vue/src/views/nav1/commission/uploadexcel.vue" />
-        <option value="$PROJECT_DIR$/vue/src/api/api.js" />
         <option value="$PROJECT_DIR$/vue/src/views/system/menu/option.js" />
         <option value="$PROJECT_DIR$/vue/src/views/system/menu/elist.vue" />
         <option value="$PROJECT_DIR$/vue/src/components/func/func.js" />
+        <option value="$PROJECT_DIR$/vue/src/api/api.js" />
         <option value="$PROJECT_DIR$/vue/src/views/system/menu/index.vue" />
-        <option value="$PROJECT_DIR$/vue/src/components/eleme/edialog/base.vue" />
         <option value="$PROJECT_DIR$/vue/src/views/system/menu/addDialog.vue" />
+        <option value="$PROJECT_DIR$/vue/src/components/eleme/edialog/base.vue" />
       </list>
     </option>
   </component>
@@ -643,7 +533,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="Scope" currentSubView="Scope 'vue_menu'; set:file[yii_vue_admin]:vue/src/views/system/menu//*; class com.intellij.psi.search.scope.packageSet.NamedScope" proportions="" version="1">
+    <navigator proportions="" version="1">
       <showModules Scope="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
@@ -665,6 +555,13 @@
               <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
               <item name="vue" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yii_vue_admin" type="462c0819:PsiDirectoryNode" />
+              <item name="vue" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yii_vue_admin" type="b2602c69:ProjectViewProjectNode" />
@@ -1264,7 +1161,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545198925865" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545199554002" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../idea-plugin" />
@@ -1601,12 +1498,12 @@
       <workItem from="1545095153340" duration="1648000" />
       <workItem from="1545097762163" duration="38839000" />
       <workItem from="1545183617583" duration="7375000" />
-      <workItem from="1545191336506" duration="6093000" />
+      <workItem from="1545191336506" duration="6785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="397930000" />
+    <option name="totallyTimeSpent" value="398622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1628,7 +1525,7 @@
       <window_info id="Favorites" order="4" show_stripe_button="false" sideWeight="0.50185186" side_tool="true" weight="0.14445332" />
       <window_info id="Designer" order="5" />
       <window_info id="Learn" order="6" show_stripe_button="false" weight="0.32960895" />
-      <window_info active="true" id="Structure" order="7" sideWeight="0.5008157" visible="true" weight="0.24581006" />
+      <window_info id="Structure" order="7" sideWeight="0.5008157" visible="true" weight="0.24581006" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.49265906" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49720672" weight="0.29526916" />
@@ -1637,7 +1534,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.66480446" weight="0.32952693" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.19313647" side_tool="true" visible="true" weight="0.2822186" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.80686355" visible="true" weight="0.2822186" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.80686355" visible="true" weight="0.2822186" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" weight="0.32899022" />
       <window_info anchor="bottom" id="Database Changes" order="10" sideWeight="0.49960095" weight="0.32789558" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -2199,13 +2096,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/src/api/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="n#style#0;n#el-form-item#2;n#el-form#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#el-button#0;n#el-form-item#2;n#el-form#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2357,17 +2251,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vue/src/api/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="109" selection-start-line="4" selection-start-column="109" selection-end-line="4" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/components/eleme/edialog/base.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="53" />
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/views/system/menu/addDialog.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+        <state relative-caret-position="176">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#el-input#0;n#el-form-item#0;n#el-form#0;n#slot#0;n#edialog#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#452#512#0" expanded="true" />
@@ -2379,10 +2280,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vue/src/views/system/menu/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="388">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#el-col#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#396#423#0" expanded="true" />
           </folding>
         </state>
       </provider>

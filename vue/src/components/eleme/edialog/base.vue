@@ -11,7 +11,7 @@
 <script>
     export default {
         name: "edialog",
-        props: {value:{isShow:false, title:'', row:[], fshow:''}},
+        props: {value:{isShow:false, title:'', params:[], fshow:''}},
 
 
     }
