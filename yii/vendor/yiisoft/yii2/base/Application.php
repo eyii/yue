@@ -247,9 +247,9 @@ abstract class Application extends Module
             unset($config['container']);
         }
 
-        // merge core components with custom components
+        // 把coreComponents合并到$config['components']里   // 不存在$config['components'][$id]或!isset($config['components'][$id]['class']就存入
         foreach ($this->coreComponents() as $id => $component) {
-            if (!isset($config['components'][$id])) $config['components'][$id] = $component;
+            if (!isset($config['components'][$id]))              $config['components'][$id] = $component;
              elseif (is_array($config['components'][$id]) && !isset($config['components'][$id]['class'])) $config['components'][$id]['class'] = $component['class'];
 
         }
@@ -276,11 +276,8 @@ abstract class Application extends Module
             $this->extensions = is_file($file) ? include $file : [];
         }
         foreach ($this->extensions as $extension) {
-            if (!empty($extension['alias'])) {
-                foreach ($extension['alias'] as $name => $path) {
-                    Yii::setAlias($name, $path);
-                }
-            }
+            if (!empty($extension['alias'])) foreach ($extension['alias'] as $name => $path) Yii::setAlias($name, $path);
+
             if (isset($extension['bootstrap'])) {
                 $component = Yii::createObject($extension['bootstrap']);
                 if ($component instanceof BootstrapInterface) {
@@ -295,25 +292,23 @@ abstract class Application extends Module
             $component = null;
             if ($mixed instanceof \Closure) {
                 Yii::debug('Bootstrap with Closure', __METHOD__);
-                if (!$component = call_user_func($mixed, $this)) {
-                    continue;
-                }
+                if (!$component = call_user_func($mixed, $this)) continue;
+
             } elseif (is_string($mixed)) {
-                if ($this->has($mixed)) $component = $this->get($mixed);
-                elseif ($this->hasModule($mixed)) $component = $this->getModule($mixed);
-                 elseif (strpos($mixed, '\\') === false) throw new InvalidConfigException("Unknown bootstrapping component ID: $mixed");
+                if ($this->has($mixed))                                             $component = $this->get($mixed);
+                elseif ($this->hasModule($mixed))                                   $component = $this->getModule($mixed);
+                elseif (strpos($mixed, '\\') === false)                               throw new InvalidConfigException("Unknown bootstrapping component ID: $mixed");
 
             }
 
-            if (!isset($component)) $component = Yii::createObject($mixed);
+           !isset($component)&& $component = Yii::createObject($mixed);
 
 
             if ($component instanceof BootstrapInterface) {
                 Yii::debug('Bootstrap with ' . get_class($component) . '::bootstrap()', __METHOD__);
                 $component->bootstrap($this);
-            } else {
-                Yii::debug('Bootstrap with ' . get_class($component), __METHOD__);
-            }
+            } else Yii::debug('Bootstrap with ' . get_class($component), __METHOD__);
+
         }
     }
 
@@ -406,10 +401,7 @@ abstract class Application extends Module
      */
     public function getRuntimePath()
     {
-        if ($this->_runtimePath === null) {
-            $this->setRuntimePath($this->getBasePath() . DIRECTORY_SEPARATOR . 'runtime');
-        }
-
+        if ($this->_runtimePath === null) $this->setRuntimePath($this->getBasePath() . DIRECTORY_SEPARATOR . 'runtime');
         return $this->_runtimePath;
     }
 
@@ -432,9 +424,8 @@ abstract class Application extends Module
      */
     public function getVendorPath()
     {
-        if ($this->_vendorPath === null) {
-            $this->setVendorPath($this->getBasePath() . DIRECTORY_SEPARATOR . 'vendor');
-        }
+        if ($this->_vendorPath === null) $this->setVendorPath($this->getBasePath() . DIRECTORY_SEPARATOR . 'vendor');
+
 
         return $this->_vendorPath;
     }
@@ -471,8 +462,7 @@ abstract class Application extends Module
      * @param string $value the time zone used by this application.
      * @see http://php.net/manual/en/function.date-default-timezone-set.php
      */
-    public function setTimeZone($value)
-    {
+    public function setTimeZone($value){
         date_default_timezone_set($value);
     }
 
@@ -480,8 +470,7 @@ abstract class Application extends Module
      * Returns the database connection component.
      * @return \yii\db\Connection the database connection.
      */
-    public function getDb()
-    {
+    public function getDb(){
         return $this->get('db');
     }
 
@@ -489,8 +478,7 @@ abstract class Application extends Module
      * Returns the log dispatcher component.
      * @return \yii\log\Dispatcher the log dispatcher application component.
      */
-    public function getLog()
-    {
+    public function getLog(){
         return $this->get('log');
     }
 
@@ -498,8 +486,7 @@ abstract class Application extends Module
      * Returns the error handler component.
      * @return \yii\web\ErrorHandler|\yii\console\ErrorHandler the error handler application component.
      */
-    public function getErrorHandler()
-    {
+    public function getErrorHandler(){
         return $this->get('errorHandler');
     }
 
@@ -507,8 +494,7 @@ abstract class Application extends Module
      * Returns the cache component.
      * @return \yii\caching\CacheInterface the cache application component. Null if the component is not enabled.
      */
-    public function getCache()
-    {
+    public function getCache(){
         return $this->get('cache', false);
     }
 
@@ -516,8 +502,7 @@ abstract class Application extends Module
      * Returns the formatter component.
      * @return \yii\i18n\Formatter the formatter application component.
      */
-    public function getFormatter()
-    {
+    public function getFormatter(){
         return $this->get('formatter');
     }
 
@@ -525,8 +510,7 @@ abstract class Application extends Module
      * Returns the request component.
      * @return \yii\web\Request|\yii\console\Request the request component.
      */
-    public function getRequest()
-    {
+    public function getRequest(){
         return $this->get('request');
     }
 
@@ -534,8 +518,7 @@ abstract class Application extends Module
      * Returns the response component.
      * @return \yii\web\Response|\yii\console\Response the response component.
      */
-    public function getResponse()
-    {
+    public function getResponse(){
         return $this->get('response');
     }
 
@@ -543,8 +526,7 @@ abstract class Application extends Module
      * Returns the view object.
      * @return View|\yii\web\View the view application component that is used to render various view files.
      */
-    public function getView()
-    {
+    public function getView(){
         return $this->get('view');
     }
 
@@ -552,8 +534,7 @@ abstract class Application extends Module
      * Returns the URL manager for this application.
      * @return \yii\web\UrlManager the URL manager for this application.
      */
-    public function getUrlManager()
-    {
+    public function getUrlManager(){
         return $this->get('urlManager');
     }
 
@@ -561,8 +542,7 @@ abstract class Application extends Module
      * Returns the internationalization (i18n) component.
      * @return \yii\i18n\I18N the internationalization application component.
      */
-    public function getI18n()
-    {
+    public function getI18n(){
         return $this->get('i18n');
     }
 
@@ -570,8 +550,7 @@ abstract class Application extends Module
      * Returns the mailer component.
      * @return \yii\mail\MailerInterface the mailer application component.
      */
-    public function getMailer()
-    {
+    public function getMailer(){
         return $this->get('mailer');
     }
 
@@ -580,8 +559,7 @@ abstract class Application extends Module
      * @return \yii\rbac\ManagerInterface the auth manager application component.
      * Null is returned if auth manager is not configured.
      */
-    public function getAuthManager()
-    {
+    public function getAuthManager(){
         return $this->get('authManager', false);
     }
 

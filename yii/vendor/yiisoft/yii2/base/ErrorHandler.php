@@ -88,32 +88,26 @@ abstract class ErrorHandler extends Component
      */
     public function handleException($exception)
     {
-        if ($exception instanceof ExitException) {
-            return;
-        }
+        if ($exception instanceof ExitException) return;
+
 
         $this->exception = $exception;
 
-        // disable error capturing to avoid recursive errors while handling exceptions
+
         $this->unregister();
 
-        // set preventive HTTP status code to 500 in case error handling somehow fails and headers are sent
-        // HTTP exceptions will override this value in renderException()
-        if (PHP_SAPI !== 'cli') {
-            http_response_code(500);
-        }
+        PHP_SAPI !== 'cli'&& http_response_code(500);
+
 
         try {
             $this->logException($exception);
-            if ($this->discardExistingOutput) {
-                $this->clearOutput();
-            }
+            if ($this->discardExistingOutput) $this->clearOutput();
+
             $this->renderException($exception);
             if (!YII_ENV_TEST) {
                 \Yii::getLogger()->flush(true);
-                if (defined('HHVM_VERSION')) {
-                    flush();
-                }
+                if (defined('HHVM_VERSION')) flush();
+
                 exit(1);
             }
         } catch (\Exception $e) {
@@ -207,9 +201,8 @@ abstract class ErrorHandler extends Component
         if (error_reporting() & $code) {
             // load ErrorException manually here because autoloading them will not work
             // when error occurs while autoloading a class
-            if (!class_exists('yii\\base\\ErrorException', false)) {
-                require_once __DIR__ . '/ErrorException.php';
-            }
+            if (!class_exists('yii\\base\\ErrorException', false)) require_once __DIR__ . '/ErrorException.php';
+
             $exception = new ErrorException($message, $code, $code, $file, $line);
 
             // in case error appeared in __toString method we can't throw any exception
@@ -218,9 +211,8 @@ abstract class ErrorHandler extends Component
             foreach ($trace as $frame) {
                 if ($frame['function'] === '__toString') {
                     $this->handleException($exception);
-                    if (defined('HHVM_VERSION')) {
-                        flush();
-                    }
+                   defined('HHVM_VERSION')&& flush();
+
                     exit(1);
                 }
             }
@@ -231,27 +223,18 @@ abstract class ErrorHandler extends Component
         return false;
     }
 
-    /**
-     * Handles fatal PHP errors.
-     */
-    public function handleFatalError()
-    {
+    function handleFatalError(){
         unset($this->_memoryReserve);
 
-        // load ErrorException manually here because autoloading them will not work
-        // when error occurs while autoloading a class
-        if (!class_exists('yii\\base\\ErrorException', false)) {
-            require_once __DIR__ . '/ErrorException.php';
-        }
+        if (!class_exists('yii\\base\\ErrorException', false)) require_once __DIR__ . '/ErrorException.php';
+
 
         $error = error_get_last();
 
         if (ErrorException::isFatalError($error)) {
-            if (!empty($this->_hhvmException)) {
-                $exception = $this->_hhvmException;
-            } else {
-                $exception = new ErrorException($error['message'], $error['type'], $error['type'], $error['file'], $error['line']);
-            }
+            if (!empty($this->_hhvmException)) $exception = $this->_hhvmException;
+            else $exception = new ErrorException($error['message'], $error['type'], $error['type'], $error['file'], $error['line']);
+
             $this->exception = $exception;
 
             $this->logException($exception);
@@ -261,96 +244,51 @@ abstract class ErrorHandler extends Component
             }
             $this->renderException($exception);
 
-            // need to explicitly flush logs because exit() next will terminate the app immediately
+
             Yii::getLogger()->flush(true);
-            if (defined('HHVM_VERSION')) {
-                flush();
-            }
+            if (defined('HHVM_VERSION')) flush();
+
             exit(1);
         }
     }
 
-    /**
-     * Renders the exception.
-     * @param \Exception $exception the exception to be rendered.
-     */
     abstract protected function renderException($exception);
 
-    /**
-     * Logs the given exception.
-     * @param \Exception $exception the exception to be logged
-     * @since 2.0.3 this method is now public.
-     */
-    public function logException($exception)
+     function logException($exception)
     {
         $category = get_class($exception);
-        if ($exception instanceof HttpException) {
-            $category = 'yii\\web\\HttpException:' . $exception->statusCode;
-        } elseif ($exception instanceof \ErrorException) {
-            $category .= ':' . $exception->getSeverity();
-        }
+        if ($exception instanceof HttpException) $category = 'yii\\web\\HttpException:' . $exception->statusCode;
+         elseif ($exception instanceof \ErrorException) $category .= ':' . $exception->getSeverity();
+
         Yii::error($exception, $category);
     }
 
-    /**
-     * Removes all output echoed before calling this method.
-     */
-    public function clearOutput()
-    {
-        // the following manual level counting is to deal with zlib.output_compression set to On
-        for ($level = ob_get_level(); $level > 0; --$level) {
-            if (!@ob_end_clean()) {
-                ob_clean();
-            }
-        }
+
+     function clearOutput(){
+
+        for ($level = ob_get_level(); $level > 0; --$level) !@ob_end_clean()&& ob_clean();
     }
 
-    /**
-     * Converts an exception into a PHP error.
-     *
-     * This method can be used to convert exceptions inside of methods like `__toString()`
-     * to PHP errors because exceptions cannot be thrown inside of them.
-     * @param \Exception $exception the exception to convert to a PHP error.
-     */
-    public static function convertExceptionToError($exception)
-    {
+     static function convertExceptionToError($exception){
         trigger_error(static::convertExceptionToString($exception), E_USER_ERROR);
     }
 
-    /**
-     * Converts an exception into a simple string.
-     * @param \Exception|\Error $exception the exception being converted
-     * @return string the string representation of the exception.
-     */
-    public static function convertExceptionToString($exception)
+   static function convertExceptionToString($exception)
     {
-        if ($exception instanceof UserException) {
-            return "{$exception->getName()}: {$exception->getMessage()}";
-        }
+        if ($exception instanceof UserException) return "{$exception->getName()}: {$exception->getMessage()}";
 
-        if (YII_DEBUG) {
-            return static::convertExceptionToVerboseString($exception);
-        }
+
+        if (YII_DEBUG) return static::convertExceptionToVerboseString($exception);
+
 
         return 'An internal server error occurred.';
     }
 
-    /**
-     * Converts an exception into a string that has verbose information about the exception and its trace.
-     * @param \Exception|\Error $exception the exception being converted
-     * @return string the string representation of the exception.
-     *
-     * @since 2.0.14
-     */
-    public static function convertExceptionToVerboseString($exception)
-    {
-        if ($exception instanceof Exception) {
-            $message = "Exception ({$exception->getName()})";
-        } elseif ($exception instanceof ErrorException) {
-            $message = (string)$exception->getName();
-        } else {
-            $message = 'Exception';
-        }
+   static function convertExceptionToVerboseString($exception){
+        if ($exception instanceof Exception) $message = "Exception ({$exception->getName()})";
+         elseif ($exception instanceof ErrorException) $message = (string)$exception->getName();
+         else $message = 'Exception';
+
         $message .= " '" . get_class($exception) . "' with message '{$exception->getMessage()}' \n\nin "
             . $exception->getFile() . ':' . $exception->getLine() . "\n\n"
             . "Stack trace:\n" . $exception->getTraceAsString();

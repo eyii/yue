@@ -65,23 +65,14 @@ use yii\web\Response;
  * @author Philippe Gaultier <pgaultier@gmail.com>
  * @since 2.0
  */
-class Cors extends ActionFilter
-{
-    /**
-     * @var Request the current request. If not set, the `request` application component will be used.
-     */
+class Cors extends ActionFilter{
+
     public $request;
-    /**
-     * @var Response the response to be sent. If not set, the `response` application component will be used.
-     */
+
     public $response;
-    /**
-     * @var array define specific CORS rules for specific actions
-     */
+
     public $actions = [];
-    /**
-     * @var array Basic headers handled for the CORS requests.
-     */
+
     public $cors = [
         'Origin' => ['*'],
         'Access-Control-Request-Method' => ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
@@ -92,11 +83,8 @@ class Cors extends ActionFilter
     ];
 
 
-    /**
-     * {@inheritdoc}
-     */
-    public function beforeAction($action)
-    {
+
+     function beforeAction($action){
         $this->request = $this->request ?: Yii::$app->getRequest();
         $this->response = $this->response ?: Yii::$app->getResponse();
 
@@ -107,7 +95,6 @@ class Cors extends ActionFilter
         $this->addCorsHeaders($this->response, $responseCorsHeaders);
 
         if ($this->request->isOptions && $this->request->headers->has('Access-Control-Request-Method')) {
-            // it is CORS preflight request, respond with 200 OK without further processing
             $this->response->setStatusCode(200);
             return false;
         }
@@ -115,19 +102,14 @@ class Cors extends ActionFilter
         return true;
     }
 
-    /**
-     * Override settings for specific action.
-     * @param \yii\base\Action $action the action settings to override
-     */
-    public function overrideDefaultSettings($action)
-    {
+
+     function overrideDefaultSettings($action){
         if (isset($this->actions[$action->id])) {
             $actionParams = $this->actions[$action->id];
             $actionParamsKeys = array_keys($actionParams);
             foreach ($this->cors as $headerField => $headerValue) {
-                if (in_array($headerField, $actionParamsKeys)) {
-                    $this->cors[$headerField] = $actionParams[$headerField];
-                }
+                if (in_array($headerField, $actionParamsKeys)) $this->cors[$headerField] = $actionParams[$headerField];
+
             }
         }
     }

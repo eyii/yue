@@ -1,0 +1,14 @@
+{
+  "code": "200",
+  "msg": "操作成功",
+  "data": {
+    "id": 11,
+    "parent": 0,
+    "path": "/",
+    "component": "home",
+    "name": "主页",
+    "icon": "",
+    "hidden": 0,
+    "redirect": ""
+  }
+}

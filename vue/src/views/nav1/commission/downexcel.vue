@@ -10,14 +10,7 @@
     export default {
         name: "downexcel",
         components:{excel},
-        props:{
-            value:{
-                list:[],
-                fields:{},
-
-            },
-            file:'数据.xls'
-        }
+        props:{value:{ list:[], fields:{},}, file:'数据.xls'}
     }
 </script>
 

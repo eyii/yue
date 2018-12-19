@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/idea-plugin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ssc_admin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vue-admin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/yii/yii2-app-advanced" vcs="Git" />

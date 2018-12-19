@@ -149,14 +149,11 @@ class Container extends Component
      */
     public function get($class, $params = [], $config = [])
     {
-        if (isset($this->_singletons[$class])) {
-            // singleton
-            return $this->_singletons[$class];
-        } elseif (!isset($this->_definitions[$class])) {
-            return $this->build($class, $params, $config);
-        }
+        if (isset($this->_singletons[$class]))              return $this->_singletons[$class];
+        elseif (!isset($this->_definitions[$class]))        return $this->build($class, $params, $config);
 
-        $definition = $this->_definitions[$class];
+
+        $definition = $this->_definitions[$class];                  //真正实例化组件的
 
         if (is_callable($definition, true)) {
             $params = $this->resolveDependencies($this->mergeParams($class, $params));
@@ -168,21 +165,14 @@ class Container extends Component
             $config = array_merge($definition, $config);
             $params = $this->mergeParams($class, $params);
 
-            if ($concrete === $class) {
-                $object = $this->build($class, $params, $config);
-            } else {
-                $object = $this->get($concrete, $params, $config);
-            }
-        } elseif (is_object($definition)) {
-            return $this->_singletons[$class] = $definition;
-        } else {
-            throw new InvalidConfigException('Unexpected object definition type: ' . gettype($definition));
-        }
+            $object =  $concrete === $class?$this->build($class, $params, $config):$this->get($concrete, $params, $config);
 
-        if (array_key_exists($class, $this->_singletons)) {
-            // singleton
-            $this->_singletons[$class] = $object;
-        }
+        } elseif (is_object($definition)) return $this->_singletons[$class] = $definition;
+        else throw new InvalidConfigException('Unexpected object definition type: ' . gettype($definition));
+
+
+       array_key_exists($class, $this->_singletons)&& $this->_singletons[$class] = $object;
+
 
         return $object;
     }

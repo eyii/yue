@@ -1,9 +1,5 @@
 <?php
-/**
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
- */
+
 
 namespace yii\rbac;
 
@@ -21,29 +17,17 @@ class PhpManager extends BaseManager
 
     public $ruleFile = '@app/rbac/rules.php';
 
-    /**
-     * @var Item[]
-     */
-    protected $items = []; // itemName => item
-    /**
-     * @var array
-     */
-    protected $children = []; // itemName, childName => child
-    /**
-     * @var array
-     */
-    protected $assignments = []; // userId, itemName => assignment
-    /**
-     * @var Rule[]
-     */
-    protected $rules = []; // ruleName => rule
+
+    protected $items = [];
+
+    protected $children = [];
+
+    protected $assignments = [];
+
+    protected $rules = [];
 
 
-    /**
-     * Initializes the application component.
-     * This method overrides parent implementation by loading the authorization data
-     * from PHP script.
-     */
+
     public function init()
     {
         parent::init();
@@ -53,25 +37,17 @@ class PhpManager extends BaseManager
         $this->load();
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function checkAccess($userId, $permissionName, $params = [])
+    function checkAccess($userId, $permissionName, $params = [])
     {
         $assignments = $this->getAssignments($userId);
 
-        if ($this->hasNoAssignments($assignments)) {
-            return false;
-        }
+        if ($this->hasNoAssignments($assignments)) return false;
+
 
         return $this->checkAccessRecursive($userId, $permissionName, $params, $assignments);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getAssignments($userId)
-    {
+   function getAssignments($userId){
         return isset($this->assignments[$userId]) ? $this->assignments[$userId] : [];
     }
 
@@ -92,27 +68,18 @@ class PhpManager extends BaseManager
 
 
         foreach ($this->children as $parentName => $children) {
-            if (isset($children[$itemName]) && $this->checkAccessRecursive($user, $parentName, $params, $assignments)) {
-                return true;
-            }
+            if (isset($children[$itemName]) && $this->checkAccessRecursive($user, $parentName, $params, $assignments)) return true;
+
         }
 
         return false;
     }
 
-    /**
-     * {@inheritdoc}
-     * @since 2.0.8
-     */
-    public function canAddChild($parent, $child)
-    {
+   function canAddChild($parent, $child){
         return !$this->detectLoop($parent, $child);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function addChild($parent, $child)
+   function addChild($parent, $child)
     {
         if (!isset($this->items[$parent->name], $this->items[$child->name])) throw new InvalidArgumentException("Either '{$parent->name}' or '{$child->name}' does not exist.");
 
@@ -132,43 +99,29 @@ class PhpManager extends BaseManager
         return true;
     }
 
-    /**
-     * Checks whether there is a loop in the authorization item hierarchy.
-     *
-     * @param Item $parent parent item
-     * @param Item $child the child item that is to be added to the hierarchy
-     * @return bool whether a loop exists
-     */
+
     protected function detectLoop($parent, $child)
     {
-        if ($child->name === $parent->name) {
-            return true;
-        }
-        if (!isset($this->children[$child->name], $this->items[$parent->name])) {
-            return false;
-        }
-        foreach ($this->children[$child->name] as $grandchild) {
-            /* @var $grandchild Item */
-            if ($this->detectLoop($parent, $grandchild)) {
-                return true;
-            }
-        }
+        if ($child->name === $parent->name) return true;
+
+        if (!isset($this->children[$child->name], $this->items[$parent->name])) return false;
+
+        foreach ($this->children[$child->name] as $grandchild) if ($this->detectLoop($parent, $grandchild)) return true;
+
+
 
         return false;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function removeChild($parent, $child)
+     function removeChild($parent, $child)
     {
-        if (isset($this->children[$parent->name][$child->name])) {
-            unset($this->children[$parent->name][$child->name]);
-            $this->saveItems();
-            return true;
-        }
+        if (!isset($this->children[$parent->name][$child->name]))  return false;
+        unset($this->children[$parent->name][$child->name]);
+        $this->saveItems();
+        return true;
 
-        return false;
+
+
     }
 
     /**
@@ -176,185 +129,112 @@ class PhpManager extends BaseManager
      */
     public function removeChildren($parent)
     {
-        if (isset($this->children[$parent->name])) {
-            unset($this->children[$parent->name]);
-            $this->saveItems();
-            return true;
-        }
+        if (!isset($this->children[$parent->name]))  return false;
+        unset($this->children[$parent->name]);
+        $this->saveItems();
+        return true;
 
-        return false;
+
+
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function hasChild($parent, $child)
+    function hasChild($parent, $child)
     {
         return isset($this->children[$parent->name][$child->name]);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function assign($role, $userId)
+    function assign($role, $userId)
     {
-        if (!isset($this->items[$role->name])) {
-            throw new InvalidArgumentException("Unknown role '{$role->name}'.");
-        } elseif (isset($this->assignments[$userId][$role->name])) {
-            throw new InvalidArgumentException("Authorization item '{$role->name}' has already been assigned to user '$userId'.");
-        }
+        if (!isset($this->items[$role->name])) throw new InvalidArgumentException("Unknown role '{$role->name}'.");
+        elseif (isset($this->assignments[$userId][$role->name])) throw new InvalidArgumentException("Authorization item '{$role->name}' has already been assigned to user '$userId'.");
 
-        $this->assignments[$userId][$role->name] = new Assignment([
-            'userId' => $userId,
-            'roleName' => $role->name,
-            'createdAt' => time(),
-        ]);
+
+        $this->assignments[$userId][$role->name] = new Assignment(['userId' => $userId, 'roleName' => $role->name, 'createdAt' => time(),]);
         $this->saveAssignments();
 
         return $this->assignments[$userId][$role->name];
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function revoke($role, $userId)
+   function revoke($role, $userId)
     {
-        if (isset($this->assignments[$userId][$role->name])) {
-            unset($this->assignments[$userId][$role->name]);
-            $this->saveAssignments();
-            return true;
-        }
-
-        return false;
+        if (!isset($this->assignments[$userId][$role->name])) return false;
+        unset($this->assignments[$userId][$role->name]);
+        $this->saveAssignments();
+        return true;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function revokeAll($userId)
+     function revokeAll($userId)
     {
-        if (isset($this->assignments[$userId]) && is_array($this->assignments[$userId])) {
-            foreach ($this->assignments[$userId] as $itemName => $value) {
-                unset($this->assignments[$userId][$itemName]);
-            }
-            $this->saveAssignments();
-            return true;
-        }
+        if (!isset($this->assignments[$userId]) && is_array($this->assignments[$userId]))  return false;
+        foreach ($this->assignments[$userId] as $itemName => $value) unset($this->assignments[$userId][$itemName]);
 
-        return false;
+        $this->saveAssignments();
+        return true;
     }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getAssignment($roleName, $userId)
-    {
+     function getAssignment($roleName, $userId){
         return isset($this->assignments[$userId][$roleName]) ? $this->assignments[$userId][$roleName] : null;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getItems($type)
+   function getItems($type)
     {
         $items = [];
-
-        foreach ($this->items as $name => $item) {
-            /* @var $item Item */
-            if ($item->type == $type) {
-                $items[$name] = $item;
-            }
-        }
-
+        foreach ($this->items as $name => $item) if ($item->type == $type) $items[$name] = $item;
         return $items;
     }
 
 
-    /**
-     * {@inheritdoc}
-     */
-    public function removeItem($item)
+     function removeItem($item)
     {
-        if (isset($this->items[$item->name])) {
-            foreach ($this->children as &$children) {
-                unset($children[$item->name]);
-            }
-            foreach ($this->assignments as &$assignments) {
-                unset($assignments[$item->name]);
-            }
-            unset($this->items[$item->name]);
-            $this->saveItems();
-            $this->saveAssignments();
-            return true;
-        }
+        if (!isset($this->items[$item->name])) return false;
+        foreach ($this->children as &$children) unset($children[$item->name]);
 
-        return false;
+        foreach ($this->assignments as &$assignments) unset($assignments[$item->name]);
+
+        unset($this->items[$item->name]);
+        $this->saveItems();
+        $this->saveAssignments();
+        return true;
+
+
+
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getItem($name)
-    {
+    function getItem($name){
         return isset($this->items[$name]) ? $this->items[$name] : null;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function updateRule($name, $rule)
-    {
-        if ($rule->name !== $name) {
-            unset($this->rules[$name]);
-        }
+     function updateRule($name, $rule){
+        if ($rule->name !== $name) unset($this->rules[$name]);
+
         $this->rules[$rule->name] = $rule;
         $this->saveRules();
         return true;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getRule($name)
-    {
+    function getRule($name){
         return isset($this->rules[$name]) ? $this->rules[$name] : null;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getRules()
-    {
+    function getRules(){
         return $this->rules;
     }
-
-    /**
-     * {@inheritdoc}
-     * The roles returned by this method include the roles assigned via [[$defaultRoles]].
-     */
-    public function getRolesByUser($userId)
-    {
+    function getRolesByUser($userId){
         $roles = $this->getDefaultRoleInstances();
         foreach ($this->getAssignments($userId) as $name => $assignment) {
             $role = $this->items[$assignment->roleName];
-            if ($role->type === Item::TYPE_ROLE) {
-                $roles[$name] = $role;
-            }
+            if ($role->type === Item::TYPE_ROLE) $roles[$name] = $role;
+
         }
 
         return $roles;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getChildRoles($roleName)
+  function getChildRoles($roleName)
     {
         $role = $this->getRole($roleName);
 
-        if ($role === null) {
-            throw new InvalidArgumentException("Role \"$roleName\" not found.");
-        }
+        if ($role === null) throw new InvalidArgumentException("Role \"$roleName\" not found.");
+
 
         $result = [];
         $this->getChildrenRecursive($roleName, $result);
@@ -368,113 +248,69 @@ class PhpManager extends BaseManager
         return $roles;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getPermissionsByRole($roleName)
-    {
+    function getPermissionsByRole($roleName){
         $result = [];
         $this->getChildrenRecursive($roleName, $result);
-        if (empty($result)) {
-            return [];
-        }
+        if (empty($result)) return [];
+
         $permissions = [];
-        foreach (array_keys($result) as $itemName) {
-            if (isset($this->items[$itemName]) && $this->items[$itemName] instanceof Permission) {
-                $permissions[$itemName] = $this->items[$itemName];
-            }
-        }
+        foreach (array_keys($result) as $itemName) if (isset($this->items[$itemName]) && $this->items[$itemName] instanceof Permission) $permissions[$itemName] = $this->items[$itemName];
+
+
 
         return $permissions;
     }
 
-    /**
-     * Recursively finds all children and grand children of the specified item.
-     *
-     * @param string $name the name of the item whose children are to be looked for.
-     * @param array $result the children and grand children (in array keys)
-     */
+
     protected function getChildrenRecursive($name, &$result)
     {
-        if (isset($this->children[$name])) {
+        if (!isset($this->children[$name])) return;
             foreach ($this->children[$name] as $child) {
                 $result[$child->name] = true;
                 $this->getChildrenRecursive($child->name, $result);
             }
-        }
+
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getPermissionsByUser($userId)
-    {
+    function getPermissionsByUser($userId){
         $directPermission = $this->getDirectPermissionsByUser($userId);
         $inheritedPermission = $this->getInheritedPermissionsByUser($userId);
 
         return array_merge($directPermission, $inheritedPermission);
     }
 
-    /**
-     * Returns all permissions that are directly assigned to user.
-     * @param string|int $userId the user ID (see [[\yii\web\User::id]])
-     * @return Permission[] all direct permissions that the user has. The array is indexed by the permission names.
-     * @since 2.0.7
-     */
+
     protected function getDirectPermissionsByUser($userId)
     {
         $permissions = [];
         foreach ($this->getAssignments($userId) as $name => $assignment) {
             $permission = $this->items[$assignment->roleName];
-            if ($permission->type === Item::TYPE_PERMISSION) {
-                $permissions[$name] = $permission;
-            }
+            if ($permission->type === Item::TYPE_PERMISSION) $permissions[$name] = $permission;
+
         }
 
         return $permissions;
     }
 
-    /**
-     * Returns all permissions that the user inherits from the roles assigned to him.
-     * @param string|int $userId the user ID (see [[\yii\web\User::id]])
-     * @return Permission[] all inherited permissions that the user has. The array is indexed by the permission names.
-     * @since 2.0.7
-     */
+
     protected function getInheritedPermissionsByUser($userId)
     {
         $assignments = $this->getAssignments($userId);
         $result = [];
-        foreach (array_keys($assignments) as $roleName) {
-            $this->getChildrenRecursive($roleName, $result);
-        }
-
-        if (empty($result)) {
-            return [];
-        }
+        foreach (array_keys($assignments) as $roleName) $this->getChildrenRecursive($roleName, $result);
+        if (empty($result)) return [];
 
         $permissions = [];
-        foreach (array_keys($result) as $itemName) {
-            if (isset($this->items[$itemName]) && $this->items[$itemName] instanceof Permission) {
-                $permissions[$itemName] = $this->items[$itemName];
-            }
-        }
+        foreach (array_keys($result) as $itemName) if (isset($this->items[$itemName]) && $this->items[$itemName] instanceof Permission) $permissions[$itemName] = $this->items[$itemName];
 
         return $permissions;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function getChildren($name)
-    {
+     function getChildren($name){
         return isset($this->children[$name]) ? $this->children[$name] : [];
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function removeAll()
-    {
+     function removeAll(){
         $this->children = [];
         $this->items = [];
         $this->assignments = [];
@@ -482,26 +318,15 @@ class PhpManager extends BaseManager
         $this->save();
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function removeAllPermissions()
-    {
+   function removeAllPermissions(){
         $this->removeAllItems(Item::TYPE_PERMISSION);
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function removeAllRoles()
-    {
+    function removeAllRoles(){
         $this->removeAllItems(Item::TYPE_ROLE);
     }
 
-    /**
-     * Removes all auth items of the specified type.
-     * @param int $type the auth item type (either Item::TYPE_PERMISSION or Item::TYPE_ROLE)
-     */
+
     protected function removeAllItems($type)
     {
         $names = [];
@@ -511,26 +336,17 @@ class PhpManager extends BaseManager
                 $names[$name] = true;
             }
         }
-        if (empty($names)) {
-            return;
-        }
+        if (empty($names)) return;
+
 
         foreach ($this->assignments as $i => $assignments) {
-            foreach ($assignments as $n => $assignment) {
-                if (isset($names[$assignment->roleName])) {
-                    unset($this->assignments[$i][$n]);
-                }
-            }
+            foreach ($assignments as $n => $assignment) if (isset($names[$assignment->roleName])) unset($this->assignments[$i][$n]);
+
         }
         foreach ($this->children as $name => $children) {
-            if (isset($names[$name])) {
-                unset($this->children[$name]);
-            } else {
-                foreach ($children as $childName => $item) {
-                    if (isset($names[$childName])) {
-                        unset($children[$childName]);
-                    }
-                }
+            if (isset($names[$name])) unset($this->children[$name]);
+             else {
+                foreach ($children as $childName => $item) if (isset($names[$childName])) unset($children[$childName]);
                 $this->children[$name] = $children;
             }
         }
@@ -538,49 +354,29 @@ class PhpManager extends BaseManager
         $this->saveItems();
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function removeAllRules()
-    {
-        foreach ($this->items as $item) {
-            $item->ruleName = null;
-        }
+     function removeAllRules(){
+        foreach ($this->items as $item) $item->ruleName = null;
+
         $this->rules = [];
         $this->saveRules();
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function removeAllAssignments()
-    {
+     function removeAllAssignments(){
         $this->assignments = [];
         $this->saveAssignments();
     }
 
-    /**
-     * {@inheritdoc}
-     */
+
     protected function removeRule($rule)
     {
-        if (isset($this->rules[$rule->name])) {
-            unset($this->rules[$rule->name]);
-            foreach ($this->items as $item) {
-                if ($item->ruleName === $rule->name) {
-                    $item->ruleName = null;
-                }
-            }
-            $this->saveRules();
-            return true;
-        }
+        if (!isset($this->rules[$rule->name]))  return false;
+        unset($this->rules[$rule->name]);
+        foreach ($this->items as $item) if ($item->ruleName === $rule->name) $item->ruleName = null;
 
-        return false;
+      return true;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+
     protected function addRule($rule)
     {
         $this->rules[$rule->name] = $rule;
@@ -588,17 +384,12 @@ class PhpManager extends BaseManager
         return true;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+
     protected function updateItem($name, $item)
     {
         if ($name !== $item->name) {
-            if (isset($this->items[$item->name])) {
-                throw new InvalidArgumentException("Unable to change the item name. The name '{$item->name}' is already used by another item.");
-            }
+            if (isset($this->items[$item->name])) throw new InvalidArgumentException("Unable to change the item name. The name '{$item->name}' is already used by another item.");
 
-            // Remove old item in case of renaming
             unset($this->items[$name]);
 
             if (isset($this->children[$name])) {
@@ -606,17 +397,17 @@ class PhpManager extends BaseManager
                 unset($this->children[$name]);
             }
             foreach ($this->children as &$children) {
-                if (isset($children[$name])) {
+                if (!isset($children[$name])) continue;
                     $children[$item->name] = $children[$name];
                     unset($children[$name]);
-                }
+
             }
             foreach ($this->assignments as &$assignments) {
-                if (isset($assignments[$name])) {
+                if (!isset($assignments[$name])) continue;
                     $assignments[$item->name] = $assignments[$name];
                     $assignments[$item->name]->roleName = $item->name;
                     unset($assignments[$name]);
-                }
+
             }
             $this->saveAssignments();
         }
@@ -627,18 +418,14 @@ class PhpManager extends BaseManager
         return true;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+
     protected function addItem($item)
     {
         $time = time();
-        if ($item->createdAt === null) {
-            $item->createdAt = $time;
-        }
-        if ($item->updatedAt === null) {
-            $item->updatedAt = $time;
-        }
+       $item->createdAt === null&& $item->createdAt = $time;
+
+      $item->updatedAt === null&& $item->updatedAt = $time;
+
 
         $this->items[$item->name] = $item;
 
@@ -647,9 +434,7 @@ class PhpManager extends BaseManager
         return true;
     }
 
-    /**
-     * Loads authorization data from persistent storage.
-     */
+
     protected function load()
     {
         $this->children = [];
@@ -677,22 +462,13 @@ class PhpManager extends BaseManager
         }
 
         foreach ($items as $name => $item) {
-            if (isset($item['children'])) {
-                foreach ($item['children'] as $childName) {
-                    if (isset($this->items[$childName])) {
-                        $this->children[$name][$childName] = $this->items[$childName];
-                    }
-                }
-            }
+            if (!isset($item['children'])) continue;
+             foreach ($item['children'] as $childName) if (isset($this->items[$childName])) $this->children[$name][$childName] = $this->items[$childName];
         }
 
         foreach ($assignments as $userId => $roles) {
             foreach ($roles as $role) {
-                $this->assignments[$userId][$role] = new Assignment([
-                    'userId' => $userId,
-                    'roleName' => $role,
-                    'createdAt' => $assignmentsMtime,
-                ]);
+                $this->assignments[$userId][$role] = new Assignment(['userId' => $userId, 'roleName' => $role, 'createdAt' => $assignmentsMtime,]);
             }
         }
 
@@ -701,9 +477,7 @@ class PhpManager extends BaseManager
         }
     }
 
-    /**
-     * Saves authorization data into persistent storage.
-     */
+
     protected function save()
     {
         $this->saveItems();
@@ -711,72 +485,39 @@ class PhpManager extends BaseManager
         $this->saveRules();
     }
 
-    /**
-     * Loads the authorization data from a PHP script file.
-     *
-     * @param string $file the file path.
-     * @return array the authorization data
-     * @see saveToFile()
-     */
+
     protected function loadFromFile($file)
     {
-        if (is_file($file)) {
-            return require $file;
-        }
+        if (is_file($file)) return require $file;
+
 
         return [];
     }
 
-    /**
-     * Saves the authorization data to a PHP script file.
-     *
-     * @param array $data the authorization data
-     * @param string $file the file path.
-     * @see loadFromFile()
-     */
+
     protected function saveToFile($data, $file)
     {
         file_put_contents($file, "<?php\nreturn " . VarDumper::export($data) . ";\n", LOCK_EX);
         $this->invalidateScriptCache($file);
     }
 
-    /**
-     * Invalidates precompiled script cache (such as OPCache or APC) for the given file.
-     * @param string $file the file path.
-     * @since 2.0.9
-     */
+
     protected function invalidateScriptCache($file)
     {
-        if (function_exists('opcache_invalidate')) {
-            opcache_invalidate($file, true);
-        }
-        if (function_exists('apc_delete_file')) {
-            @apc_delete_file($file);
-        }
+      function_exists('opcache_invalidate')&& opcache_invalidate($file, true);
+
+        function_exists('apc_delete_file')&& @apc_delete_file($file);
+
     }
 
-    /**
-     * Saves items data into persistent storage.
-     */
+
     protected function saveItems()
     {
         $items = [];
         foreach ($this->items as $name => $item) {
             /* @var $item Item */
-            $items[$name] = array_filter(
-                [
-                    'type' => $item->type,
-                    'description' => $item->description,
-                    'ruleName' => $item->ruleName,
-                    'data' => $item->data,
-                ]
-            );
-            if (isset($this->children[$name])) {
-                foreach ($this->children[$name] as $child) {
-                    /* @var $child Item */
-                    $items[$name]['children'][] = $child->name;
-                }
-            }
+            $items[$name] = array_filter(['type' => $item->type, 'description' => $item->description, 'ruleName' => $item->ruleName, 'data' => $item->data,]);
+            if (isset($this->children[$name])) foreach ($this->children[$name] as $child) $items[$name]['children'][] = $child->name;
         }
         $this->saveToFile($items, $this->itemFile);
     }
@@ -788,10 +529,7 @@ class PhpManager extends BaseManager
     {
         $assignmentData = [];
         foreach ($this->assignments as $userId => $assignments) {
-            foreach ($assignments as $name => $assignment) {
-                /* @var $assignment Assignment */
-                $assignmentData[$userId][] = $assignment->roleName;
-            }
+            foreach ($assignments as $name => $assignment) $assignmentData[$userId][] = $assignment->roleName;
         }
         $this->saveToFile($assignmentData, $this->assignmentFile);
     }
@@ -802,9 +540,8 @@ class PhpManager extends BaseManager
     protected function saveRules()
     {
         $rules = [];
-        foreach ($this->rules as $name => $rule) {
-            $rules[$name] = serialize($rule);
-        }
+        foreach ($this->rules as $name => $rule) $rules[$name] = serialize($rule);
+
         $this->saveToFile($rules, $this->ruleFile);
     }
 
@@ -816,11 +553,7 @@ class PhpManager extends BaseManager
     {
         $result = [];
         foreach ($this->assignments as $userID => $assignments) {
-            foreach ($assignments as $userAssignment) {
-                if ($userAssignment->roleName === $roleName && $userAssignment->userId == $userID) {
-                    $result[] = (string) $userID;
-                }
-            }
+            foreach ($assignments as $userAssignment) if ($userAssignment->roleName === $roleName && $userAssignment->userId == $userID) $result[] = (string) $userID;
         }
 
         return $result;

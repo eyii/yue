@@ -88,13 +88,10 @@ class VerbFilter extends Behavior
     public function beforeAction($event)
     {
         $action = $event->action->id;
-        if (isset($this->actions[$action])) {
-            $verbs = $this->actions[$action];
-        } elseif (isset($this->actions['*'])) {
-            $verbs = $this->actions['*'];
-        } else {
-            return $event->isValid;
-        }
+        if (isset($this->actions[$action])) $verbs = $this->actions[$action];
+        elseif (isset($this->actions['*'])) $verbs = $this->actions['*'];
+         else                               return $event->isValid;
+
 
         $verb = Yii::$app->getRequest()->getMethod();
         $allowed = array_map('strtoupper', $verbs);

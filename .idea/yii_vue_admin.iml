@@ -4,6 +4,11 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.vagrant" />
+      <excludeFolder url="file://$MODULE_DIR$/vue/.com.google.Chrome.0hGjhS" />
+      <excludeFolder url="file://$MODULE_DIR$/vue/build" />
+      <excludeFolder url="file://$MODULE_DIR$/vue/config" />
+      <excludeFolder url="file://$MODULE_DIR$/vue/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/vue/static" />
       <excludeFolder url="file://$MODULE_DIR$/yii/.vagrant" />
       <excludeFolder url="file://$MODULE_DIR$/yii/console" />
       <excludeFolder url="file://$MODULE_DIR$/yii/environments" />

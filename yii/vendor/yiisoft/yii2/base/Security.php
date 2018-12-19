@@ -640,26 +640,19 @@ class Security extends Component
      */
     public function validatePassword($password, $hash)
     {
-        if (!is_string($password) || $password === '') {
-            throw new InvalidArgumentException('Password must be a string and cannot be empty.');
-        }
+        if (!is_string($password) || $password === '') throw new InvalidArgumentException('Password must be a string and cannot be empty.');
 
-        if (!preg_match('/^\$2[axy]\$(\d\d)\$[\.\/0-9A-Za-z]{22}/', $hash, $matches)
-            || $matches[1] < 4
-            || $matches[1] > 30
-        ) {
-            throw new InvalidArgumentException('Hash is invalid.');
-        }
 
-        if (function_exists('password_verify')) {
-            return password_verify($password, $hash);
-        }
+        if (!preg_match('/^\$2[axy]\$(\d\d)\$[\.\/0-9A-Za-z]{22}/', $hash, $matches) || $matches[1] < 4 || $matches[1] > 30) throw new InvalidArgumentException('Hash is invalid.');
+
+
+        if (function_exists('password_verify')) return password_verify($password, $hash);
+
 
         $test = crypt($password, $hash);
         $n = strlen($test);
-        if ($n !== 60) {
-            return false;
-        }
+        if ($n !== 60) return false;
+
 
         return $this->compareString($test, $hash);
     }
@@ -679,9 +672,8 @@ class Security extends Component
     protected function generateSalt($cost = 13)
     {
         $cost = (int) $cost;
-        if ($cost < 4 || $cost > 31) {
-            throw new InvalidArgumentException('Cost must be between 4 and 31.');
-        }
+        if ($cost < 4 || $cost > 31) throw new InvalidArgumentException('Cost must be between 4 and 31.');
+
 
         // Get a 20-byte random string
         $rand = $this->generateRandomKey(20);
@@ -702,17 +694,14 @@ class Security extends Component
      */
     public function compareString($expected, $actual)
     {
-        if (!is_string($expected)) {
-            throw new InvalidArgumentException('Expected expected value to be a string, ' . gettype($expected) . ' given.');
-        }
+        if (!is_string($expected)) throw new InvalidArgumentException('Expected expected value to be a string, ' . gettype($expected) . ' given.');
 
-        if (!is_string($actual)) {
-            throw new InvalidArgumentException('Expected actual value to be a string, ' . gettype($actual) . ' given.');
-        }
 
-        if (function_exists('hash_equals')) {
-            return hash_equals($expected, $actual);
-        }
+        if (!is_string($actual)) throw new InvalidArgumentException('Expected actual value to be a string, ' . gettype($actual) . ' given.');
+
+
+        if (function_exists('hash_equals')) return hash_equals($expected, $actual);
+
 
         $expected .= "\0";
         $actual .= "\0";

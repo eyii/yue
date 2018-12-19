@@ -158,15 +158,10 @@ class BaseYii
         $root = $pos === false ? $alias : substr($alias, 0, $pos);
 
         if (isset(static::$aliases[$root])) {
-            if (is_string(static::$aliases[$root])) {
-                return $root;
-            }
+            if (is_string(static::$aliases[$root])) return $root;
+            foreach (static::$aliases[$root] as $name => $path) if (strpos($alias . '/', $name . '/') === 0) return $name;
 
-            foreach (static::$aliases[$root] as $name => $path) {
-                if (strpos($alias . '/', $name . '/') === 0) {
-                    return $name;
-                }
-            }
+
         }
 
         return false;
@@ -489,14 +484,11 @@ class BaseYii
      */
     public static function t($category, $message, $params = [], $language = null)
     {
-        if (static::$app !== null) {
-            return static::$app->getI18n()->translate($category, $message, $params, $language ?: static::$app->language);
-        }
+        if (static::$app !== null) return static::$app->getI18n()->translate($category, $message, $params, $language ?: static::$app->language);
 
         $placeholders = [];
-        foreach ((array) $params as $name => $value) {
-            $placeholders['{' . $name . '}'] = $value;
-        }
+        foreach ((array) $params as $name => $value) $placeholders['{' . $name . '}'] = $value;
+
 
         return ($placeholders === []) ? $message : strtr($message, $placeholders);
     }
@@ -509,9 +501,8 @@ class BaseYii
      */
     public static function configure($object, $properties)
     {
-        foreach ($properties as $name => $value) {
-            $object->$name = $value;
-        }
+        foreach ($properties as $name => $value) $object->$name = $value;
+
 
         return $object;
     }

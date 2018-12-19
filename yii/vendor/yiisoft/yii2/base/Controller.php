@@ -158,30 +158,18 @@ class Controller extends Component implements ViewContextInterface
 
         }
 
-        if ($oldAction !== null) $this->action = $oldAction;
+       $oldAction !== null && $this->action = $oldAction;
 
 
         return $result;
     }
 
-    /**
-     * Runs a request specified in terms of a route.
-     * The route can be either an ID of an action within this controller or a complete route consisting
-     * of module IDs, controller ID and action ID. If the route starts with a slash '/', the parsing of
-     * the route will start from the application; otherwise, it will start from the parent module of this controller.
-     * @param string $route the route to be handled, e.g., 'view', 'comment/view', '/admin/comment/view'.
-     * @param array $params the parameters to be passed to the action.
-     * @return mixed the result of the action.
-     * @see runAction()
-     */
-    public function run($route, $params = [])
-    {
+
+     function run($route, $params = []){
         $pos = strpos($route, '/');
-        if ($pos === false) {
-            return $this->runAction($route, $params);
-        } elseif ($pos > 0) {
-            return $this->module->runAction($route, $params);
-        }
+        if ($pos === false) return $this->runAction($route, $params);
+        elseif ($pos > 0) return $this->module->runAction($route, $params);
+
 
         return Yii::$app->runAction(ltrim($route, '/'), $params);
     }
@@ -210,9 +198,8 @@ class Controller extends Component implements ViewContextInterface
      */
     public function createAction($id)
     {
-        if ($id === '') {
-            $id = $this->defaultAction;
-        }
+        $id === ''&& $id = $this->defaultAction;
+
 
         $actionMap = $this->actions();
         if (isset($actionMap[$id])) {
@@ -221,9 +208,8 @@ class Controller extends Component implements ViewContextInterface
             $methodName = 'action' . str_replace(' ', '', ucwords(implode(' ', explode('-', $id))));
             if (method_exists($this, $methodName)) {
                 $method = new \ReflectionMethod($this, $methodName);
-                if ($method->isPublic() && $method->getName() === $methodName) {
-                    return new InlineAction($id, $this, $methodName);
-                }
+                if ($method->isPublic() && $method->getName() === $methodName) return new InlineAction($id, $this, $methodName);
+
             }
         }
 
@@ -387,9 +373,8 @@ class Controller extends Component implements ViewContextInterface
     public function renderContent($content)
     {
         $layoutFile = $this->findLayoutFile($this->getView());
-        if ($layoutFile !== false) {
-            return $this->getView()->renderFile($layoutFile, ['content' => $content], $this);
-        }
+        if ($layoutFile !== false) return $this->getView()->renderFile($layoutFile, ['content' => $content], $this);
+
 
         return $content;
     }
@@ -428,9 +413,7 @@ class Controller extends Component implements ViewContextInterface
      */
     public function getView()
     {
-        if ($this->_view === null) {
-            $this->_view = Yii::$app->getView();
-        }
+       $this->_view === null&&$this->_view = Yii::$app->getView();
 
         return $this->_view;
     }

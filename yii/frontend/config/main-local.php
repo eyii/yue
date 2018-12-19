@@ -1,13 +1,9 @@
 <?php
 
-$config = [
-    'components' => [
-        'request' => ['cookieValidationKey' => 'Lf3sJ3jFprI83M6PlUdLA3zePYrHWS7n',],
-    ],
-];
+$config = ['components' => ['request' => ['cookieValidationKey' => 'Lf3sJ3jFprI83M6PlUdLA3zePYrHWS7n',],],];
 
 if (!YII_ENV_TEST) {
-    // configuration adjustments for 'dev' environment
+
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = ['class' => 'yii\debug\Module',];
     $config['bootstrap'][] = 'gii';

@@ -315,31 +315,26 @@ class UrlManager extends Component
                         'parent' => null,
                     ], __METHOD__);
                 }
-                if ($result !== false) {
-                    return $result;
-                }
+                if ($result !== false) return $result;
+
             }
 
-            if ($this->enableStrictParsing) {
-                return false;
-            }
+            if ($this->enableStrictParsing) return false;
+
 
             Yii::debug('No matching URL rules. Using default URL parsing logic.', __METHOD__);
 
             $suffix = (string) $this->suffix;
             $pathInfo = $request->getPathInfo();
             $normalized = false;
-            if ($this->normalizer !== false) {
-                $pathInfo = $this->normalizer->normalizePathInfo($pathInfo, $suffix, $normalized);
-            }
+            if ($this->normalizer !== false) $pathInfo = $this->normalizer->normalizePathInfo($pathInfo, $suffix, $normalized);
+
             if ($suffix !== '' && $pathInfo !== '') {
                 $n = strlen($this->suffix);
                 if (substr_compare($pathInfo, $this->suffix, -$n, $n) === 0) {
                     $pathInfo = substr($pathInfo, 0, -$n);
-                    if ($pathInfo === '') {
-                        // suffix alone is not allowed
-                        return false;
-                    }
+                    if ($pathInfo === '') return false;
+
                 } else {
                     // suffix doesn't match
                     return false;

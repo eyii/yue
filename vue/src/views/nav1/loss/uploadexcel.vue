@@ -7,7 +7,7 @@
 
 </template>
 <script>
-   import VPost from '../../../components/js/ajax/VPost'
+
 
     export default {
         name:'uploadexcel',

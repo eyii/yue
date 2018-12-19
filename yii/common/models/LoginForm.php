@@ -40,12 +40,11 @@ class LoginForm extends Model
      */
     public function validatePassword($attribute, $params)
     {
-        if (!$this->hasErrors()) {
+        if ($this->hasErrors()) return;
             $user = $this->getUser();
-            if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
-            }
-        }
+            (!$user || !$user->validatePassword($this->password))&& $this->addError($attribute, 'Incorrect username or password.');
+
+
     }
 
     /**
@@ -55,11 +54,15 @@ class LoginForm extends Model
      */
     public function login()
     {
-        if ($this->validate()) {
-            return Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
-        }
-        
-        return false;
+        if (!$this->validate())    return false;
+           $isLogin= Yii::$app->user->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
+           if ($isLogin&&isset(Yii::$app->user->identity))  return false;
+           xdebug_break();
+            $token= md5(Yii::$app->security->generateRandomString());
+            Yii::$app->cache->set($token,$this->username,3600 * 24 * 30);
+             return $token;
+      
+
     }
 
     /**
@@ -69,10 +72,11 @@ class LoginForm extends Model
      */
     protected function getUser()
     {
-        if ($this->_user === null) {
-            $this->_user = User::findByUsername($this->username);
-        }
+        if ($this->_user === null) $this->_user = User::findByUsername($this->username);
+
 
         return $this->_user;
     }
+
+
 }

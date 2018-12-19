@@ -3,6 +3,8 @@
 
 namespace common\lib\rest;
 
+use common\lib\result\MsgAbort;
+use common\lib\result\MsgOk;
 use Yii;
 use yii\base\Model;
 use yii\db\ActiveRecord;
@@ -23,10 +25,14 @@ class UpdateAction extends Action{
 
 
         $model->scenario = $this->scenario;
-        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
-        if ($model->save() === false && !$model->hasErrors()) throw new ServerErrorHttpException('Failed to update the object for unknown reason.');
+        $post=Yii::$app->getRequest()->getBodyParams();
+
+        if (!$model->load($post,'body'))return new MsgAbort('载入失败',httpStatus::c802,$model->getErrors());
+        if (!$model->validate())return new MsgAbort('参数不对',httpStatus::c802,$model->getErrors());
+        $result= $model->save();
+       return ($result)?new MsgOk('更新成功',httpStatus::OK,$model):new MsgAbort('更新失败',httpStatus::c803,$model->getErrors());
 
 
-        return $model;
+
     }
 }

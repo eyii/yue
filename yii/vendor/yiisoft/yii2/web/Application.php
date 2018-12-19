@@ -84,7 +84,6 @@ class Application extends \yii\base\Application
                 $url = $e->url;
                 if (is_array($url)) {
                     if (isset($url[0])) $url[0] = '/' . ltrim($url[0], '/');
-
                     $url += $request->getQueryParams();
                 }
 
@@ -100,12 +99,10 @@ class Application extends \yii\base\Application
             $this->requestedRoute = $route;
             $result = $this->runAction($route, $params);
             if ($result instanceof Response) return $result;
-
-
             $response = $this->getResponse();
-            if ($result !== null) {
-                $response->data = $result;
-            }
+            if ($result !== null) $response->data = $result;
+
+
 
             return $response;
         } catch (InvalidRouteException $e) {

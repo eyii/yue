@@ -259,58 +259,47 @@ class Event extends BaseObject
      */
     public static function trigger($class, $name, $event = null)
     {
-        $wildcardEventHandlers = [];
+        $whandles = [];
         foreach (self::$_eventWildcards as $nameWildcard => $classHandlers) {
-            if (!StringHelper::matchWildcard($nameWildcard, $name)) {
-                continue;
-            }
-            $wildcardEventHandlers = array_merge($wildcardEventHandlers, $classHandlers);
+            if (!StringHelper::matchWildcard($nameWildcard, $name)) continue;
+
+            $whandles = array_merge($whandles, $classHandlers);
         }
 
-        if (empty(self::$_events[$name]) && empty($wildcardEventHandlers)) {
-            return;
-        }
+        if (empty(self::$_events[$name]) && empty($whandles)) return;
 
-        if ($event === null) {
-            $event = new static();
-        }
+
+        if ($event === null) $event = new static();
+
         $event->handled = false;
         $event->name = $name;
 
         if (is_object($class)) {
-            if ($event->sender === null) {
-                $event->sender = $class;
-            }
-            $class = get_class($class);
-        } else {
-            $class = ltrim($class, '\\');
-        }
+           ($event->sender === null)&& $event->sender = $class;
 
-        $classes = array_merge(
-            [$class],
-            class_parents($class, true),
-            class_implements($class, true)
-        );
+            $class = get_class($class);
+        } else$class = ltrim($class, '\\');
+
+
+        $classes = array_merge([$class], class_parents($class, true), class_implements($class, true));
 
         foreach ($classes as $class) {
-            $eventHandlers = [];
-            foreach ($wildcardEventHandlers as $classWildcard => $handlers) {
-                if (StringHelper::matchWildcard($classWildcard, $class)) {
-                    $eventHandlers = array_merge($eventHandlers, $handlers);
-                    unset($wildcardEventHandlers[$classWildcard]);
-                }
+            $eHandlers = [];
+            foreach ($whandles as $cWildcard => $handlers) {
+                if (!StringHelper::matchWildcard($cWildcard, $class)) continue;
+                    $eHandlers = array_merge($eHandlers, $handlers);
+                    unset($whandles[$cWildcard]);
+
             }
 
-            if (!empty(self::$_events[$name][$class])) {
-                $eventHandlers = array_merge($eventHandlers, self::$_events[$name][$class]);
-            }
+            if (!empty(self::$_events[$name][$class])) $eHandlers = array_merge($eHandlers, self::$_events[$name][$class]);
 
-            foreach ($eventHandlers as $handler) {
+
+            foreach ($eHandlers as $handler) {
                 $event->data = $handler[1];
                 call_user_func($handler[0], $event);
-                if ($event->handled) {
-                    return;
-                }
+                if ($event->handled) return;
+
             }
         }
     }

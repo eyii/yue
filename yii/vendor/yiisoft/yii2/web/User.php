@@ -13,50 +13,7 @@ use yii\base\InvalidConfigException;
 use yii\base\InvalidValueException;
 use yii\rbac\CheckAccessInterface;
 
-/**
- * User is the class for the `user` application component that manages the user authentication status.
- *
- * You may use [[isGuest]] to determine whether the current user is a guest or not.
- * If the user is a guest, the [[identity]] property would return `null`. Otherwise, it would
- * be an instance of [[IdentityInterface]].
- *
- * You may call various methods to change the user authentication status:
- *
- * - [[login()]]: sets the specified identity and remembers the authentication status in session and cookie;
- * - [[logout()]]: marks the user as a guest and clears the relevant information from session and cookie;
- * - [[setIdentity()]]: changes the user identity without touching session or cookie
- *   (this is best used in stateless RESTful API implementation).
- *
- * Note that User only maintains the user authentication status. It does NOT handle how to authenticate
- * a user. The logic of how to authenticate a user should be done in the class implementing [[IdentityInterface]].
- * You are also required to set [[identityClass]] with the name of this class.
- *
- * User is configured as an application component in [[\yii\web\Application]] by default.
- * You can access that instance via `Yii::$app->user`.
- *
- * You can modify its configuration by adding an array to your application config under `components`
- * as it is shown in the following example:
- *
- * ```php
- * 'user' => [
- *     'identityClass' => 'app\models\User', // User must implement the IdentityInterface
- *     'enableAutoLogin' => true,
- *     // 'loginUrl' => ['user/login'],
- *     // ...
- * ]
- * ```
- *
- * @property string|int $id The unique identifier for the user. If `null`, it means the user is a guest. This
- * property is read-only.
- * @property IdentityInterface|null $identity The identity object associated with the currently logged-in
- * user. `null` is returned if the user is not logged in (not authenticated).
- * @property bool $isGuest Whether the current user is a guest. This property is read-only.
- * @property string $returnUrl The URL that the user should be redirected to after login. Note that the type
- * of this property differs in getter and setter. See [[getReturnUrl()]] and [[setReturnUrl()]] for details.
- *
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
- */
+
 class User extends Component
 {
     const EVENT_BEFORE_LOGIN = 'beforeLogin';
@@ -252,11 +209,9 @@ class User extends Component
             $this->switchIdentity($identity, $duration);
             $id = $identity->getId();
             $ip = Yii::$app->getRequest()->getUserIP();
-            if ($this->enableSession) {
-                $log = "User '$id' logged in from $ip with duration $duration.";
-            } else {
-                $log = "User '$id' logged in from $ip. Session not enabled.";
-            }
+            if ($this->enableSession) $log = "User '$id' logged in from $ip with duration $duration.";
+             else $log = "User '$id' logged in from $ip. Session not enabled.";
+
 
             $this->regenerateCsrfToken();
 
@@ -296,9 +251,7 @@ class User extends Component
         /* @var $class IdentityInterface */
         $class = $this->identityClass;
         $identity = $class::findIdentityByAccessToken($token, $type);
-        if ($identity && $this->login($identity)) {
-            return $identity;
-        }
+        if ($identity && $this->login($identity)) return $identity;
 
         return null;
     }
@@ -341,9 +294,8 @@ class User extends Component
             $id = $identity->getId();
             $ip = Yii::$app->getRequest()->getUserIP();
             Yii::info("User '$id' logged out from $ip.", __METHOD__);
-            if ($destroySession && $this->enableSession) {
-                Yii::$app->getSession()->destroy();
-            }
+            if ($destroySession && $this->enableSession) Yii::$app->getSession()->destroy();
+
             $this->afterLogout($identity);
         }
 
@@ -489,11 +441,7 @@ class User extends Component
      */
     protected function afterLogin($identity, $cookieBased, $duration)
     {
-        $this->trigger(self::EVENT_AFTER_LOGIN, new UserEvent([
-            'identity' => $identity,
-            'cookieBased' => $cookieBased,
-            'duration' => $duration,
-        ]));
+        $this->trigger(self::EVENT_AFTER_LOGIN, new UserEvent(['identity' => $identity, 'cookieBased' => $cookieBased, 'duration' => $duration,]));
     }
 
     /**
@@ -730,16 +678,13 @@ class User extends Component
      */
     public function can($permissionName, $params = [], $allowCaching = true)
     {
-        if ($allowCaching && empty($params) && isset($this->_access[$permissionName])) {
-            return $this->_access[$permissionName];
-        }
-        if (($accessChecker = $this->getAccessChecker()) === null) {
-            return false;
-        }
+        if ($allowCaching && empty($params) && isset($this->_access[$permissionName])) return $this->_access[$permissionName];
+
+        if (($accessChecker = $this->getAccessChecker()) === null) return false;
+
         $access = $accessChecker->checkAccess($this->getId(), $permissionName, $params);
-        if ($allowCaching && empty($params)) {
-            $this->_access[$permissionName] = $access;
-        }
+        ($allowCaching && empty($params))&& $this->_access[$permissionName] = $access;
+
 
         return $access;
     }

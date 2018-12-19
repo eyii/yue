@@ -70,18 +70,13 @@ class ActionFilter extends Behavior
      */
     public function beforeFilter($event)
     {
-        if (!$this->isActive($event->action)) {
-            return;
-        }
+        if (!$this->isActive($event->action)) return;
+
 
         $event->isValid = $this->beforeAction($event->action);
-        if ($event->isValid) {
-            // call afterFilter only if beforeFilter succeeds
-            // beforeFilter and afterFilter should be properly nested
-            $this->owner->on(Controller::EVENT_AFTER_ACTION, [$this, 'afterFilter'], null, false);
-        } else {
-            $event->handled = true;
-        }
+        if ($event->isValid) $this->owner->on(Controller::EVENT_AFTER_ACTION, [$this, 'afterFilter'], null, false);
+        else $event->handled = true;
+
     }
 
     /**
@@ -93,26 +88,12 @@ class ActionFilter extends Behavior
         $this->owner->off(Controller::EVENT_AFTER_ACTION, [$this, 'afterFilter']);
     }
 
-    /**
-     * This method is invoked right before an action is to be executed (after all possible filters.)
-     * You may override this method to do last-minute preparation for the action.
-     * @param Action $action the action to be executed.
-     * @return bool whether the action should continue to be executed.
-     */
-    public function beforeAction($action)
-    {
+
+     function beforeAction($action){
         return true;
     }
 
-    /**
-     * This method is invoked right after an action is executed.
-     * You may override this method to do some postprocessing for the action.
-     * @param Action $action the action just executed.
-     * @param mixed $result the action execution result
-     * @return mixed the processed action result.
-     */
-    public function afterAction($action, $result)
-    {
+     function afterAction($action, $result){
         return $result;
     }
 

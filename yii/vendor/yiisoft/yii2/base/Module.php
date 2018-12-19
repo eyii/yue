@@ -218,11 +218,9 @@ class Module extends ServiceLocator
      */
     public function getBasePath()
     {
-        if ($this->_basePath === null) {
-            $class = new \ReflectionClass($this);
-            $this->_basePath = dirname($class->getFileName());
-        }
-
+        if (null !==$this->_basePath ) return $this->_basePath;
+        $class = new \ReflectionClass($this);
+        $this->_basePath = dirname($class->getFileName());
         return $this->_basePath;
     }
 
@@ -259,9 +257,7 @@ class Module extends ServiceLocator
      */
     public function getViewPath()
     {
-        if ($this->_viewPath === null) {
-            $this->_viewPath = $this->getBasePath() . DIRECTORY_SEPARATOR . 'views';
-        }
+        if ($this->_viewPath === null) $this->_viewPath = $this->getBasePath() . DIRECTORY_SEPARATOR . 'views';
 
         return $this->_viewPath;
     }
@@ -282,9 +278,7 @@ class Module extends ServiceLocator
      */
     public function getLayoutPath()
     {
-        if ($this->_layoutPath === null) {
-            $this->_layoutPath = $this->getViewPath() . DIRECTORY_SEPARATOR . 'layouts';
-        }
+        if ($this->_layoutPath === null) $this->_layoutPath = $this->getViewPath() . DIRECTORY_SEPARATOR . 'layouts';
 
         return $this->_layoutPath;
     }
@@ -498,9 +492,8 @@ class Module extends ServiceLocator
      */
     public function setModules($modules)
     {
-        foreach ($modules as $id => $module) {
-            $this->_modules[$id] = $module;
-        }
+        foreach ($modules as $id => $module) $this->_modules[$id] = $module;
+
     }
 
     /**

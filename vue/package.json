@@ -16,6 +16,7 @@
     "font-awesome": "^4.7.0",
     "moment": "^2.22.2",
     "nprogress": "^0.2.0",
+    "vreq": "^1.0.7",
     "vue": "^2.2.2",
     "vue-json-excel": "^0.2.96",
     "vue-resource": "^1.5.1",

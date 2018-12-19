@@ -136,12 +136,9 @@ abstract class BaseActiveRecord extends Model implements ActiveRecordInterface
         if (!ArrayHelper::isAssociative($condition)) {
             // query by primary key
             $primaryKey = static::primaryKey();
-            if (isset($primaryKey[0])) {
-                // if condition is scalar, search for a single primary key, if it is array, search for multiple primary key values
-                $condition = [$primaryKey[0] => is_array($condition) ? array_values($condition) : $condition];
-            } else {
-                throw new InvalidConfigException('"' . get_called_class() . '" must have a primary key.');
-            }
+            if (isset($primaryKey[0])) $condition = [$primaryKey[0] => is_array($condition) ? array_values($condition) : $condition];
+             else throw new InvalidConfigException('"' . get_called_class() . '" must have a primary key.');
+
         }
 
         return $query->andWhere($condition);
@@ -666,9 +663,8 @@ abstract class BaseActiveRecord extends Model implements ActiveRecordInterface
      */
     public function save($runValidation = true, $attributeNames = null)
     {
-        if ($this->getIsNewRecord()) {
-            return $this->insert($runValidation, $attributeNames);
-        }
+        if ($this->getIsNewRecord()) return $this->insert($runValidation, $attributeNames);
+
 
         return $this->update($runValidation, $attributeNames) !== false;
     }

@@ -61,52 +61,16 @@ class ServiceLocator extends Component
      */
     private $_definitions = [];
 
+    function __get($name){
+        return   $this->has($name)?  $this->get($name):parent::__get($name);
 
-    /**
-     * Getter magic method.
-     * This method is overridden to support accessing components like reading properties.
-     * @param string $name component or property name
-     * @return mixed the named property value
-     */
-    public function __get($name)
-    {
-        if ($this->has($name)) {
-            return $this->get($name);
-        }
-
-        return parent::__get($name);
     }
 
-    /**
-     * Checks if a property value is null.
-     * This method overrides the parent implementation by checking if the named component is loaded.
-     * @param string $name the property name or the event name
-     * @return bool whether the property value is null
-     */
-    public function __isset($name)
-    {
-        if ($this->has($name)) {
-            return true;
-        }
-
-        return parent::__isset($name);
+     function __isset($name){
+         return ($this->has($name))?  true: parent::__isset($name);
     }
 
-    /**
-     * Returns a value indicating whether the locator has the specified component definition or has instantiated the component.
-     * This method may return different results depending on the value of `$checkInstance`.
-     *
-     * - If `$checkInstance` is false (default), the method will return a value indicating whether the locator has the specified
-     *   component definition.
-     * - If `$checkInstance` is true, the method will return a value indicating whether the locator has
-     *   instantiated the specified component.
-     *
-     * @param string $id component ID (e.g. `db`).
-     * @param bool $checkInstance whether the method should check if the component is shared and instantiated.
-     * @return bool whether the locator has the specified component definition or has instantiated the component.
-     * @see set()
-     */
-    public function has($id, $checkInstance = false)
+   function has($id, $checkInstance = false)
     {
         return $checkInstance ? isset($this->_components[$id]) : isset($this->_definitions[$id]);
     }

@@ -567,9 +567,8 @@ class Model extends Component implements StaticInstanceInterface, IteratorAggreg
      */
     public function getErrors($attribute = null)
     {
-        if ($attribute === null) {
-            return $this->_errors === null ? [] : $this->_errors;
-        }
+        if ($attribute === null) return $this->_errors === null ? [] : $this->_errors;
+
 
         return isset($this->_errors[$attribute]) ? $this->_errors[$attribute] : [];
     }

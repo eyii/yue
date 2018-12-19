@@ -18,7 +18,7 @@
                 file: {},
 
                 form:{
-                    url:'http://f.cn/v1/upload/upload?XDEBUG_SESSION_START=11886',
+                    url:'http://f.cn/v1/upload/upload',
                     param:{},
                     success:this.success,
                     catch:'上传失败'

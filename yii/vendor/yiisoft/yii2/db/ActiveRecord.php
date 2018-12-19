@@ -660,10 +660,7 @@ class ActiveRecord extends BaseActiveRecord
      */
     public function delete()
     {
-        if (!$this->isTransactional(self::OP_DELETE)) {
-            return $this->deleteInternal();
-        }
-
+        if (!$this->isTransactional(self::OP_DELETE)) return $this->deleteInternal();
         $transaction = static::getDb()->beginTransaction();
         try {
             $result = $this->deleteInternal();

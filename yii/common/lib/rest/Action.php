@@ -46,7 +46,7 @@ class Action extends \yii\base\Action
         $keys = $modelClass::primaryKey();
         if (count($keys) > 1) {
             $values = explode(',', $id);
-            if (count($keys) === count($values)) $model = $modelClass::findOne(array_combine($keys, $values));
+            count($keys) === count($values)&&$model = $modelClass::findOne(array_combine($keys, $values));
         } elseif ($id !== null) $model = $modelClass::findOne($id);
 
 

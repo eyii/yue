@@ -272,11 +272,9 @@ class Request extends \yii\base\Request
         $result = Yii::$app->getUrlManager()->parseRequest($this);
         if ($result !== false) {
             list($route, $params) = $result;
-            if ($this->_queryParams === null) {
-                $_GET = $params + $_GET; // preserve numeric keys
-            } else {
-                $this->_queryParams = $params + $this->_queryParams;
-            }
+            if ($this->_queryParams === null) $_GET = $params + $_GET; // preserve numeric keys
+             else $this->_queryParams = $params + $this->_queryParams;
+
 
             return [$route, $this->getQueryParams()];
         }
@@ -371,17 +369,14 @@ class Request extends \yii\base\Request
      */
     public function getMethod()
     {
-        if (isset($_POST[$this->methodParam])) {
-            return strtoupper($_POST[$this->methodParam]);
-        }
+        if (isset($_POST[$this->methodParam])) return strtoupper($_POST[$this->methodParam]);
 
-        if ($this->headers->has('X-Http-Method-Override')) {
-            return strtoupper($this->headers->get('X-Http-Method-Override'));
-        }
 
-        if (isset($_SERVER['REQUEST_METHOD'])) {
-            return strtoupper($_SERVER['REQUEST_METHOD']);
-        }
+        if ($this->headers->has('X-Http-Method-Override')) return strtoupper($this->headers->get('X-Http-Method-Override'));
+
+
+        if (isset($_SERVER['REQUEST_METHOD'])) return strtoupper($_SERVER['REQUEST_METHOD']);
+
 
         return 'GET';
     }
@@ -490,9 +485,8 @@ class Request extends \yii\base\Request
      */
     public function getRawBody()
     {
-        if ($this->_rawBody === null) {
-            $this->_rawBody = file_get_contents('php://input');
-        }
+       $this->_rawBody === null&& $this->_rawBody = file_get_contents('php://input');
+
 
         return $this->_rawBody;
     }
@@ -530,29 +524,21 @@ class Request extends \yii\base\Request
             }
 
             $rawContentType = $this->getContentType();
-            if (($pos = strpos($rawContentType, ';')) !== false) {
-                // e.g. text/html; charset=UTF-8
-                $contentType = substr($rawContentType, 0, $pos);
-            } else {
-                $contentType = $rawContentType;
-            }
+            $contentType =  ($pos = strpos($rawContentType, ';')) !== false? substr($rawContentType, 0, $pos): $rawContentType;
+
 
             if (isset($this->parsers[$contentType])) {
                 $parser = Yii::createObject($this->parsers[$contentType]);
-                if (!($parser instanceof RequestParserInterface)) {
-                    throw new InvalidConfigException("The '$contentType' request parser is invalid. It must implement the yii\\web\\RequestParserInterface.");
-                }
+                if (!($parser instanceof RequestParserInterface)) throw new InvalidConfigException("The '$contentType' request parser is invalid. It must implement the yii\\web\\RequestParserInterface.");
+
                 $this->_bodyParams = $parser->parse($this->getRawBody(), $rawContentType);
             } elseif (isset($this->parsers['*'])) {
                 $parser = Yii::createObject($this->parsers['*']);
-                if (!($parser instanceof RequestParserInterface)) {
-                    throw new InvalidConfigException('The fallback request parser is invalid. It must implement the yii\\web\\RequestParserInterface.');
-                }
+                if (!($parser instanceof RequestParserInterface)) throw new InvalidConfigException('The fallback request parser is invalid. It must implement the yii\\web\\RequestParserInterface.');
+
                 $this->_bodyParams = $parser->parse($this->getRawBody(), $rawContentType);
-            } elseif ($this->getMethod() === 'POST') {
-                // PHP has already parsed the body so we have all params in $_POST
-                $this->_bodyParams = $_POST;
-            } else {
+            } elseif ($this->getMethod() === 'POST') $this->_bodyParams = $_POST;
+             else {
                 $this->_bodyParams = [];
                 mb_parse_str($this->getRawBody(), $this->_bodyParams);
             }

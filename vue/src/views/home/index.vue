@@ -12,44 +12,9 @@
     import mmenu from './mmenu'
     import mcontent from './mcontent'
 	export default {
-		data() {
-			return {
-				sysName:'Yue',
-				collapsed:false,
 
-			}
-		},
 		components:{mheader,mmenu,mcontent},
-		methods: {
-			onSubmit() {
-				console.log('submit!');
-			},
-			handleopen() {
-				//console.log('handleopen');
-			},
-			handleclose() {
-				//console.log('handleclose');
-			},
-			handleselect: function (a, b) {
-			},
-			//退出登录
-			logout: function () {
-				var _this = this;
-				this.$confirm('确认退出吗?', '提示', {}).then(() => {
-					sessionStorage.removeItem('user');
-					_this.$router.push('/login');
-				});
 
-
-			},
-			//折叠导航栏
-			collapse:function(){
-				this.collapsed=!this.collapsed;
-			},
-			showMenu(i,status){
-				this.$refs.menuCollapsed.getElementsByClassName('submenu-hook-'+i)[0].style.display=status?'block':'none';
-			}
-		},
 
 	}
 
@@ -63,59 +28,7 @@
 		top: 0px;
 		bottom: 0px;
 		width: 100%;
-		.header {
-			height: 60px;
-			line-height: 60px;
-			background: $color-primary;
-			color:#fff;
-			.userinfo {
-				text-align: right;
-				padding-right: 35px;
-				float: right;
-				.userinfo-inner {
-					cursor: pointer;
-					color:#fff;
-					img {
-						width: 40px;
-						height: 40px;
-						border-radius: 20px;
-						margin: 10px 0px 10px 10px;
-						float: right;
-					}
-				}
-			}
-			.logo {
-				//width:230px;
-				height:60px;
-				font-size: 22px;
-				padding-left:20px;
-				padding-right:20px;
-				border-color: rgba(238,241,146,0.3);
-				border-right-width: 1px;
-				border-right-style: solid;
-				img {
-					width: 40px;
-					float: left;
-					margin: 10px 10px 10px 18px;
-				}
-				.txt {
-					color:#fff;
-				}
-			}
-			.logo-width{
-				width:230px;
-			}
-			.logo-collapse-width{
-				width:60px
-			}
-			.tools{
-				padding: 0px 23px;
-				width:14px;
-				height: 60px;
-				line-height: 60px;
-				cursor: pointer;
-			}
-		}
+
 		.main {
 			display: flex;
 			// background: #324057;

@@ -27,7 +27,7 @@ class UploadController extends ActiveController
         if (!Yii::$app->request->isPost)                         return  new MsgAbort('非法访问',-20);
          if (!$model->fileIsNull())    {
              $model->getFilePath($fileName);
-          $isSave=   $model->file->saveAs($fileName);
+            $isSave=   $model->file->saveAs($fileName);
          }else $model->getFilePath($fileName);
 
 

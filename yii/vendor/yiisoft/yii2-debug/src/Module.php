@@ -200,18 +200,8 @@ class Module extends \yii\base\Module implements BootstrapInterface
         });
 
         $app->getUrlManager()->addRules([
-            [
-                'class' => 'yii\web\UrlRule',
-                'route' => $this->id,
-                'pattern' => $this->id,
-                'suffix' => false
-            ],
-            [
-                'class' => 'yii\web\UrlRule',
-                'route' => $this->id . '/<controller>/<action>',
-                'pattern' => $this->id . '/<controller:[\w\-]+>/<action:[\w\-]+>',
-                'suffix' => false
-            ]
+                                         ['class' => 'yii\web\UrlRule', 'route' => $this->id, 'pattern' => $this->id, 'suffix' => false],
+                                         ['class' => 'yii\web\UrlRule', 'route' => $this->id . '/<controller>/<action>', 'pattern' => $this->id . '/<controller:[\w\-]+>/<action:[\w\-]+>', 'suffix' => false]
         ], false);
     }
 
@@ -220,15 +210,12 @@ class Module extends \yii\base\Module implements BootstrapInterface
      */
     public function beforeAction($action)
     {
-        if (!$this->enableDebugLogs) {
-            foreach ($this->get('log')->targets as $target) {
-                $target->enabled = false;
-            }
-        }
+        if (!$this->enableDebugLogs) foreach ($this->get('log')->targets as $target) $target->enabled = false;
 
-        if (!parent::beforeAction($action)) {
-            return false;
-        }
+
+
+        if (!parent::beforeAction($action)) return false;
+
 
         // do not display debug toolbar when in debug view mode
         Yii::$app->getView()->off(View::EVENT_END_BODY, [$this, 'renderToolbar']);

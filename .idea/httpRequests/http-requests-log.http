@@ -1,3 +1,189 @@
+POST http://f.cn/v1/user/login?username=admin&password=111
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T063956.200.json
+
+###
+
+PATCH http://f.cn/v1/menu/11?parent=0&path=/&component=Home&name=111&icon=eee&hidden=0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T022706.500.json
+
+###
+
+PATCH http://f.cn/v1/menu/11?parent=0&path=/&component=Home&name=111&icon=eee&hidden=0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T022610.200.json
+
+###
+
+PATCH http://f.cn/v1/menu/11?parent=0&path=/&component=Home&name=111&icon=eee&hidden=0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T022501.200.json
+
+###
+
+PATCH http://f.cn/v1/menu/11?parent=0&path=/&component=Home&name=111&icon=eee&hidden=0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T022443.200.json
+
+###
+
+PATCH http://f.cn/v1/menu/11?parent=0&path=/&component=Home&name=111&icon=eee&hidden=0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T022336.404.json
+
+###
+
+PATCH http://f.cn/v1/menu/11?parent=0&path=/&component=Home&name=111&icon=eee&hidden=0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T022312.404.json
+
+###
+
+PATCH http://f.cn/v1/menu/11
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T022131.404.json
+
+###
+
+PATCH http://f.cn/v1/menu/11
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T022116.404.json
+
+###
+
+DELETE http://f.cn/v1/menu/2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T122817.504.html
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T122648.404.json
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112812.504.html
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112700.404.json
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112550.504.html
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112446.404.json
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112421.404.json
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112343.504.html
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112152.404.json
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112129.404.json
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T112057.404.json
+
+###
+
+DELETE http://f.cn/v1/menu/1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-17T111901.504.html
+
+###
+
 POST http://f.cn/v1/upload/upload?file=
 Accept: */*
 Cache-Control: no-cache

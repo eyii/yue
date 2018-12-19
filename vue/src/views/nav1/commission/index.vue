@@ -14,8 +14,6 @@
 				</el-form>
 			</el-col>
 	    	<elist v-model="form"/>
-
-
 		 <edialog v-model="form"/>
 	</section>
 </template>
@@ -34,26 +32,16 @@
                 form: {
                     isShow:false,
                     name: '', fcheck:this.fcheck, fadd:this.fadd, page:0, list:[], bl:[],
-					url:'http://f.cn/v1/upload/upload?XDEBUG_SESSION_START=15899',
+					url:'http://f.cn/v1/upload/upload',
 					fields: {'会员账号': 'A', '有效投注': 'B', '结果': 'C',},
 				},
 
             }
 		},
         methods:{
-            fcheck(){},
-            fadd(){
-
-                return 1;
-            },
+            fcheck(){}, fadd(){return 1;},
             fcount(){
-                this.form.list.forEach(row=> {
-                    if (row.C!=null)return ;
-                    this.form.bl.forEach(bl=>{
-                        if(row.B>bl.A)row.C=bl.B
-                    });
-                })
-
+                this.form.list.forEach(row=> { if (row.C!=null)return ; this.form.bl.forEach(bl=>{if(row.B>bl.A)row.C=bl.B});})
             }
         }
 	}

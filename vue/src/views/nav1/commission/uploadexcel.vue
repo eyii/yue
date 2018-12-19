@@ -7,41 +7,25 @@
 
 </template>
 <script>
-   import VPost from '../../../components/js/ajax/VPost'
+
 
     export default {
         name:'uploadexcel',
-        props:{
-            value:{
-
-            },
-            title:'',
-            url:"",
-
-            filename:'',
-            autoread:false
-        },
+        props:{value:{}, title:'', url:"", filename:'', autoread:false},
         data() {
             return {
                 file: {},
-                form:{
-                    url:this.url,
-                    param:{},
-                    success:this.success,
-                    catch:false
-                }
+                form:{url:this.url, param:{}, success:this.success, catch:false}
             };
         },
         methods: {
             success(msg,data){
-
                 data=this.toArray(data);
                 data.shift();
                 this.$emit('input', data);
             },
 
             uploadFile(hasFile=true) {
-
                 this.form.param= new FormData();
                if (hasFile) this.form.param.append('UploadForm[file]',this.file);
                 this.form.param.append('filename',this.$route.path+'_'+this.filename);

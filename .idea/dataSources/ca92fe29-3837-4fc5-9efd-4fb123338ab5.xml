@@ -4255,35 +4255,47 @@ child</ColNames>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="955" parent="297" name="username">
+    <column id="955" parent="297" name="role">
+      <Position>10</Position>
+      <DataType>smallint(6)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;10&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="956" parent="297" name="access_token">
+      <Position>11</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="957" parent="297" name="username">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="956" parent="297" name="password_reset_token">
+    <index id="958" parent="297" name="password_reset_token">
       <ColNames>password_reset_token</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="957" parent="297" name="email">
+    <index id="959" parent="297" name="email">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="958" parent="297" name="PRIMARY">
+    <key id="960" parent="297" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="959" parent="297" name="username">
+    <key id="961" parent="297" name="username">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
-    <key id="960" parent="297" name="password_reset_token">
+    <key id="962" parent="297" name="password_reset_token">
       <ColNames>password_reset_token</ColNames>
       <UnderlyingIndexName>password_reset_token</UnderlyingIndexName>
     </key>
-    <key id="961" parent="297" name="email">
+    <key id="963" parent="297" name="email">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>email</UnderlyingIndexName>
     </key>
